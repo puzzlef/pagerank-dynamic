@@ -34,7 +34,7 @@ void pagerankSeqOnce(vector<T>& a, const vector<T>& c, const vector<int>& vfrom,
 
 template <class T>
 int pagerankSeqLoop(vector<T>& a, vector<T>& r, const vector<T>& f, vector<T>& c, const vector<int>& vfrom, const vector<int>& efrom, const vector<int>& vdata, int N, T p, T E, int L) {
-  int l = 0;
+  int l = 1;
   T e0 = T();
   for (; l<L; l++) {
     T c0 = pagerankTeleport(r, vfrom, efrom, vdata, N, p);
@@ -72,6 +72,8 @@ PagerankResult<T> pagerankSeq(const G& xt, const vector<T> *q=nullptr, PagerankO
   auto vdata = vertexData(xt);
   int  N     = xt.order();
   vector<T> a(N), r(N), f(N), c(N);
-  float t = measureDuration([&]() { l = pagerankSeqCore(a, r, f, c, vfrom, efrom, vdata, N, q, p, E, L); }, o.repeat);
-  return {vertexContainer(xt, a), l, t};
+  vector<T> *qc = q? new vector<T> : nullptr;
+  if (q) *qc = compressContainer(xt, *q);
+  float t = measureDuration([&]() { l = pagerankSeqCore(a, r, f, c, vfrom, efrom, vdata, N, qc, p, E, L); }, o.repeat);
+  return {decompressContainer(xt, a), l, t};
 }
