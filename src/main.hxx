@@ -4,6 +4,7 @@
 #include "vertices.hxx"
 #include "edges.hxx"
 #include "transpose.hxx"
-#include "mtx.hxx"
+#include "snap.hxx"
+#include "ranks.hxx"
 #include "pagerank.hxx"
 #include "pagerankSeq.hxx"

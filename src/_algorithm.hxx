@@ -1,12 +1,16 @@
 #pragma once
 #include <cmath>
 #include <vector>
+#include <iterator>
 #include <algorithm>
 
 using std::vector;
+using std::iterator_traits;
+using std::back_inserter;
 using std::find;
 using std::count;
 using std::count_if;
+using std::set_difference;
 using std::copy;
 using std::abs;
 
@@ -47,6 +51,29 @@ int countIf(I ib, I ie, F fn) {
 template <class J, class F>
 int countIf(const J& x, F fn) {
   return count_if(x.begin(), x.end(), fn);
+}
+
+
+
+
+// SET-DIFFERENCE
+// --------------
+
+template <class L, class J, class K>
+void setDifference(L&& a, J&& x, K&& y) {
+  set_difference(x.begin(), x.end(), y.begin(), y.end(), a.begin());
+}
+
+template <class T, class J, class K>
+void setDifference(vector<T>& a, J&& x, K&& y) {
+  set_difference(x.begin(), x.end(), y.begin(), y.end(), back_inserter(a));
+}
+
+template <class J, class K>
+auto setDifference(J&& x, K&& y) {
+  using T = typename iterator_traits<J>::value_type;
+  vector<T> a; setDifference(a, x, y);
+  return a;
 }
 
 
