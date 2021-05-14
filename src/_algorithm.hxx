@@ -71,7 +71,8 @@ void setDifference(vector<T>& a, J&& x, K&& y) {
 
 template <class J, class K>
 auto setDifference(J&& x, K&& y) {
-  using T = typename iterator_traits<J>::value_type;
+  using I = decltype(x.begin());
+  using T = typename iterator_traits<I>::value_type;
   vector<T> a; setDifference(a, x, y);
   return a;
 }

@@ -29,9 +29,10 @@ bool readSnapTemporalLine(G& a, const string& ln, bool sym=false) {
 
 template <class G>
 bool readSnapTemporal(G& a, istream& s, int N, bool sym=false) {
-  for (int i=0; i<N; i++) {
+  int i = 0;
+  for (; i<N; i++) {
     string ln; getline(s, ln);
-    if (!readSnapTemporalLine(a, ln, sym)) return i>0;
+    if (!readSnapTemporalLine(a, ln, sym)) break;
   }
   return i>0;
 }
