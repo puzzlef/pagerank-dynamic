@@ -1,10 +1,17 @@
-Performance of sequential execution based vs OpenMP based PageRank (pull, CSR).
+Comparing strategies to update ranks for dynamic PageRank (pull, CSR).
 
 This experiment was for comparing the performance between:
-1. Find pagerank using a single thread (**sequential**).
-2. Find pagerank accelerated using **OpenMP**.
+1. Find static pagerank of updated graph.
+2. Find dynamic pagerank, using **zero-fill** for new vertices.
+3. Find dynamic pagerank, using **1/N** for new vertices.
+4. Find dynamic pagerank, **scaling** old vertices, and using **1/N** for new vertices.
 
-Both techniques were attempted on different types of graphs, running each
+Each technique was attempted on different temporal graphs, updating each graph
+with multiple batch sizes. Batch sizes are always an order of 10. For each
+batch size, static as well as the 3 dynamic rank adjust methods are tested.
+Each rank adjust method (for dynamic pagerank) can have a different number
+of iterations to convergence.
+
 technique 5 times per graph to get a good time measure. **OpenMP** does seem
 to provide a clear benefit for most graphs (except the smallest ones). This
 speedup is definitely not directly proportional to the number of threads, as
