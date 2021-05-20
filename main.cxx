@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <iostream>
 #include <utility>
+#include <algorithm>
 #include "src/main.hxx"
 
 using namespace std;
@@ -12,15 +13,15 @@ using namespace std;
 
 template <class G, class T>
 auto runPagerankCall(const char *name, const G& xt, const vector<T> *init, const vector<T> *ranks=nullptr) {
-  int repeat = 5;
+  int repeat = name? 5 : 1;
   auto a = pagerankSeq(xt, init, {repeat});
   auto e = absError(a.ranks, ranks? *ranks : a.ranks);
-  print(xt); printf(" [%09.3f ms; %03d iters.] [%.4e err.] %s\n", a.time, a.iterations, e, name);
+  if (name) { print(xt); printf(" [%09.3f ms; %03d iters.] [%.4e err.] %s\n", a.time, a.iterations, e, name); }
   return a;
 }
 
 
-void runPagerankBatch(const string& data, bool show, int batch) {
+void runPagerankBatch(const string& data, bool show, int batch, int skip) {
   vector<float>  ranksOld, ranksAdj;
   vector<float> *initStatic  = nullptr;
   vector<float> *initDynamic = &ranksAdj;
@@ -40,18 +41,27 @@ void runPagerankBatch(const string& data, bool show, int batch) {
     adjustRanks(ranksAdj, ranksOld, ksOld, ks, 0.0f, float(ksOld.size())/ks.size(), 1.0f/ks.size());
     auto a2 = runPagerankCall("pagerankDynamic", xt, initDynamic, &a1.ranks);
 
+    // Skip some edges (to speed up execution)
+    if (skip) {
+      if (!readSnapTemporal(x, s, skip)) break;
+      ks = vertices(x);
+      xt = transposeWithDegree(x);
+      a1 = runPagerankCall(nullptr, xt, initStatic);
+    }
+
     ksOld = move(ks);
-    ranksOld = move(a2.ranks);
+    ranksOld = move(a1.ranks);
   }
 }
 
 
 void runPagerank(const string& data, bool show) {
-  int M = countLines(data);
+  int M = countLines(data), steps = 100;
   printf("Temporal edges: %d\n\n", M);
-  for (int batch=int(pow(10, int(log10(M)))); batch>=1000; batch/=10) {
+  for (int batch=1, i=0; batch<M; batch*=i&1? 2:5, i++) {
+    int skip = max(M/steps - batch, 0);
     printf("# Batch size %.0e\n", (double) batch);
-    runPagerankBatch(data, show, batch);
+    runPagerankBatch(data, show, batch, skip);
     printf("\n");
   }
 }
