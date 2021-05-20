@@ -36,17 +36,9 @@ void runPagerankBatch(const string& data, bool show, int batch) {
     // Find static pagerank of updated graph.
     auto a1 = runPagerankCall("pagerankStatic", xt, initStatic);
 
-    // Find dynamic pagerank, using zero-fill for new vertices.
-    adjustRanks(ranksAdj, ranksOld, ksOld, ks, 0.0f, 1.0f, 0.0f);
-    auto a2 = runPagerankCall("pagerankDynamic (zero-fill)", xt, initDynamic, &a1.ranks);
-
-    // Find dynamic pagerank, using 1/N for new vertices.
-    adjustRanks(ranksAdj, ranksOld, ksOld, ks, 0.0f, 1.0f, 1.0f/ks.size());
-    auto a3 = runPagerankCall("pagerankDynamic (1/N-fill)", xt, initDynamic, &a1.ranks);
-
     // Find dynamic pagerank, scaling old vertices, and using 1/N for new vertices.
     adjustRanks(ranksAdj, ranksOld, ksOld, ks, 0.0f, float(ksOld.size())/ks.size(), 1.0f/ks.size());
-    auto a4 = runPagerankCall("pagerankDynamic (scaled,1/N-fill)", xt, initDynamic, &a1.ranks);
+    auto a2 = runPagerankCall("pagerankDynamic", xt, initDynamic, &a1.ranks);
 
     ksOld = move(ks);
     ranksOld = move(a2.ranks);
