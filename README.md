@@ -1,4 +1,4 @@
-Comparing strategies to update ranks for dynamic PageRank (pull, CSR).
+Comparing strategies to update ranks for dynamic PageRank ([pull], [CSR]).
 
 This experiment was for comparing the performance between:
 1. Find static pagerank of updated graph.
@@ -17,11 +17,10 @@ pagerank increases. In some cases it even becomes slower than static pagerank.
 
 All outputs (including shortened versions) are saved in [out/](out/) and
 outputs for `email-Eu-core-temporal` and `wiki-talk-temporal` are listed here.
-See ["pagerank-push-vs-pull"] for a discussion on *push* vs *pull* method, and
-["pagerank-class-vs-csr"] for a comparision between using a C++ DiGraph class
-directly vs using its CSR representation. The input data used for this
-experiment is available at ["graphs"] (for small ones), and the
-[SuiteSparse Matrix Collection].
+The input data used for this experiment is available at the
+[Stanford Large Network Dataset Collection].
+
+<br>
 
 ```bash
 $ g++ -O3 main.cxx
@@ -50,6 +49,8 @@ $ ./a.out ~/data/email-Eu-core-temporal.txt
 # [00000.499 ms; 027 iters.] [3.8160e-6 err.] pagerankDynamic (1/N-fill)
 # [00000.325 ms; 018 iters.] [2.6078e-6 err.] pagerankDynamic (scaled,1/N-fill)
 ```
+
+<br>
 
 ```bash
 $ g++ -O3 main.cxx
@@ -92,14 +93,13 @@ $ ./a.out ~/data/wiki-talk-temporal.txt
 ## References
 
 - [PageRank Algorithm, Mining massive Datasets (CS246), Stanford University](http://snap.stanford.edu/class/cs246-videos-2019/lec9_190205-cs246-720.mp4)
-- [SuiteSparse Matrix Collection]
+- [Stanford Large Network Dataset Collection]
 
 <br>
 <br>
 
 [![](https://i.imgur.com/sNyLL3K.jpg)](https://www.youtube.com/watch?v=SoiKp2oSUl0)
 
-["pagerank-push-vs-pull"]: https://github.com/puzzlef/pagerank-push-vs-pull
-["pagerank-class-vs-csr"]: https://github.com/puzzlef/pagerank-class-vs-csr
-["graphs"]: https://github.com/puzzlef/graphs
-[SuiteSparse Matrix Collection]: https://suitesparse-collection-website.herokuapp.com
+[pull]: https://github.com/puzzlef/pagerank-push-vs-pull
+[CSR]: https://github.com/puzzlef/pagerank-class-vs-csr
+[Stanford Large Network Dataset Collection]: http://snap.stanford.edu/data/index.html
