@@ -1,14 +1,14 @@
-Comparing strategies to update ranks for dynamic PageRank ([pull], [CSR]).
+Performance of static vs dynamic PageRank ([pull], [CSR], [scaled-fill]).
 
 This experiment was for comparing the performance between:
 1. Find static pagerank of updated graph.
-2. Find dynamic pagerank, using **zero-fill** for new vertices.
-3. Find dynamic pagerank, using **1/N** for new vertices.
-4. Find dynamic pagerank, **scaling** old vertices, and using **1/N** for new vertices.
+2. Find dynamic pagerank, **scaling** old vertices, and using **1/N** for new vertices.
 
-Each technique was attempted on different temporal graphs, updating each graph
-with multiple batch sizes. Batch sizes are always an order of 10. For each
-batch size, static as well as the 3 dynamic rank adjust methods are tested.
+Both techniques were attempted on different temporal graphs, updating each
+graph with multiple batch sizes. Batch sizes are always an order of 10. New
+edges are incrementally added to the graph batch-by-batch until the entire
+graph is complete.
+
 Each rank adjust method (for dynamic pagerank) can have a different number
 of iterations to convergence. The **4th approach**, which does **scaling**
 and uses **1/N** for new vertices seems to perform best. It is also seen
@@ -58,5 +58,6 @@ $ ./a.out ~/data/wiki-talk-temporal.txt
 
 [pull]: https://github.com/puzzlef/pagerank-push-vs-pull
 [CSR]: https://github.com/puzzlef/pagerank-class-vs-csr
+[scaled-fill]: https://github.com/puzzlef/pagerank-dynamic-adjust-ranks
 ["graphs"]: https://github.com/puzzlef/graphs
 [SuiteSparse Matrix Collection]: https://suitesparse-collection-website.herokuapp.com
