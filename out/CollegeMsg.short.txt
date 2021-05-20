@@ -1,0 +1,15 @@
+Using graph CollegeMsg.txt ...
+Temporal edges: 59836
+order: 1899 size: 20296 {}
+
+# Batch size 1e+4
+[00000.734 ms; 040 iters.] [0.0000e+0 err.] pagerankStatic
+[00000.751 ms; 045 iters.] [8.3523e-6 err.] pagerankDynamic (zero-fill)
+[00001.141 ms; 061 iters.] [4.3681e-6 err.] pagerankDynamic (1/N-fill)
+[00000.631 ms; 036 iters.] [6.2492e-6 err.] pagerankDynamic (scaled,1/N-fill)
+
+# Batch size 1e+3
+[00000.657 ms; 042 iters.] [0.0000e+0 err.] pagerankStatic
+[00000.430 ms; 031 iters.] [7.8309e-6 err.] pagerankDynamic (zero-fill)
+[00000.798 ms; 051 iters.] [4.9999e-6 err.] pagerankDynamic (1/N-fill)
+[00000.402 ms; 028 iters.] [6.2744e-6 err.] pagerankDynamic (scaled,1/N-fill)

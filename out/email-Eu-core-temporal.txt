@@ -1,0 +1,1492 @@
+Using graph /home/subhajit/data/email-Eu-core-temporal.txt ...
+Temporal edges: 332335
+
+# Batch size 1e+05
+order: 827 size: 12769 {} [00000.417 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 827 size: 12769 {} [00001.224 ms; 075 iters.] [6.0143e-06 err.] pagerankDynamic (zero-fill)
+order: 827 size: 12769 {} [00000.443 ms; 026 iters.] [0.0000e+00 err.] pagerankDynamic (1/N-fill)
+order: 827 size: 12769 {} [00000.445 ms; 026 iters.] [0.0000e+00 err.] pagerankDynamic (scaled,1/N-fill)
+order: 883 size: 18386 {} [00000.506 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 883 size: 18386 {} [00000.527 ms; 023 iters.] [3.5470e-06 err.] pagerankDynamic (zero-fill)
+order: 883 size: 18386 {} [00001.287 ms; 058 iters.] [5.0839e-06 err.] pagerankDynamic (1/N-fill)
+order: 883 size: 18386 {} [00000.513 ms; 022 iters.] [3.3036e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 976 size: 23525 {} [00000.712 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 976 size: 23525 {} [00000.632 ms; 022 iters.] [2.6775e-06 err.] pagerankDynamic (zero-fill)
+order: 976 size: 23525 {} [00001.683 ms; 060 iters.] [5.4120e-06 err.] pagerankDynamic (1/N-fill)
+order: 976 size: 23525 {} [00000.575 ms; 020 iters.] [2.3439e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 986 size: 24929 {} [00000.676 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 986 size: 24929 {} [00000.643 ms; 021 iters.] [6.9205e-07 err.] pagerankDynamic (zero-fill)
+order: 986 size: 24929 {} [00001.394 ms; 047 iters.] [4.9237e-06 err.] pagerankDynamic (1/N-fill)
+order: 986 size: 24929 {} [00000.603 ms; 020 iters.] [4.4961e-07 err.] pagerankDynamic (scaled,1/N-fill)
+
+# Batch size 1e+04
+order: 653 size: 3495 {} [00000.259 ms; 050 iters.] [0.0000e+00 err.] pagerankStatic
+order: 653 size: 3495 {} [00000.386 ms; 075 iters.] [7.7433e-06 err.] pagerankDynamic (zero-fill)
+order: 653 size: 3495 {} [00000.264 ms; 050 iters.] [0.0000e+00 err.] pagerankDynamic (1/N-fill)
+order: 653 size: 3495 {} [00000.261 ms; 050 iters.] [0.0000e+00 err.] pagerankDynamic (scaled,1/N-fill)
+order: 710 size: 5148 {} [00000.274 ms; 037 iters.] [0.0000e+00 err.] pagerankStatic
+order: 710 size: 5148 {} [00000.342 ms; 045 iters.] [5.2917e-07 err.] pagerankDynamic (zero-fill)
+order: 710 size: 5148 {} [00000.458 ms; 061 iters.] [4.2035e-06 err.] pagerankDynamic (1/N-fill)
+order: 710 size: 5148 {} [00001.770 ms; 044 iters.] [2.9628e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 742 size: 6525 {} [00000.425 ms; 047 iters.] [0.0000e+00 err.] pagerankStatic
+order: 742 size: 6525 {} [00000.433 ms; 047 iters.] [1.2307e-06 err.] pagerankDynamic (zero-fill)
+order: 742 size: 6525 {} [00000.509 ms; 056 iters.] [4.7954e-06 err.] pagerankDynamic (1/N-fill)
+order: 742 size: 6525 {} [00000.434 ms; 047 iters.] [1.2940e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 775 size: 8038 {} [00000.519 ms; 047 iters.] [0.0000e+00 err.] pagerankStatic
+order: 775 size: 8038 {} [00000.384 ms; 034 iters.] [5.3483e-06 err.] pagerankDynamic (zero-fill)
+order: 775 size: 8038 {} [00000.606 ms; 055 iters.] [5.6311e-06 err.] pagerankDynamic (1/N-fill)
+order: 775 size: 8038 {} [00000.382 ms; 034 iters.] [3.3387e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 786 size: 9051 {} [00000.327 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 786 size: 9051 {} [00000.315 ms; 025 iters.] [3.7486e-06 err.] pagerankDynamic (zero-fill)
+order: 786 size: 9051 {} [00000.590 ms; 048 iters.] [5.9030e-06 err.] pagerankDynamic (1/N-fill)
+order: 786 size: 9051 {} [00000.314 ms; 025 iters.] [3.9503e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 795 size: 10028 {} [00000.368 ms; 028 iters.] [0.0000e+00 err.] pagerankStatic
+order: 795 size: 10028 {} [00000.380 ms; 028 iters.] [7.6575e-07 err.] pagerankDynamic (zero-fill)
+order: 795 size: 10028 {} [00000.621 ms; 047 iters.] [5.5007e-06 err.] pagerankDynamic (1/N-fill)
+order: 795 size: 10028 {} [00000.380 ms; 028 iters.] [7.5289e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 805 size: 10811 {} [00000.393 ms; 028 iters.] [0.0000e+00 err.] pagerankStatic
+order: 805 size: 10811 {} [00000.307 ms; 021 iters.] [3.7918e-06 err.] pagerankDynamic (zero-fill)
+order: 805 size: 10811 {} [00000.679 ms; 048 iters.] [4.8136e-06 err.] pagerankDynamic (1/N-fill)
+order: 805 size: 10811 {} [00000.281 ms; 019 iters.] [3.3633e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 814 size: 11519 {} [00000.399 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 814 size: 11519 {} [00000.336 ms; 022 iters.] [1.4790e-06 err.] pagerankDynamic (zero-fill)
+order: 814 size: 11519 {} [00000.696 ms; 047 iters.] [5.3568e-06 err.] pagerankDynamic (1/N-fill)
+order: 814 size: 11519 {} [00000.308 ms; 020 iters.] [2.1942e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 817 size: 12125 {} [00000.402 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 817 size: 12125 {} [00000.324 ms; 020 iters.] [3.4410e-06 err.] pagerankDynamic (zero-fill)
+order: 817 size: 12125 {} [00000.627 ms; 040 iters.] [5.4705e-06 err.] pagerankDynamic (1/N-fill)
+order: 817 size: 12125 {} [00000.307 ms; 019 iters.] [3.6274e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 827 size: 12769 {} [00000.419 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 827 size: 12769 {} [00000.367 ms; 022 iters.] [1.7920e-06 err.] pagerankDynamic (zero-fill)
+order: 827 size: 12769 {} [00000.775 ms; 048 iters.] [5.0233e-06 err.] pagerankDynamic (1/N-fill)
+order: 827 size: 12769 {} [00000.365 ms; 022 iters.] [1.0895e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 836 size: 13464 {} [00000.437 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 836 size: 13464 {} [00000.367 ms; 021 iters.] [4.0082e-06 err.] pagerankDynamic (zero-fill)
+order: 836 size: 13464 {} [00000.795 ms; 047 iters.] [5.0254e-06 err.] pagerankDynamic (1/N-fill)
+order: 836 size: 13464 {} [00000.366 ms; 021 iters.] [3.6547e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 844 size: 14126 {} [00000.453 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 844 size: 14126 {} [00000.363 ms; 020 iters.] [3.1139e-06 err.] pagerankDynamic (zero-fill)
+order: 844 size: 14126 {} [00000.807 ms; 046 iters.] [5.5860e-06 err.] pagerankDynamic (1/N-fill)
+order: 844 size: 14126 {} [00000.345 ms; 019 iters.] [3.1579e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 848 size: 14714 {} [00000.468 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 848 size: 14714 {} [00000.372 ms; 020 iters.] [2.6787e-06 err.] pagerankDynamic (zero-fill)
+order: 848 size: 14714 {} [00000.762 ms; 042 iters.] [5.0435e-06 err.] pagerankDynamic (1/N-fill)
+order: 848 size: 14714 {} [00000.373 ms; 020 iters.] [1.9706e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 851 size: 15360 {} [00000.471 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 851 size: 15360 {} [00000.388 ms; 020 iters.] [3.3536e-06 err.] pagerankDynamic (zero-fill)
+order: 851 size: 15360 {} [00000.758 ms; 040 iters.] [5.5420e-06 err.] pagerankDynamic (1/N-fill)
+order: 851 size: 15360 {} [00000.389 ms; 020 iters.] [3.0732e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 857 size: 15724 {} [00000.460 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 857 size: 15724 {} [00000.358 ms; 018 iters.] [3.2469e-06 err.] pagerankDynamic (zero-fill)
+order: 857 size: 15724 {} [00000.850 ms; 044 iters.] [5.5474e-06 err.] pagerankDynamic (1/N-fill)
+order: 857 size: 15724 {} [00000.376 ms; 019 iters.] [2.9908e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 861 size: 16254 {} [00000.473 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 861 size: 16254 {} [00000.387 ms; 019 iters.] [3.1986e-06 err.] pagerankDynamic (zero-fill)
+order: 861 size: 16254 {} [00000.832 ms; 042 iters.] [5.2951e-06 err.] pagerankDynamic (1/N-fill)
+order: 861 size: 16254 {} [00000.348 ms; 017 iters.] [3.1968e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 870 size: 16878 {} [00000.488 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 870 size: 16878 {} [00000.400 ms; 019 iters.] [2.3032e-06 err.] pagerankDynamic (zero-fill)
+order: 870 size: 16878 {} [00000.959 ms; 047 iters.] [4.9809e-06 err.] pagerankDynamic (1/N-fill)
+order: 870 size: 16878 {} [00000.378 ms; 018 iters.] [2.4668e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 875 size: 17382 {} [00000.482 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 875 size: 17382 {} [00000.391 ms; 018 iters.] [3.2498e-06 err.] pagerankDynamic (zero-fill)
+order: 875 size: 17382 {} [00000.908 ms; 043 iters.] [5.3384e-06 err.] pagerankDynamic (1/N-fill)
+order: 875 size: 17382 {} [00000.368 ms; 017 iters.] [3.5241e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 879 size: 17872 {} [00000.512 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 879 size: 17872 {} [00000.375 ms; 017 iters.] [8.8361e-07 err.] pagerankDynamic (zero-fill)
+order: 879 size: 17872 {} [00000.902 ms; 042 iters.] [5.1783e-06 err.] pagerankDynamic (1/N-fill)
+order: 879 size: 17872 {} [00000.397 ms; 018 iters.] [3.9788e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 883 size: 18386 {} [00000.506 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 883 size: 18386 {} [00000.410 ms; 018 iters.] [2.9430e-06 err.] pagerankDynamic (zero-fill)
+order: 883 size: 18386 {} [00000.908 ms; 041 iters.] [5.7634e-06 err.] pagerankDynamic (1/N-fill)
+order: 883 size: 18386 {} [00000.387 ms; 017 iters.] [2.7329e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 887 size: 18873 {} [00000.518 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 887 size: 18873 {} [00000.396 ms; 017 iters.] [3.1481e-06 err.] pagerankDynamic (zero-fill)
+order: 887 size: 18873 {} [00000.952 ms; 042 iters.] [4.7605e-06 err.] pagerankDynamic (1/N-fill)
+order: 887 size: 18873 {} [00000.396 ms; 017 iters.] [2.9439e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 891 size: 19353 {} [00000.553 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 891 size: 19353 {} [00000.474 ms; 020 iters.] [6.9385e-07 err.] pagerankDynamic (zero-fill)
+order: 891 size: 19353 {} [00000.974 ms; 042 iters.] [4.8795e-06 err.] pagerankDynamic (1/N-fill)
+order: 891 size: 19353 {} [00000.474 ms; 020 iters.] [7.2402e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 904 size: 19829 {} [00000.564 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 904 size: 19829 {} [00000.435 ms; 018 iters.] [2.1810e-06 err.] pagerankDynamic (zero-fill)
+order: 904 size: 19829 {} [00001.158 ms; 049 iters.] [4.8700e-06 err.] pagerankDynamic (1/N-fill)
+order: 904 size: 19829 {} [00000.435 ms; 018 iters.] [2.8465e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 918 size: 20259 {} [00000.575 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 918 size: 20259 {} [00000.492 ms; 020 iters.] [2.9718e-06 err.] pagerankDynamic (zero-fill)
+order: 918 size: 20259 {} [00001.178 ms; 049 iters.] [5.3017e-06 err.] pagerankDynamic (1/N-fill)
+order: 918 size: 20259 {} [00000.444 ms; 018 iters.] [1.6110e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 938 size: 20755 {} [00000.568 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 938 size: 20755 {} [00000.480 ms; 019 iters.] [3.1853e-06 err.] pagerankDynamic (zero-fill)
+order: 938 size: 20755 {} [00001.256 ms; 051 iters.] [5.3807e-06 err.] pagerankDynamic (1/N-fill)
+order: 938 size: 20755 {} [00000.479 ms; 019 iters.] [3.6937e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 951 size: 21473 {} [00000.587 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 951 size: 21473 {} [00000.470 ms; 018 iters.] [2.5905e-06 err.] pagerankDynamic (zero-fill)
+order: 951 size: 21473 {} [00001.253 ms; 049 iters.] [4.5772e-06 err.] pagerankDynamic (1/N-fill)
+order: 951 size: 21473 {} [00000.420 ms; 016 iters.] [2.7003e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 962 size: 22107 {} [00000.606 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 962 size: 22107 {} [00000.511 ms; 019 iters.] [2.4730e-06 err.] pagerankDynamic (zero-fill)
+order: 962 size: 22107 {} [00001.244 ms; 047 iters.] [5.7525e-06 err.] pagerankDynamic (1/N-fill)
+order: 962 size: 22107 {} [00000.490 ms; 018 iters.] [2.6705e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 964 size: 22579 {} [00000.616 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 964 size: 22579 {} [00000.468 ms; 017 iters.] [2.5452e-06 err.] pagerankDynamic (zero-fill)
+order: 964 size: 22579 {} [00001.001 ms; 037 iters.] [5.1568e-06 err.] pagerankDynamic (1/N-fill)
+order: 964 size: 22579 {} [00000.494 ms; 018 iters.] [1.8928e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 970 size: 23030 {} [00000.626 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 970 size: 23030 {} [00000.394 ms; 014 iters.] [6.1233e-07 err.] pagerankDynamic (zero-fill)
+order: 970 size: 23030 {} [00001.175 ms; 043 iters.] [5.6480e-06 err.] pagerankDynamic (1/N-fill)
+order: 970 size: 23030 {} [00000.420 ms; 015 iters.] [4.0811e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 976 size: 23525 {} [00000.644 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 976 size: 23525 {} [00000.514 ms; 018 iters.] [2.4484e-06 err.] pagerankDynamic (zero-fill)
+order: 976 size: 23525 {} [00001.205 ms; 043 iters.] [5.5322e-06 err.] pagerankDynamic (1/N-fill)
+order: 976 size: 23525 {} [00000.487 ms; 017 iters.] [2.0403e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 978 size: 24016 {} [00000.650 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 978 size: 24016 {} [00000.577 ms; 020 iters.] [5.2151e-07 err.] pagerankDynamic (zero-fill)
+order: 978 size: 24016 {} [00001.054 ms; 037 iters.] [4.8682e-06 err.] pagerankDynamic (1/N-fill)
+order: 978 size: 24016 {} [00000.522 ms; 018 iters.] [8.1878e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 981 size: 24375 {} [00000.662 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 981 size: 24375 {} [00000.474 ms; 016 iters.] [5.1661e-07 err.] pagerankDynamic (zero-fill)
+order: 981 size: 24375 {} [00001.133 ms; 039 iters.] [5.3641e-06 err.] pagerankDynamic (1/N-fill)
+order: 981 size: 24375 {} [00000.502 ms; 017 iters.] [3.2922e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 986 size: 24816 {} [00000.672 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 986 size: 24816 {} [00000.510 ms; 017 iters.] [1.1582e-06 err.] pagerankDynamic (zero-fill)
+order: 986 size: 24816 {} [00001.234 ms; 042 iters.] [5.7734e-06 err.] pagerankDynamic (1/N-fill)
+order: 986 size: 24816 {} [00000.509 ms; 017 iters.] [5.4576e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 986 size: 24929 {} [00000.674 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 986 size: 24929 {} [00000.424 ms; 014 iters.] [2.2556e-06 err.] pagerankDynamic (zero-fill)
+order: 986 size: 24929 {} [00000.424 ms; 014 iters.] [2.2556e-06 err.] pagerankDynamic (1/N-fill)
+order: 986 size: 24929 {} [00000.424 ms; 014 iters.] [2.2556e-06 err.] pagerankDynamic (scaled,1/N-fill)
+
+# Batch size 1e+03
+order: 421 size: 719 {} [00000.117 ms; 059 iters.] [0.0000e+00 err.] pagerankStatic
+order: 421 size: 719 {} [00000.158 ms; 075 iters.] [6.9272e-06 err.] pagerankDynamic (zero-fill)
+order: 421 size: 719 {} [00000.121 ms; 059 iters.] [0.0000e+00 err.] pagerankDynamic (1/N-fill)
+order: 421 size: 719 {} [00000.122 ms; 059 iters.] [0.0000e+00 err.] pagerankDynamic (scaled,1/N-fill)
+order: 511 size: 1242 {} [00000.159 ms; 060 iters.] [0.0000e+00 err.] pagerankStatic
+order: 511 size: 1242 {} [00000.165 ms; 059 iters.] [1.4136e-06 err.] pagerankDynamic (zero-fill)
+order: 511 size: 1242 {} [00000.177 ms; 064 iters.] [4.9104e-06 err.] pagerankDynamic (1/N-fill)
+order: 511 size: 1242 {} [00000.160 ms; 058 iters.] [1.9717e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 549 size: 1600 {} [00000.179 ms; 058 iters.] [0.0000e+00 err.] pagerankStatic
+order: 549 size: 1600 {} [00000.167 ms; 052 iters.] [6.2045e-06 err.] pagerankDynamic (zero-fill)
+order: 549 size: 1600 {} [00000.191 ms; 060 iters.] [4.1550e-06 err.] pagerankDynamic (1/N-fill)
+order: 549 size: 1600 {} [00000.163 ms; 051 iters.] [5.9977e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 580 size: 1944 {} [00000.165 ms; 047 iters.] [0.0000e+00 err.] pagerankStatic
+order: 580 size: 1944 {} [00000.170 ms; 047 iters.] [9.1491e-06 err.] pagerankDynamic (zero-fill)
+order: 580 size: 1944 {} [00000.205 ms; 057 iters.] [5.3898e-06 err.] pagerankDynamic (1/N-fill)
+order: 580 size: 1944 {} [00000.164 ms; 046 iters.] [9.2416e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 594 size: 2277 {} [00000.189 ms; 050 iters.] [0.0000e+00 err.] pagerankStatic
+order: 594 size: 2277 {} [00000.193 ms; 049 iters.] [3.2239e-06 err.] pagerankDynamic (zero-fill)
+order: 594 size: 2277 {} [00000.214 ms; 055 iters.] [2.9946e-06 err.] pagerankDynamic (1/N-fill)
+order: 594 size: 2277 {} [00000.191 ms; 049 iters.] [3.0894e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 616 size: 2585 {} [00000.210 ms; 050 iters.] [0.0000e+00 err.] pagerankStatic
+order: 616 size: 2585 {} [00000.155 ms; 035 iters.] [6.7271e-06 err.] pagerankDynamic (zero-fill)
+order: 616 size: 2585 {} [00000.239 ms; 055 iters.] [4.7201e-06 err.] pagerankDynamic (1/N-fill)
+order: 616 size: 2585 {} [00000.149 ms; 034 iters.] [3.5571e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 625 size: 2855 {} [00000.235 ms; 050 iters.] [0.0000e+00 err.] pagerankStatic
+order: 625 size: 2855 {} [00000.174 ms; 038 iters.] [5.3826e-06 err.] pagerankDynamic (zero-fill)
+order: 625 size: 2855 {} [00000.223 ms; 049 iters.] [4.9982e-06 err.] pagerankDynamic (1/N-fill)
+order: 625 size: 2855 {} [00000.170 ms; 038 iters.] [4.9573e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 634 size: 3085 {} [00000.260 ms; 050 iters.] [0.0000e+00 err.] pagerankStatic
+order: 634 size: 3085 {} [00000.168 ms; 034 iters.] [9.4674e-06 err.] pagerankDynamic (zero-fill)
+order: 634 size: 3085 {} [00000.240 ms; 049 iters.] [4.9878e-06 err.] pagerankDynamic (1/N-fill)
+order: 634 size: 3085 {} [00000.164 ms; 034 iters.] [8.5832e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 643 size: 3295 {} [00000.252 ms; 050 iters.] [0.0000e+00 err.] pagerankStatic
+order: 643 size: 3295 {} [00000.181 ms; 035 iters.] [7.3730e-06 err.] pagerankDynamic (zero-fill)
+order: 643 size: 3295 {} [00000.246 ms; 049 iters.] [4.9061e-06 err.] pagerankDynamic (1/N-fill)
+order: 643 size: 3295 {} [00000.180 ms; 034 iters.] [7.6996e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 653 size: 3495 {} [00000.263 ms; 050 iters.] [0.0000e+00 err.] pagerankStatic
+order: 653 size: 3495 {} [00000.172 ms; 032 iters.] [6.0685e-06 err.] pagerankDynamic (zero-fill)
+order: 653 size: 3495 {} [00000.263 ms; 049 iters.] [5.4993e-06 err.] pagerankDynamic (1/N-fill)
+order: 653 size: 3495 {} [00000.169 ms; 031 iters.] [3.7391e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 659 size: 3666 {} [00000.271 ms; 050 iters.] [0.0000e+00 err.] pagerankStatic
+order: 659 size: 3666 {} [00000.222 ms; 040 iters.] [2.7602e-06 err.] pagerankDynamic (zero-fill)
+order: 659 size: 3666 {} [00000.261 ms; 047 iters.] [4.3229e-06 err.] pagerankDynamic (1/N-fill)
+order: 659 size: 3666 {} [00000.222 ms; 040 iters.] [2.6210e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 669 size: 3841 {} [00000.285 ms; 051 iters.] [0.0000e+00 err.] pagerankStatic
+order: 669 size: 3841 {} [00000.184 ms; 032 iters.] [3.8731e-06 err.] pagerankDynamic (zero-fill)
+order: 669 size: 3841 {} [00000.283 ms; 050 iters.] [4.4068e-06 err.] pagerankDynamic (1/N-fill)
+order: 669 size: 3841 {} [00000.191 ms; 033 iters.] [2.8658e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 681 size: 4077 {} [00000.301 ms; 050 iters.] [0.0000e+00 err.] pagerankStatic
+order: 681 size: 4077 {} [00000.228 ms; 036 iters.] [8.6665e-06 err.] pagerankDynamic (zero-fill)
+order: 681 size: 4077 {} [00000.309 ms; 050 iters.] [5.2841e-06 err.] pagerankDynamic (1/N-fill)
+order: 681 size: 4077 {} [00000.219 ms; 035 iters.] [7.7659e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 684 size: 4223 {} [00000.302 ms; 050 iters.] [0.0000e+00 err.] pagerankStatic
+order: 684 size: 4223 {} [00000.217 ms; 033 iters.] [1.0254e-05 err.] pagerankDynamic (zero-fill)
+order: 684 size: 4223 {} [00000.270 ms; 042 iters.] [4.8844e-06 err.] pagerankDynamic (1/N-fill)
+order: 684 size: 4223 {} [00000.209 ms; 033 iters.] [9.6272e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 690 size: 4384 {} [00000.324 ms; 050 iters.] [0.0000e+00 err.] pagerankStatic
+order: 690 size: 4384 {} [00000.246 ms; 036 iters.] [2.2081e-06 err.] pagerankDynamic (zero-fill)
+order: 690 size: 4384 {} [00000.302 ms; 046 iters.] [4.7956e-06 err.] pagerankDynamic (1/N-fill)
+order: 690 size: 4384 {} [00000.248 ms; 037 iters.] [2.0214e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 694 size: 4501 {} [00000.327 ms; 050 iters.] [0.0000e+00 err.] pagerankStatic
+order: 694 size: 4501 {} [00000.194 ms; 028 iters.] [9.8822e-06 err.] pagerankDynamic (zero-fill)
+order: 694 size: 4501 {} [00000.292 ms; 043 iters.] [5.2050e-06 err.] pagerankDynamic (1/N-fill)
+order: 694 size: 4501 {} [00000.193 ms; 028 iters.] [8.4692e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 699 size: 4652 {} [00000.315 ms; 046 iters.] [0.0000e+00 err.] pagerankStatic
+order: 699 size: 4652 {} [00000.188 ms; 026 iters.] [7.5857e-06 err.] pagerankDynamic (zero-fill)
+order: 699 size: 4652 {} [00000.307 ms; 044 iters.] [5.5222e-06 err.] pagerankDynamic (1/N-fill)
+order: 699 size: 4652 {} [00000.187 ms; 026 iters.] [6.2095e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 702 size: 4801 {} [00000.323 ms; 047 iters.] [0.0000e+00 err.] pagerankStatic
+order: 702 size: 4801 {} [00000.313 ms; 044 iters.] [4.9999e-06 err.] pagerankDynamic (zero-fill)
+order: 702 size: 4801 {} [00000.335 ms; 047 iters.] [4.2139e-06 err.] pagerankDynamic (1/N-fill)
+order: 702 size: 4801 {} [00000.313 ms; 044 iters.] [4.9603e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 706 size: 4969 {} [00000.257 ms; 036 iters.] [0.0000e+00 err.] pagerankStatic
+order: 706 size: 4969 {} [00000.183 ms; 024 iters.] [6.6999e-06 err.] pagerankDynamic (zero-fill)
+order: 706 size: 4969 {} [00000.313 ms; 043 iters.] [5.2745e-06 err.] pagerankDynamic (1/N-fill)
+order: 706 size: 4969 {} [00000.173 ms; 023 iters.] [6.1758e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 710 size: 5148 {} [00000.276 ms; 037 iters.] [0.0000e+00 err.] pagerankStatic
+order: 710 size: 5148 {} [00000.172 ms; 022 iters.] [5.3976e-06 err.] pagerankDynamic (zero-fill)
+order: 710 size: 5148 {} [00000.323 ms; 043 iters.] [5.6285e-06 err.] pagerankDynamic (1/N-fill)
+order: 710 size: 5148 {} [00000.170 ms; 022 iters.] [4.8500e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 717 size: 5269 {} [00000.276 ms; 036 iters.] [0.0000e+00 err.] pagerankStatic
+order: 717 size: 5269 {} [00000.163 ms; 020 iters.] [8.4116e-06 err.] pagerankDynamic (zero-fill)
+order: 717 size: 5269 {} [00000.359 ms; 046 iters.] [5.5117e-06 err.] pagerankDynamic (1/N-fill)
+order: 717 size: 5269 {} [00000.178 ms; 022 iters.] [6.1043e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 719 size: 5435 {} [00000.287 ms; 036 iters.] [0.0000e+00 err.] pagerankStatic
+order: 719 size: 5435 {} [00000.192 ms; 023 iters.] [8.7740e-06 err.] pagerankDynamic (zero-fill)
+order: 719 size: 5435 {} [00000.309 ms; 038 iters.] [5.6700e-06 err.] pagerankDynamic (1/N-fill)
+order: 719 size: 5435 {} [00000.185 ms; 022 iters.] [8.5127e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 721 size: 5540 {} [00000.309 ms; 036 iters.] [0.0000e+00 err.] pagerankStatic
+order: 721 size: 5540 {} [00000.161 ms; 019 iters.] [7.8120e-06 err.] pagerankDynamic (zero-fill)
+order: 721 size: 5540 {} [00000.312 ms; 038 iters.] [5.5352e-06 err.] pagerankDynamic (1/N-fill)
+order: 721 size: 5540 {} [00000.151 ms; 018 iters.] [7.7866e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 726 size: 5663 {} [00000.295 ms; 036 iters.] [0.0000e+00 err.] pagerankStatic
+order: 726 size: 5663 {} [00000.175 ms; 020 iters.] [8.0983e-06 err.] pagerankDynamic (zero-fill)
+order: 726 size: 5663 {} [00000.366 ms; 044 iters.] [5.0828e-06 err.] pagerankDynamic (1/N-fill)
+order: 726 size: 5663 {} [00000.155 ms; 018 iters.] [7.0762e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 730 size: 5803 {} [00000.288 ms; 035 iters.] [0.0000e+00 err.] pagerankStatic
+order: 730 size: 5803 {} [00000.183 ms; 021 iters.] [9.7270e-06 err.] pagerankDynamic (zero-fill)
+order: 730 size: 5803 {} [00000.371 ms; 043 iters.] [4.9119e-06 err.] pagerankDynamic (1/N-fill)
+order: 730 size: 5803 {} [00000.183 ms; 021 iters.] [8.3971e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 731 size: 5970 {} [00000.296 ms; 035 iters.] [0.0000e+00 err.] pagerankStatic
+order: 731 size: 5970 {} [00000.234 ms; 026 iters.] [7.7542e-06 err.] pagerankDynamic (zero-fill)
+order: 731 size: 5970 {} [00000.299 ms; 034 iters.] [5.4776e-06 err.] pagerankDynamic (1/N-fill)
+order: 731 size: 5970 {} [00000.236 ms; 026 iters.] [7.7086e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 734 size: 6117 {} [00000.301 ms; 035 iters.] [0.0000e+00 err.] pagerankStatic
+order: 734 size: 6117 {} [00000.205 ms; 022 iters.] [7.1619e-06 err.] pagerankDynamic (zero-fill)
+order: 734 size: 6117 {} [00000.360 ms; 041 iters.] [5.3240e-06 err.] pagerankDynamic (1/N-fill)
+order: 734 size: 6117 {} [00000.202 ms; 022 iters.] [6.9313e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 737 size: 6240 {} [00000.305 ms; 035 iters.] [0.0000e+00 err.] pagerankStatic
+order: 737 size: 6240 {} [00000.231 ms; 025 iters.] [7.0707e-06 err.] pagerankDynamic (zero-fill)
+order: 737 size: 6240 {} [00000.367 ms; 041 iters.] [5.1808e-06 err.] pagerankDynamic (1/N-fill)
+order: 737 size: 6240 {} [00000.231 ms; 025 iters.] [6.7471e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 738 size: 6389 {} [00000.420 ms; 047 iters.] [0.0000e+00 err.] pagerankStatic
+order: 738 size: 6389 {} [00000.444 ms; 048 iters.] [8.9675e-07 err.] pagerankDynamic (zero-fill)
+order: 738 size: 6389 {} [00000.448 ms; 049 iters.] [7.0929e-07 err.] pagerankDynamic (1/N-fill)
+order: 738 size: 6389 {} [00000.438 ms; 048 iters.] [8.9582e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 742 size: 6525 {} [00000.423 ms; 047 iters.] [0.0000e+00 err.] pagerankStatic
+order: 742 size: 6525 {} [00000.222 ms; 023 iters.] [1.0253e-05 err.] pagerankDynamic (zero-fill)
+order: 742 size: 6525 {} [00000.395 ms; 043 iters.] [4.9268e-06 err.] pagerankDynamic (1/N-fill)
+order: 742 size: 6525 {} [00000.201 ms; 021 iters.] [9.4436e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 743 size: 6685 {} [00000.422 ms; 046 iters.] [0.0000e+00 err.] pagerankStatic
+order: 743 size: 6685 {} [00000.253 ms; 026 iters.] [8.4973e-06 err.] pagerankDynamic (zero-fill)
+order: 743 size: 6685 {} [00000.321 ms; 034 iters.] [5.3224e-06 err.] pagerankDynamic (1/N-fill)
+order: 743 size: 6685 {} [00000.241 ms; 025 iters.] [8.9965e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 748 size: 6797 {} [00000.433 ms; 046 iters.] [0.0000e+00 err.] pagerankStatic
+order: 748 size: 6797 {} [00000.191 ms; 019 iters.] [4.7137e-06 err.] pagerankDynamic (zero-fill)
+order: 748 size: 6797 {} [00000.421 ms; 044 iters.] [5.1742e-06 err.] pagerankDynamic (1/N-fill)
+order: 748 size: 6797 {} [00000.201 ms; 020 iters.] [1.9304e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 751 size: 6924 {} [00000.444 ms; 047 iters.] [0.0000e+00 err.] pagerankStatic
+order: 751 size: 6924 {} [00000.223 ms; 022 iters.] [9.2797e-06 err.] pagerankDynamic (zero-fill)
+order: 751 size: 6924 {} [00000.402 ms; 041 iters.] [5.2902e-06 err.] pagerankDynamic (1/N-fill)
+order: 751 size: 6924 {} [00000.203 ms; 020 iters.] [8.8441e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 755 size: 7107 {} [00000.465 ms; 047 iters.] [0.0000e+00 err.] pagerankStatic
+order: 755 size: 7107 {} [00000.310 ms; 030 iters.] [1.4677e-06 err.] pagerankDynamic (zero-fill)
+order: 755 size: 7107 {} [00000.432 ms; 043 iters.] [4.7138e-06 err.] pagerankDynamic (1/N-fill)
+order: 755 size: 7107 {} [00000.308 ms; 030 iters.] [1.1660e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 757 size: 7224 {} [00000.468 ms; 047 iters.] [0.0000e+00 err.] pagerankStatic
+order: 757 size: 7224 {} [00000.272 ms; 026 iters.] [5.3463e-06 err.] pagerankDynamic (zero-fill)
+order: 757 size: 7224 {} [00000.394 ms; 038 iters.] [5.2844e-06 err.] pagerankDynamic (1/N-fill)
+order: 757 size: 7224 {} [00000.251 ms; 024 iters.] [5.4022e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 760 size: 7342 {} [00000.458 ms; 046 iters.] [0.0000e+00 err.] pagerankStatic
+order: 760 size: 7342 {} [00000.254 ms; 024 iters.] [1.0128e-05 err.] pagerankDynamic (zero-fill)
+order: 760 size: 7342 {} [00000.419 ms; 041 iters.] [4.9825e-06 err.] pagerankDynamic (1/N-fill)
+order: 760 size: 7342 {} [00000.244 ms; 023 iters.] [9.2030e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 764 size: 7497 {} [00000.511 ms; 047 iters.] [0.0000e+00 err.] pagerankStatic
+order: 764 size: 7497 {} [00000.248 ms; 023 iters.] [9.8778e-06 err.] pagerankDynamic (zero-fill)
+order: 764 size: 7497 {} [00000.441 ms; 042 iters.] [5.7045e-06 err.] pagerankDynamic (1/N-fill)
+order: 764 size: 7497 {} [00000.231 ms; 021 iters.] [9.0107e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 768 size: 7721 {} [00000.485 ms; 046 iters.] [0.0000e+00 err.] pagerankStatic
+order: 768 size: 7721 {} [00000.238 ms; 021 iters.] [8.1982e-06 err.] pagerankDynamic (zero-fill)
+order: 768 size: 7721 {} [00000.452 ms; 042 iters.] [5.3570e-06 err.] pagerankDynamic (1/N-fill)
+order: 768 size: 7721 {} [00000.236 ms; 021 iters.] [5.5524e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 774 size: 7908 {} [00000.509 ms; 047 iters.] [0.0000e+00 err.] pagerankStatic
+order: 774 size: 7908 {} [00000.264 ms; 023 iters.] [5.8922e-06 err.] pagerankDynamic (zero-fill)
+order: 774 size: 7908 {} [00000.497 ms; 045 iters.] [5.2904e-06 err.] pagerankDynamic (1/N-fill)
+order: 774 size: 7908 {} [00000.243 ms; 021 iters.] [2.2583e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 775 size: 8038 {} [00000.514 ms; 047 iters.] [0.0000e+00 err.] pagerankStatic
+order: 775 size: 8038 {} [00000.352 ms; 031 iters.] [4.1466e-06 err.] pagerankDynamic (zero-fill)
+order: 775 size: 8038 {} [00000.418 ms; 037 iters.] [3.9630e-06 err.] pagerankDynamic (1/N-fill)
+order: 775 size: 8038 {} [00000.352 ms; 031 iters.] [4.0628e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 776 size: 8164 {} [00000.302 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 776 size: 8164 {} [00000.292 ms; 025 iters.] [3.7239e-06 err.] pagerankDynamic (zero-fill)
+order: 776 size: 8164 {} [00000.389 ms; 034 iters.] [6.0316e-06 err.] pagerankDynamic (1/N-fill)
+order: 776 size: 8164 {} [00000.292 ms; 025 iters.] [3.7396e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 777 size: 8277 {} [00000.306 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 777 size: 8277 {} [00000.240 ms; 020 iters.] [3.7339e-06 err.] pagerankDynamic (zero-fill)
+order: 777 size: 8277 {} [00000.392 ms; 034 iters.] [5.7541e-06 err.] pagerankDynamic (1/N-fill)
+order: 777 size: 8277 {} [00000.238 ms; 020 iters.] [3.6925e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 779 size: 8380 {} [00000.310 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 779 size: 8380 {} [00000.220 ms; 018 iters.] [2.5148e-06 err.] pagerankDynamic (zero-fill)
+order: 779 size: 8380 {} [00000.441 ms; 038 iters.] [6.2114e-06 err.] pagerankDynamic (1/N-fill)
+order: 779 size: 8380 {} [00000.207 ms; 017 iters.] [3.2153e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 781 size: 8519 {} [00000.317 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 781 size: 8519 {} [00000.248 ms; 020 iters.] [8.2635e-07 err.] pagerankDynamic (zero-fill)
+order: 781 size: 8519 {} [00000.452 ms; 038 iters.] [6.0980e-06 err.] pagerankDynamic (1/N-fill)
+order: 781 size: 8519 {} [00000.257 ms; 021 iters.] [9.0784e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 781 size: 8614 {} [00000.316 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 781 size: 8614 {} [00000.257 ms; 021 iters.] [3.5210e-06 err.] pagerankDynamic (zero-fill)
+order: 781 size: 8614 {} [00000.255 ms; 021 iters.] [3.5210e-06 err.] pagerankDynamic (1/N-fill)
+order: 781 size: 8614 {} [00000.255 ms; 021 iters.] [3.5210e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 781 size: 8691 {} [00000.317 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 781 size: 8691 {} [00000.248 ms; 020 iters.] [4.0667e-07 err.] pagerankDynamic (zero-fill)
+order: 781 size: 8691 {} [00000.251 ms; 020 iters.] [4.0667e-07 err.] pagerankDynamic (1/N-fill)
+order: 781 size: 8691 {} [00000.246 ms; 020 iters.] [4.0667e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 782 size: 8791 {} [00000.325 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 782 size: 8791 {} [00000.240 ms; 019 iters.] [3.2727e-06 err.] pagerankDynamic (zero-fill)
+order: 782 size: 8791 {} [00000.418 ms; 034 iters.] [5.2979e-06 err.] pagerankDynamic (1/N-fill)
+order: 782 size: 8791 {} [00000.241 ms; 019 iters.] [3.2824e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 784 size: 8901 {} [00000.315 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 784 size: 8901 {} [00000.304 ms; 024 iters.] [3.9286e-06 err.] pagerankDynamic (zero-fill)
+order: 784 size: 8901 {} [00000.480 ms; 039 iters.] [5.0443e-06 err.] pagerankDynamic (1/N-fill)
+order: 784 size: 8901 {} [00000.301 ms; 024 iters.] [3.9022e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 785 size: 8974 {} [00000.325 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 785 size: 8974 {} [00000.254 ms; 020 iters.] [4.6400e-07 err.] pagerankDynamic (zero-fill)
+order: 785 size: 8974 {} [00000.418 ms; 034 iters.] [5.3841e-06 err.] pagerankDynamic (1/N-fill)
+order: 785 size: 8974 {} [00000.255 ms; 020 iters.] [4.6226e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 786 size: 9051 {} [00000.326 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 786 size: 9051 {} [00000.230 ms; 018 iters.] [8.3569e-07 err.] pagerankDynamic (zero-fill)
+order: 786 size: 9051 {} [00000.421 ms; 034 iters.] [5.3777e-06 err.] pagerankDynamic (1/N-fill)
+order: 786 size: 9051 {} [00000.244 ms; 019 iters.] [7.2623e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 787 size: 9146 {} [00000.330 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 787 size: 9146 {} [00000.261 ms; 020 iters.] [6.8851e-07 err.] pagerankDynamic (zero-fill)
+order: 787 size: 9146 {} [00000.426 ms; 034 iters.] [5.7142e-06 err.] pagerankDynamic (1/N-fill)
+order: 787 size: 9146 {} [00000.258 ms; 020 iters.] [6.8301e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 787 size: 9247 {} [00000.337 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 787 size: 9247 {} [00000.287 ms; 022 iters.] [3.5331e-06 err.] pagerankDynamic (zero-fill)
+order: 787 size: 9247 {} [00000.285 ms; 022 iters.] [3.5331e-06 err.] pagerankDynamic (1/N-fill)
+order: 787 size: 9247 {} [00000.285 ms; 022 iters.] [3.5331e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 789 size: 9366 {} [00000.338 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 789 size: 9366 {} [00000.250 ms; 019 iters.] [2.8938e-06 err.] pagerankDynamic (zero-fill)
+order: 789 size: 9366 {} [00000.481 ms; 038 iters.] [5.4697e-06 err.] pagerankDynamic (1/N-fill)
+order: 789 size: 9366 {} [00000.224 ms; 017 iters.] [3.4415e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 790 size: 9456 {} [00000.324 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 790 size: 9456 {} [00000.226 ms; 017 iters.] [3.7334e-06 err.] pagerankDynamic (zero-fill)
+order: 790 size: 9456 {} [00000.431 ms; 034 iters.] [5.4285e-06 err.] pagerankDynamic (1/N-fill)
+order: 790 size: 9456 {} [00000.224 ms; 017 iters.] [3.6412e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 791 size: 9545 {} [00000.328 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 791 size: 9545 {} [00000.264 ms; 020 iters.] [2.2644e-06 err.] pagerankDynamic (zero-fill)
+order: 791 size: 9545 {} [00000.436 ms; 034 iters.] [5.5160e-06 err.] pagerankDynamic (1/N-fill)
+order: 791 size: 9545 {} [00000.265 ms; 020 iters.] [2.2432e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 794 size: 9651 {} [00000.331 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 794 size: 9651 {} [00000.281 ms; 021 iters.] [3.5920e-06 err.] pagerankDynamic (zero-fill)
+order: 794 size: 9651 {} [00000.526 ms; 041 iters.] [5.1571e-06 err.] pagerankDynamic (1/N-fill)
+order: 794 size: 9651 {} [00000.267 ms; 020 iters.] [3.6871e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 794 size: 9762 {} [00000.336 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 794 size: 9762 {} [00000.235 ms; 017 iters.] [3.5334e-06 err.] pagerankDynamic (zero-fill)
+order: 794 size: 9762 {} [00000.234 ms; 017 iters.] [3.5334e-06 err.] pagerankDynamic (1/N-fill)
+order: 794 size: 9762 {} [00000.233 ms; 017 iters.] [3.5334e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 794 size: 9848 {} [00000.335 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 794 size: 9848 {} [00000.246 ms; 018 iters.] [1.6872e-06 err.] pagerankDynamic (zero-fill)
+order: 794 size: 9848 {} [00000.246 ms; 018 iters.] [1.6872e-06 err.] pagerankDynamic (1/N-fill)
+order: 794 size: 9848 {} [00000.245 ms; 018 iters.] [1.6872e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 794 size: 9952 {} [00000.352 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 794 size: 9952 {} [00000.285 ms; 021 iters.] [6.4741e-07 err.] pagerankDynamic (zero-fill)
+order: 794 size: 9952 {} [00000.285 ms; 021 iters.] [6.4741e-07 err.] pagerankDynamic (1/N-fill)
+order: 794 size: 9952 {} [00000.285 ms; 021 iters.] [6.4741e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 795 size: 10028 {} [00000.367 ms; 028 iters.] [0.0000e+00 err.] pagerankStatic
+order: 795 size: 10028 {} [00000.380 ms; 028 iters.] [7.6130e-07 err.] pagerankDynamic (zero-fill)
+order: 795 size: 10028 {} [00000.444 ms; 033 iters.] [5.8195e-06 err.] pagerankDynamic (1/N-fill)
+order: 795 size: 10028 {} [00000.377 ms; 028 iters.] [7.6165e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 795 size: 10100 {} [00000.369 ms; 028 iters.] [0.0000e+00 err.] pagerankStatic
+order: 795 size: 10100 {} [00000.265 ms; 019 iters.] [4.0131e-06 err.] pagerankDynamic (zero-fill)
+order: 795 size: 10100 {} [00000.265 ms; 019 iters.] [4.0131e-06 err.] pagerankDynamic (1/N-fill)
+order: 795 size: 10100 {} [00000.267 ms; 019 iters.] [4.0131e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 796 size: 10184 {} [00000.362 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 796 size: 10184 {} [00000.265 ms; 019 iters.] [3.3594e-06 err.] pagerankDynamic (zero-fill)
+order: 796 size: 10184 {} [00000.460 ms; 034 iters.] [4.9381e-06 err.] pagerankDynamic (1/N-fill)
+order: 796 size: 10184 {} [00000.252 ms; 018 iters.] [3.6201e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 797 size: 10260 {} [00000.390 ms; 028 iters.] [0.0000e+00 err.] pagerankStatic
+order: 797 size: 10260 {} [00000.268 ms; 019 iters.] [1.8955e-06 err.] pagerankDynamic (zero-fill)
+order: 797 size: 10260 {} [00000.464 ms; 034 iters.] [4.8648e-06 err.] pagerankDynamic (1/N-fill)
+order: 797 size: 10260 {} [00000.268 ms; 019 iters.] [1.7628e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 799 size: 10350 {} [00000.363 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 799 size: 10350 {} [00000.269 ms; 019 iters.] [3.9417e-06 err.] pagerankDynamic (zero-fill)
+order: 799 size: 10350 {} [00000.520 ms; 038 iters.] [5.3517e-06 err.] pagerankDynamic (1/N-fill)
+order: 799 size: 10350 {} [00000.243 ms; 017 iters.] [3.8831e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 800 size: 10428 {} [00000.381 ms; 028 iters.] [0.0000e+00 err.] pagerankStatic
+order: 800 size: 10428 {} [00000.272 ms; 019 iters.] [6.1619e-07 err.] pagerankDynamic (zero-fill)
+order: 800 size: 10428 {} [00000.459 ms; 033 iters.] [6.0182e-06 err.] pagerankDynamic (1/N-fill)
+order: 800 size: 10428 {} [00000.271 ms; 019 iters.] [6.0358e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 801 size: 10508 {} [00000.382 ms; 028 iters.] [0.0000e+00 err.] pagerankStatic
+order: 801 size: 10508 {} [00000.272 ms; 019 iters.] [3.1628e-06 err.] pagerankDynamic (zero-fill)
+order: 801 size: 10508 {} [00000.472 ms; 034 iters.] [4.9805e-06 err.] pagerankDynamic (1/N-fill)
+order: 801 size: 10508 {} [00000.261 ms; 018 iters.] [3.4980e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 804 size: 10595 {} [00000.374 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 804 size: 10595 {} [00000.276 ms; 019 iters.] [1.7992e-06 err.] pagerankDynamic (zero-fill)
+order: 804 size: 10595 {} [00000.561 ms; 040 iters.] [5.5937e-06 err.] pagerankDynamic (1/N-fill)
+order: 804 size: 10595 {} [00000.275 ms; 019 iters.] [1.0228e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 805 size: 10658 {} [00000.388 ms; 028 iters.] [0.0000e+00 err.] pagerankStatic
+order: 805 size: 10658 {} [00000.276 ms; 019 iters.] [1.3226e-06 err.] pagerankDynamic (zero-fill)
+order: 805 size: 10658 {} [00000.479 ms; 034 iters.] [4.9608e-06 err.] pagerankDynamic (1/N-fill)
+order: 805 size: 10658 {} [00000.275 ms; 019 iters.] [1.2205e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 805 size: 10720 {} [00000.393 ms; 028 iters.] [0.0000e+00 err.] pagerankStatic
+order: 805 size: 10720 {} [00000.253 ms; 017 iters.] [3.1148e-06 err.] pagerankDynamic (zero-fill)
+order: 805 size: 10720 {} [00000.251 ms; 017 iters.] [3.1148e-06 err.] pagerankDynamic (1/N-fill)
+order: 805 size: 10720 {} [00000.251 ms; 017 iters.] [3.1148e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 805 size: 10811 {} [00000.395 ms; 028 iters.] [0.0000e+00 err.] pagerankStatic
+order: 805 size: 10811 {} [00000.296 ms; 020 iters.] [3.5914e-06 err.] pagerankDynamic (zero-fill)
+order: 805 size: 10811 {} [00000.294 ms; 020 iters.] [3.5914e-06 err.] pagerankDynamic (1/N-fill)
+order: 805 size: 10811 {} [00000.294 ms; 020 iters.] [3.5914e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 805 size: 10870 {} [00000.396 ms; 028 iters.] [0.0000e+00 err.] pagerankStatic
+order: 805 size: 10870 {} [00000.254 ms; 017 iters.] [2.8250e-06 err.] pagerankDynamic (zero-fill)
+order: 805 size: 10870 {} [00000.254 ms; 017 iters.] [2.8250e-06 err.] pagerankDynamic (1/N-fill)
+order: 805 size: 10870 {} [00000.253 ms; 017 iters.] [2.8250e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 807 size: 10944 {} [00000.385 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 807 size: 10944 {} [00000.298 ms; 020 iters.] [3.9065e-06 err.] pagerankDynamic (zero-fill)
+order: 807 size: 10944 {} [00000.551 ms; 038 iters.] [5.5366e-06 err.] pagerankDynamic (1/N-fill)
+order: 807 size: 10944 {} [00000.300 ms; 020 iters.] [3.8184e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 807 size: 11021 {} [00000.388 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 807 size: 11021 {} [00000.286 ms; 019 iters.] [1.8251e-06 err.] pagerankDynamic (zero-fill)
+order: 807 size: 11021 {} [00000.287 ms; 019 iters.] [1.8251e-06 err.] pagerankDynamic (1/N-fill)
+order: 807 size: 11021 {} [00000.285 ms; 019 iters.] [1.8251e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 807 size: 11090 {} [00000.389 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 807 size: 11090 {} [00000.287 ms; 019 iters.] [4.0717e-06 err.] pagerankDynamic (zero-fill)
+order: 807 size: 11090 {} [00000.285 ms; 019 iters.] [4.0717e-06 err.] pagerankDynamic (1/N-fill)
+order: 807 size: 11090 {} [00000.286 ms; 019 iters.] [4.0717e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 807 size: 11183 {} [00000.390 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 807 size: 11183 {} [00000.246 ms; 016 iters.] [2.1285e-06 err.] pagerankDynamic (zero-fill)
+order: 807 size: 11183 {} [00000.245 ms; 016 iters.] [2.1285e-06 err.] pagerankDynamic (1/N-fill)
+order: 807 size: 11183 {} [00000.244 ms; 016 iters.] [2.1285e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 807 size: 11238 {} [00000.391 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 807 size: 11238 {} [00000.278 ms; 018 iters.] [3.3771e-06 err.] pagerankDynamic (zero-fill)
+order: 807 size: 11238 {} [00000.273 ms; 018 iters.] [3.3771e-06 err.] pagerankDynamic (1/N-fill)
+order: 807 size: 11238 {} [00000.276 ms; 018 iters.] [3.3771e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 809 size: 11308 {} [00000.394 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 809 size: 11308 {} [00000.347 ms; 023 iters.] [8.5519e-07 err.] pagerankDynamic (zero-fill)
+order: 809 size: 11308 {} [00000.560 ms; 038 iters.] [5.2109e-06 err.] pagerankDynamic (1/N-fill)
+order: 809 size: 11308 {} [00000.319 ms; 021 iters.] [8.7946e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 809 size: 11385 {} [00000.395 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 809 size: 11385 {} [00000.262 ms; 017 iters.] [2.4414e-06 err.] pagerankDynamic (zero-fill)
+order: 809 size: 11385 {} [00000.264 ms; 017 iters.] [2.4414e-06 err.] pagerankDynamic (1/N-fill)
+order: 809 size: 11385 {} [00000.263 ms; 017 iters.] [2.4414e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 813 size: 11455 {} [00000.399 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 813 size: 11455 {} [00000.296 ms; 019 iters.] [1.9758e-06 err.] pagerankDynamic (zero-fill)
+order: 813 size: 11455 {} [00000.628 ms; 042 iters.] [5.0709e-06 err.] pagerankDynamic (1/N-fill)
+order: 813 size: 11455 {} [00000.293 ms; 019 iters.] [1.5138e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 814 size: 11519 {} [00000.398 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 814 size: 11519 {} [00000.250 ms; 016 iters.] [3.5488e-06 err.] pagerankDynamic (zero-fill)
+order: 814 size: 11519 {} [00000.510 ms; 034 iters.] [4.9986e-06 err.] pagerankDynamic (1/N-fill)
+order: 814 size: 11519 {} [00000.250 ms; 016 iters.] [3.3484e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 815 size: 11581 {} [00000.399 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 815 size: 11581 {} [00000.310 ms; 020 iters.] [3.7303e-06 err.] pagerankDynamic (zero-fill)
+order: 815 size: 11581 {} [00000.513 ms; 034 iters.] [4.6483e-06 err.] pagerankDynamic (1/N-fill)
+order: 815 size: 11581 {} [00000.309 ms; 020 iters.] [3.6566e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 815 size: 11623 {} [00000.402 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 815 size: 11623 {} [00000.238 ms; 015 iters.] [1.6841e-06 err.] pagerankDynamic (zero-fill)
+order: 815 size: 11623 {} [00000.238 ms; 015 iters.] [1.6841e-06 err.] pagerankDynamic (1/N-fill)
+order: 815 size: 11623 {} [00000.236 ms; 015 iters.] [1.6841e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 816 size: 11696 {} [00000.403 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 816 size: 11696 {} [00000.284 ms; 018 iters.] [1.4950e-06 err.] pagerankDynamic (zero-fill)
+order: 816 size: 11696 {} [00000.500 ms; 033 iters.] [5.9641e-06 err.] pagerankDynamic (1/N-fill)
+order: 816 size: 11696 {} [00000.282 ms; 018 iters.] [1.4249e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 816 size: 11768 {} [00000.404 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 816 size: 11768 {} [00000.298 ms; 019 iters.] [4.1247e-06 err.] pagerankDynamic (zero-fill)
+order: 816 size: 11768 {} [00000.297 ms; 019 iters.] [4.1247e-06 err.] pagerankDynamic (1/N-fill)
+order: 816 size: 11768 {} [00000.297 ms; 019 iters.] [4.1247e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 816 size: 11839 {} [00000.394 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 816 size: 11839 {} [00000.287 ms; 018 iters.] [1.8328e-06 err.] pagerankDynamic (zero-fill)
+order: 816 size: 11839 {} [00000.287 ms; 018 iters.] [1.8328e-06 err.] pagerankDynamic (1/N-fill)
+order: 816 size: 11839 {} [00000.285 ms; 018 iters.] [1.8328e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 817 size: 11911 {} [00000.397 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 817 size: 11911 {} [00000.275 ms; 017 iters.] [4.0287e-06 err.] pagerankDynamic (zero-fill)
+order: 817 size: 11911 {} [00000.524 ms; 034 iters.] [4.7934e-06 err.] pagerankDynamic (1/N-fill)
+order: 817 size: 11911 {} [00000.273 ms; 017 iters.] [3.9471e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 817 size: 11975 {} [00000.397 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 817 size: 11975 {} [00000.304 ms; 019 iters.] [1.0291e-06 err.] pagerankDynamic (zero-fill)
+order: 817 size: 11975 {} [00000.304 ms; 019 iters.] [1.0291e-06 err.] pagerankDynamic (1/N-fill)
+order: 817 size: 11975 {} [00000.304 ms; 019 iters.] [1.0291e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 817 size: 12024 {} [00000.416 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 817 size: 12024 {} [00000.275 ms; 017 iters.] [1.0724e-06 err.] pagerankDynamic (zero-fill)
+order: 817 size: 12024 {} [00000.275 ms; 017 iters.] [1.0724e-06 err.] pagerankDynamic (1/N-fill)
+order: 817 size: 12024 {} [00000.277 ms; 017 iters.] [1.0724e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 817 size: 12068 {} [00000.400 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 817 size: 12068 {} [00000.260 ms; 016 iters.] [3.6061e-06 err.] pagerankDynamic (zero-fill)
+order: 817 size: 12068 {} [00000.260 ms; 016 iters.] [3.6061e-06 err.] pagerankDynamic (1/N-fill)
+order: 817 size: 12068 {} [00000.261 ms; 016 iters.] [3.6061e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 817 size: 12125 {} [00000.402 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 817 size: 12125 {} [00000.293 ms; 018 iters.] [2.9831e-06 err.] pagerankDynamic (zero-fill)
+order: 817 size: 12125 {} [00000.294 ms; 018 iters.] [2.9831e-06 err.] pagerankDynamic (1/N-fill)
+order: 817 size: 12125 {} [00000.293 ms; 018 iters.] [2.9831e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 820 size: 12215 {} [00000.404 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 820 size: 12215 {} [00000.341 ms; 021 iters.] [2.5315e-06 err.] pagerankDynamic (zero-fill)
+order: 820 size: 12215 {} [00000.647 ms; 041 iters.] [4.8441e-06 err.] pagerankDynamic (1/N-fill)
+order: 820 size: 12215 {} [00000.337 ms; 021 iters.] [2.0395e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 822 size: 12293 {} [00000.423 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 822 size: 12293 {} [00000.310 ms; 019 iters.] [1.1306e-06 err.] pagerankDynamic (zero-fill)
+order: 822 size: 12293 {} [00000.600 ms; 038 iters.] [5.2277e-06 err.] pagerankDynamic (1/N-fill)
+order: 822 size: 12293 {} [00000.310 ms; 019 iters.] [1.1432e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 822 size: 12363 {} [00000.424 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 822 size: 12363 {} [00000.312 ms; 019 iters.] [5.9343e-07 err.] pagerankDynamic (zero-fill)
+order: 822 size: 12363 {} [00000.311 ms; 019 iters.] [5.9343e-07 err.] pagerankDynamic (1/N-fill)
+order: 822 size: 12363 {} [00000.310 ms; 019 iters.] [5.9343e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 823 size: 12410 {} [00000.424 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 823 size: 12410 {} [00000.279 ms; 017 iters.] [2.0236e-06 err.] pagerankDynamic (zero-fill)
+order: 823 size: 12410 {} [00000.528 ms; 033 iters.] [5.4507e-06 err.] pagerankDynamic (1/N-fill)
+order: 823 size: 12410 {} [00000.281 ms; 017 iters.] [1.9314e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 824 size: 12463 {} [00000.427 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 824 size: 12463 {} [00000.283 ms; 017 iters.] [2.3608e-06 err.] pagerankDynamic (zero-fill)
+order: 824 size: 12463 {} [00000.549 ms; 034 iters.] [5.0334e-06 err.] pagerankDynamic (1/N-fill)
+order: 824 size: 12463 {} [00000.267 ms; 016 iters.] [1.0668e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 825 size: 12549 {} [00000.429 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 825 size: 12549 {} [00000.252 ms; 015 iters.] [2.0782e-06 err.] pagerankDynamic (zero-fill)
+order: 825 size: 12549 {} [00000.548 ms; 034 iters.] [4.9378e-06 err.] pagerankDynamic (1/N-fill)
+order: 825 size: 12549 {} [00000.256 ms; 015 iters.] [1.8657e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 825 size: 12615 {} [00000.415 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 825 size: 12615 {} [00000.318 ms; 019 iters.] [3.8599e-06 err.] pagerankDynamic (zero-fill)
+order: 825 size: 12615 {} [00000.315 ms; 019 iters.] [3.8599e-06 err.] pagerankDynamic (1/N-fill)
+order: 825 size: 12615 {} [00000.316 ms; 019 iters.] [3.8599e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 825 size: 12672 {} [00000.431 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 825 size: 12672 {} [00000.285 ms; 017 iters.] [2.4421e-07 err.] pagerankDynamic (zero-fill)
+order: 825 size: 12672 {} [00000.286 ms; 017 iters.] [2.4421e-07 err.] pagerankDynamic (1/N-fill)
+order: 825 size: 12672 {} [00000.284 ms; 017 iters.] [2.4421e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 827 size: 12725 {} [00000.432 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 827 size: 12725 {} [00000.302 ms; 018 iters.] [4.0073e-07 err.] pagerankDynamic (zero-fill)
+order: 827 size: 12725 {} [00000.603 ms; 037 iters.] [5.8353e-06 err.] pagerankDynamic (1/N-fill)
+order: 827 size: 12725 {} [00000.301 ms; 018 iters.] [4.2154e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 827 size: 12769 {} [00000.417 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 827 size: 12769 {} [00000.302 ms; 018 iters.] [4.1581e-06 err.] pagerankDynamic (zero-fill)
+order: 827 size: 12769 {} [00000.303 ms; 018 iters.] [4.1581e-06 err.] pagerankDynamic (1/N-fill)
+order: 827 size: 12769 {} [00000.302 ms; 018 iters.] [4.1581e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 827 size: 12820 {} [00000.435 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 827 size: 12820 {} [00000.304 ms; 018 iters.] [8.0644e-07 err.] pagerankDynamic (zero-fill)
+order: 827 size: 12820 {} [00000.303 ms; 018 iters.] [8.0644e-07 err.] pagerankDynamic (1/N-fill)
+order: 827 size: 12820 {} [00000.305 ms; 018 iters.] [8.0644e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 827 size: 12884 {} [00000.438 ms; 027 iters.] [0.0000e+00 err.] pagerankStatic
+order: 827 size: 12884 {} [00000.305 ms; 018 iters.] [2.6929e-06 err.] pagerankDynamic (zero-fill)
+order: 827 size: 12884 {} [00000.304 ms; 018 iters.] [2.6929e-06 err.] pagerankDynamic (1/N-fill)
+order: 827 size: 12884 {} [00000.305 ms; 018 iters.] [2.6929e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 830 size: 12968 {} [00000.421 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 830 size: 12968 {} [00000.336 ms; 020 iters.] [3.7583e-06 err.] pagerankDynamic (zero-fill)
+order: 830 size: 12968 {} [00000.655 ms; 040 iters.] [5.4373e-06 err.] pagerankDynamic (1/N-fill)
+order: 830 size: 12968 {} [00000.337 ms; 020 iters.] [3.6475e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 832 size: 13064 {} [00000.425 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 832 size: 13064 {} [00000.291 ms; 017 iters.] [1.7413e-06 err.] pagerankDynamic (zero-fill)
+order: 832 size: 13064 {} [00000.628 ms; 038 iters.] [5.0177e-06 err.] pagerankDynamic (1/N-fill)
+order: 832 size: 13064 {} [00000.291 ms; 017 iters.] [1.6819e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 833 size: 13133 {} [00000.426 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 833 size: 13133 {} [00000.324 ms; 019 iters.] [3.6330e-06 err.] pagerankDynamic (zero-fill)
+order: 833 size: 13133 {} [00000.565 ms; 034 iters.] [4.8249e-06 err.] pagerankDynamic (1/N-fill)
+order: 833 size: 13133 {} [00000.324 ms; 019 iters.] [3.4901e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 834 size: 13196 {} [00000.426 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 834 size: 13196 {} [00000.292 ms; 017 iters.] [2.2563e-06 err.] pagerankDynamic (zero-fill)
+order: 834 size: 13196 {} [00000.551 ms; 033 iters.] [5.6985e-06 err.] pagerankDynamic (1/N-fill)
+order: 834 size: 13196 {} [00000.293 ms; 017 iters.] [2.1768e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 835 size: 13301 {} [00000.427 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 835 size: 13301 {} [00000.340 ms; 018 iters.] [3.6010e-06 err.] pagerankDynamic (zero-fill)
+order: 835 size: 13301 {} [00000.547 ms; 033 iters.] [5.4505e-06 err.] pagerankDynamic (1/N-fill)
+order: 835 size: 13301 {} [00000.311 ms; 018 iters.] [3.5455e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 835 size: 13348 {} [00000.428 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 835 size: 13348 {} [00000.229 ms; 013 iters.] [3.0557e-06 err.] pagerankDynamic (zero-fill)
+order: 835 size: 13348 {} [00000.230 ms; 013 iters.] [3.0557e-06 err.] pagerankDynamic (1/N-fill)
+order: 835 size: 13348 {} [00000.229 ms; 013 iters.] [3.0557e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 835 size: 13392 {} [00000.432 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 835 size: 13392 {} [00000.312 ms; 018 iters.] [5.9951e-07 err.] pagerankDynamic (zero-fill)
+order: 835 size: 13392 {} [00000.313 ms; 018 iters.] [5.9951e-07 err.] pagerankDynamic (1/N-fill)
+order: 835 size: 13392 {} [00000.313 ms; 018 iters.] [5.9951e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 836 size: 13464 {} [00000.436 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 836 size: 13464 {} [00000.301 ms; 017 iters.] [2.6706e-06 err.] pagerankDynamic (zero-fill)
+order: 836 size: 13464 {} [00000.564 ms; 033 iters.] [5.3822e-06 err.] pagerankDynamic (1/N-fill)
+order: 836 size: 13464 {} [00000.300 ms; 017 iters.] [2.5692e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 837 size: 13497 {} [00000.437 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 837 size: 13497 {} [00000.300 ms; 017 iters.] [2.8300e-06 err.] pagerankDynamic (zero-fill)
+order: 837 size: 13497 {} [00000.583 ms; 034 iters.] [4.5709e-06 err.] pagerankDynamic (1/N-fill)
+order: 837 size: 13497 {} [00000.300 ms; 017 iters.] [2.9818e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 838 size: 13557 {} [00000.439 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 838 size: 13557 {} [00000.300 ms; 017 iters.] [3.9001e-06 err.] pagerankDynamic (zero-fill)
+order: 838 size: 13557 {} [00000.566 ms; 033 iters.] [5.6950e-06 err.] pagerankDynamic (1/N-fill)
+order: 838 size: 13557 {} [00000.299 ms; 017 iters.] [3.8539e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 838 size: 13630 {} [00000.440 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 838 size: 13630 {} [00000.285 ms; 016 iters.] [2.4100e-06 err.] pagerankDynamic (zero-fill)
+order: 838 size: 13630 {} [00000.285 ms; 016 iters.] [2.4100e-06 err.] pagerankDynamic (1/N-fill)
+order: 838 size: 13630 {} [00000.285 ms; 016 iters.] [2.4100e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 838 size: 13718 {} [00000.440 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 838 size: 13718 {} [00000.319 ms; 018 iters.] [3.3020e-06 err.] pagerankDynamic (zero-fill)
+order: 838 size: 13718 {} [00000.319 ms; 018 iters.] [3.3020e-06 err.] pagerankDynamic (1/N-fill)
+order: 838 size: 13718 {} [00000.318 ms; 018 iters.] [3.3020e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 839 size: 13776 {} [00000.441 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 839 size: 13776 {} [00000.269 ms; 015 iters.] [1.9305e-06 err.] pagerankDynamic (zero-fill)
+order: 839 size: 13776 {} [00000.570 ms; 033 iters.] [5.6987e-06 err.] pagerankDynamic (1/N-fill)
+order: 839 size: 13776 {} [00000.285 ms; 016 iters.] [1.4442e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 840 size: 13851 {} [00000.445 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 840 size: 13851 {} [00000.341 ms; 019 iters.] [4.0908e-07 err.] pagerankDynamic (zero-fill)
+order: 840 size: 13851 {} [00000.577 ms; 033 iters.] [5.7867e-06 err.] pagerankDynamic (1/N-fill)
+order: 840 size: 13851 {} [00000.342 ms; 019 iters.] [4.0399e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 842 size: 13948 {} [00000.449 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 842 size: 13948 {} [00000.324 ms; 018 iters.] [1.4973e-06 err.] pagerankDynamic (zero-fill)
+order: 842 size: 13948 {} [00000.664 ms; 038 iters.] [5.2640e-06 err.] pagerankDynamic (1/N-fill)
+order: 842 size: 13948 {} [00000.325 ms; 018 iters.] [1.4272e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 843 size: 14014 {} [00000.451 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 843 size: 14014 {} [00000.292 ms; 016 iters.] [3.2697e-06 err.] pagerankDynamic (zero-fill)
+order: 843 size: 14014 {} [00000.583 ms; 033 iters.] [5.5097e-06 err.] pagerankDynamic (1/N-fill)
+order: 843 size: 14014 {} [00000.309 ms; 017 iters.] [2.1437e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 844 size: 14083 {} [00000.451 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 844 size: 14083 {} [00000.278 ms; 015 iters.] [3.4558e-06 err.] pagerankDynamic (zero-fill)
+order: 844 size: 14083 {} [00000.583 ms; 033 iters.] [5.3171e-06 err.] pagerankDynamic (1/N-fill)
+order: 844 size: 14083 {} [00000.275 ms; 015 iters.] [3.3176e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 844 size: 14126 {} [00000.452 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 844 size: 14126 {} [00000.292 ms; 016 iters.] [3.1270e-06 err.] pagerankDynamic (zero-fill)
+order: 844 size: 14126 {} [00000.292 ms; 016 iters.] [3.1270e-06 err.] pagerankDynamic (1/N-fill)
+order: 844 size: 14126 {} [00000.291 ms; 016 iters.] [3.1270e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 844 size: 14178 {} [00000.454 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 844 size: 14178 {} [00000.276 ms; 015 iters.] [1.3269e-06 err.] pagerankDynamic (zero-fill)
+order: 844 size: 14178 {} [00000.279 ms; 015 iters.] [1.3269e-06 err.] pagerankDynamic (1/N-fill)
+order: 844 size: 14178 {} [00000.276 ms; 015 iters.] [1.3269e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 844 size: 14228 {} [00000.437 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 844 size: 14228 {} [00000.276 ms; 015 iters.] [3.6425e-06 err.] pagerankDynamic (zero-fill)
+order: 844 size: 14228 {} [00000.277 ms; 015 iters.] [3.6425e-06 err.] pagerankDynamic (1/N-fill)
+order: 844 size: 14228 {} [00000.276 ms; 015 iters.] [3.6425e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 845 size: 14311 {} [00000.455 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 845 size: 14311 {} [00000.329 ms; 018 iters.] [1.8287e-06 err.] pagerankDynamic (zero-fill)
+order: 845 size: 14311 {} [00000.605 ms; 034 iters.] [4.6782e-06 err.] pagerankDynamic (1/N-fill)
+order: 845 size: 14311 {} [00000.331 ms; 018 iters.] [8.2688e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 845 size: 14371 {} [00000.459 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 845 size: 14371 {} [00000.364 ms; 020 iters.] [2.4846e-06 err.] pagerankDynamic (zero-fill)
+order: 845 size: 14371 {} [00000.364 ms; 020 iters.] [2.4846e-06 err.] pagerankDynamic (1/N-fill)
+order: 845 size: 14371 {} [00000.368 ms; 020 iters.] [2.4846e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 845 size: 14415 {} [00000.441 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 845 size: 14415 {} [00000.296 ms; 016 iters.] [3.8297e-06 err.] pagerankDynamic (zero-fill)
+order: 845 size: 14415 {} [00000.297 ms; 016 iters.] [3.8297e-06 err.] pagerankDynamic (1/N-fill)
+order: 845 size: 14415 {} [00000.295 ms; 016 iters.] [3.8297e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 845 size: 14445 {} [00000.463 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 845 size: 14445 {} [00000.316 ms; 017 iters.] [4.9821e-07 err.] pagerankDynamic (zero-fill)
+order: 845 size: 14445 {} [00000.314 ms; 017 iters.] [4.9821e-07 err.] pagerankDynamic (1/N-fill)
+order: 845 size: 14445 {} [00000.315 ms; 017 iters.] [4.9821e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 845 size: 14528 {} [00000.466 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 845 size: 14528 {} [00000.336 ms; 018 iters.] [1.2930e-06 err.] pagerankDynamic (zero-fill)
+order: 845 size: 14528 {} [00000.335 ms; 018 iters.] [1.2930e-06 err.] pagerankDynamic (1/N-fill)
+order: 845 size: 14528 {} [00000.335 ms; 018 iters.] [1.2930e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 845 size: 14593 {} [00000.462 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 845 size: 14593 {} [00000.299 ms; 016 iters.] [2.3855e-06 err.] pagerankDynamic (zero-fill)
+order: 845 size: 14593 {} [00000.300 ms; 016 iters.] [2.3855e-06 err.] pagerankDynamic (1/N-fill)
+order: 845 size: 14593 {} [00000.301 ms; 016 iters.] [2.3855e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 845 size: 14649 {} [00000.466 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 845 size: 14649 {} [00000.301 ms; 016 iters.] [3.3308e-06 err.] pagerankDynamic (zero-fill)
+order: 845 size: 14649 {} [00000.300 ms; 016 iters.] [3.3308e-06 err.] pagerankDynamic (1/N-fill)
+order: 845 size: 14649 {} [00000.302 ms; 016 iters.] [3.3308e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 848 size: 14714 {} [00000.468 ms; 026 iters.] [0.0000e+00 err.] pagerankStatic
+order: 848 size: 14714 {} [00000.319 ms; 017 iters.] [2.5052e-06 err.] pagerankDynamic (zero-fill)
+order: 848 size: 14714 {} [00000.733 ms; 040 iters.] [5.2677e-06 err.] pagerankDynamic (1/N-fill)
+order: 848 size: 14714 {} [00000.318 ms; 017 iters.] [2.3579e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 849 size: 14772 {} [00000.450 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 849 size: 14772 {} [00000.319 ms; 017 iters.] [2.7567e-06 err.] pagerankDynamic (zero-fill)
+order: 849 size: 14772 {} [00000.606 ms; 033 iters.] [5.6383e-06 err.] pagerankDynamic (1/N-fill)
+order: 849 size: 14772 {} [00000.303 ms; 016 iters.] [2.0335e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 849 size: 14865 {} [00000.455 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 849 size: 14865 {} [00000.323 ms; 017 iters.] [3.3909e-06 err.] pagerankDynamic (zero-fill)
+order: 849 size: 14865 {} [00000.321 ms; 017 iters.] [3.3909e-06 err.] pagerankDynamic (1/N-fill)
+order: 849 size: 14865 {} [00000.321 ms; 017 iters.] [3.3909e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 850 size: 14933 {} [00000.458 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 850 size: 14933 {} [00000.325 ms; 017 iters.] [2.9397e-06 err.] pagerankDynamic (zero-fill)
+order: 850 size: 14933 {} [00000.612 ms; 033 iters.] [5.3935e-06 err.] pagerankDynamic (1/N-fill)
+order: 850 size: 14933 {} [00000.325 ms; 017 iters.] [2.8471e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 850 size: 14988 {} [00000.459 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 850 size: 14988 {} [00000.289 ms; 015 iters.] [3.6326e-06 err.] pagerankDynamic (zero-fill)
+order: 850 size: 14988 {} [00000.289 ms; 015 iters.] [3.6326e-06 err.] pagerankDynamic (1/N-fill)
+order: 850 size: 14988 {} [00000.296 ms; 015 iters.] [3.6326e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 850 size: 15054 {} [00000.460 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 850 size: 15054 {} [00000.327 ms; 017 iters.] [1.1936e-06 err.] pagerankDynamic (zero-fill)
+order: 850 size: 15054 {} [00000.328 ms; 017 iters.] [1.1936e-06 err.] pagerankDynamic (1/N-fill)
+order: 850 size: 15054 {} [00000.327 ms; 017 iters.] [1.1936e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 850 size: 15106 {} [00000.466 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 850 size: 15106 {} [00000.312 ms; 016 iters.] [3.1114e-06 err.] pagerankDynamic (zero-fill)
+order: 850 size: 15106 {} [00000.315 ms; 016 iters.] [3.1114e-06 err.] pagerankDynamic (1/N-fill)
+order: 850 size: 15106 {} [00000.317 ms; 016 iters.] [3.1114e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 851 size: 15157 {} [00000.467 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 851 size: 15157 {} [00000.331 ms; 017 iters.] [2.4485e-06 err.] pagerankDynamic (zero-fill)
+order: 851 size: 15157 {} [00000.626 ms; 033 iters.] [5.5921e-06 err.] pagerankDynamic (1/N-fill)
+order: 851 size: 15157 {} [00000.331 ms; 017 iters.] [2.3110e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 851 size: 15231 {} [00000.468 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 851 size: 15231 {} [00000.333 ms; 017 iters.] [3.3017e-06 err.] pagerankDynamic (zero-fill)
+order: 851 size: 15231 {} [00000.330 ms; 017 iters.] [3.3017e-06 err.] pagerankDynamic (1/N-fill)
+order: 851 size: 15231 {} [00000.332 ms; 017 iters.] [3.3017e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 851 size: 15292 {} [00000.449 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 851 size: 15292 {} [00000.257 ms; 013 iters.] [1.5216e-06 err.] pagerankDynamic (zero-fill)
+order: 851 size: 15292 {} [00000.258 ms; 013 iters.] [1.5216e-06 err.] pagerankDynamic (1/N-fill)
+order: 851 size: 15292 {} [00000.257 ms; 013 iters.] [1.5216e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 851 size: 15360 {} [00000.470 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 851 size: 15360 {} [00000.334 ms; 017 iters.] [2.4537e-06 err.] pagerankDynamic (zero-fill)
+order: 851 size: 15360 {} [00000.333 ms; 017 iters.] [2.4537e-06 err.] pagerankDynamic (1/N-fill)
+order: 851 size: 15360 {} [00000.332 ms; 017 iters.] [2.4537e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 851 size: 15412 {} [00000.470 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 851 size: 15412 {} [00000.277 ms; 014 iters.] [1.8603e-06 err.] pagerankDynamic (zero-fill)
+order: 851 size: 15412 {} [00000.277 ms; 014 iters.] [1.8603e-06 err.] pagerankDynamic (1/N-fill)
+order: 851 size: 15412 {} [00000.277 ms; 014 iters.] [1.8603e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 851 size: 15435 {} [00000.470 ms; 025 iters.] [0.0000e+00 err.] pagerankStatic
+order: 851 size: 15435 {} [00000.296 ms; 015 iters.] [2.7154e-06 err.] pagerankDynamic (zero-fill)
+order: 851 size: 15435 {} [00000.295 ms; 015 iters.] [2.7154e-06 err.] pagerankDynamic (1/N-fill)
+order: 851 size: 15435 {} [00000.297 ms; 015 iters.] [2.7154e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 852 size: 15460 {} [00000.455 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 852 size: 15460 {} [00000.335 ms; 017 iters.] [7.8946e-07 err.] pagerankDynamic (zero-fill)
+order: 852 size: 15460 {} [00000.641 ms; 033 iters.] [5.6124e-06 err.] pagerankDynamic (1/N-fill)
+order: 852 size: 15460 {} [00000.315 ms; 016 iters.] [3.7080e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 854 size: 15505 {} [00000.453 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 854 size: 15505 {} [00000.319 ms; 016 iters.] [3.4388e-06 err.] pagerankDynamic (zero-fill)
+order: 854 size: 15505 {} [00000.725 ms; 038 iters.] [4.9912e-06 err.] pagerankDynamic (1/N-fill)
+order: 854 size: 15505 {} [00000.315 ms; 016 iters.] [3.1945e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 854 size: 15543 {} [00000.455 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 854 size: 15543 {} [00000.335 ms; 017 iters.] [2.5906e-06 err.] pagerankDynamic (zero-fill)
+order: 854 size: 15543 {} [00000.335 ms; 017 iters.] [2.5906e-06 err.] pagerankDynamic (1/N-fill)
+order: 854 size: 15543 {} [00000.335 ms; 017 iters.] [2.5906e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 855 size: 15560 {} [00000.453 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 855 size: 15560 {} [00000.297 ms; 015 iters.] [3.1558e-06 err.] pagerankDynamic (zero-fill)
+order: 855 size: 15560 {} [00000.652 ms; 034 iters.] [4.7558e-06 err.] pagerankDynamic (1/N-fill)
+order: 855 size: 15560 {} [00000.298 ms; 015 iters.] [2.9503e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 856 size: 15620 {} [00000.456 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 856 size: 15620 {} [00000.279 ms; 014 iters.] [1.7423e-06 err.] pagerankDynamic (zero-fill)
+order: 856 size: 15620 {} [00000.634 ms; 033 iters.] [5.4493e-06 err.] pagerankDynamic (1/N-fill)
+order: 856 size: 15620 {} [00000.278 ms; 014 iters.] [1.6491e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 856 size: 15661 {} [00000.459 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 856 size: 15661 {} [00000.300 ms; 015 iters.] [2.9094e-06 err.] pagerankDynamic (zero-fill)
+order: 856 size: 15661 {} [00000.299 ms; 015 iters.] [2.9094e-06 err.] pagerankDynamic (1/N-fill)
+order: 856 size: 15661 {} [00000.300 ms; 015 iters.] [2.9094e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 857 size: 15694 {} [00000.456 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 857 size: 15694 {} [00000.319 ms; 016 iters.] [2.6904e-06 err.] pagerankDynamic (zero-fill)
+order: 857 size: 15694 {} [00000.639 ms; 033 iters.] [5.4473e-06 err.] pagerankDynamic (1/N-fill)
+order: 857 size: 15694 {} [00000.318 ms; 016 iters.] [2.6233e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 857 size: 15724 {} [00000.458 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 857 size: 15724 {} [00000.245 ms; 012 iters.] [3.3557e-06 err.] pagerankDynamic (zero-fill)
+order: 857 size: 15724 {} [00000.244 ms; 012 iters.] [3.3557e-06 err.] pagerankDynamic (1/N-fill)
+order: 857 size: 15724 {} [00000.243 ms; 012 iters.] [3.3557e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 857 size: 15785 {} [00000.460 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 857 size: 15785 {} [00000.340 ms; 017 iters.] [3.3052e-06 err.] pagerankDynamic (zero-fill)
+order: 857 size: 15785 {} [00000.339 ms; 017 iters.] [3.3052e-06 err.] pagerankDynamic (1/N-fill)
+order: 857 size: 15785 {} [00000.339 ms; 017 iters.] [3.3052e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 857 size: 15823 {} [00000.461 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 857 size: 15823 {} [00000.302 ms; 015 iters.] [1.5794e-06 err.] pagerankDynamic (zero-fill)
+order: 857 size: 15823 {} [00000.302 ms; 015 iters.] [1.5794e-06 err.] pagerankDynamic (1/N-fill)
+order: 857 size: 15823 {} [00000.302 ms; 015 iters.] [1.5794e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 857 size: 15873 {} [00000.463 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 857 size: 15873 {} [00000.323 ms; 016 iters.] [1.6114e-06 err.] pagerankDynamic (zero-fill)
+order: 857 size: 15873 {} [00000.323 ms; 016 iters.] [1.6114e-06 err.] pagerankDynamic (1/N-fill)
+order: 857 size: 15873 {} [00000.322 ms; 016 iters.] [1.6114e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 857 size: 15920 {} [00000.463 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 857 size: 15920 {} [00000.303 ms; 015 iters.] [2.7637e-06 err.] pagerankDynamic (zero-fill)
+order: 857 size: 15920 {} [00000.302 ms; 015 iters.] [2.7637e-06 err.] pagerankDynamic (1/N-fill)
+order: 857 size: 15920 {} [00000.302 ms; 015 iters.] [2.7637e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 858 size: 15975 {} [00000.463 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 858 size: 15975 {} [00000.341 ms; 017 iters.] [2.3594e-06 err.] pagerankDynamic (zero-fill)
+order: 858 size: 15975 {} [00000.647 ms; 033 iters.] [5.8448e-06 err.] pagerankDynamic (1/N-fill)
+order: 858 size: 15975 {} [00000.303 ms; 015 iters.] [1.5710e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 859 size: 16023 {} [00000.468 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 859 size: 16023 {} [00000.306 ms; 015 iters.] [3.2121e-06 err.] pagerankDynamic (zero-fill)
+order: 859 size: 16023 {} [00000.651 ms; 033 iters.] [5.6707e-06 err.] pagerankDynamic (1/N-fill)
+order: 859 size: 16023 {} [00000.287 ms; 014 iters.] [2.3401e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 860 size: 16069 {} [00000.464 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 860 size: 16069 {} [00000.323 ms; 016 iters.] [2.6621e-06 err.] pagerankDynamic (zero-fill)
+order: 860 size: 16069 {} [00000.651 ms; 033 iters.] [5.5191e-06 err.] pagerankDynamic (1/N-fill)
+order: 860 size: 16069 {} [00000.305 ms; 015 iters.] [8.2041e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 861 size: 16118 {} [00000.467 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 861 size: 16118 {} [00000.325 ms; 016 iters.] [3.5876e-06 err.] pagerankDynamic (zero-fill)
+order: 861 size: 16118 {} [00000.652 ms; 033 iters.] [5.5790e-06 err.] pagerankDynamic (1/N-fill)
+order: 861 size: 16118 {} [00000.324 ms; 016 iters.] [3.5300e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 861 size: 16178 {} [00000.470 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 861 size: 16178 {} [00000.311 ms; 015 iters.] [3.0966e-06 err.] pagerankDynamic (zero-fill)
+order: 861 size: 16178 {} [00000.307 ms; 015 iters.] [3.0966e-06 err.] pagerankDynamic (1/N-fill)
+order: 861 size: 16178 {} [00000.307 ms; 015 iters.] [3.0966e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 861 size: 16254 {} [00000.472 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 861 size: 16254 {} [00000.328 ms; 016 iters.] [2.6113e-06 err.] pagerankDynamic (zero-fill)
+order: 861 size: 16254 {} [00000.328 ms; 016 iters.] [2.6113e-06 err.] pagerankDynamic (1/N-fill)
+order: 861 size: 16254 {} [00000.328 ms; 016 iters.] [2.6113e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 861 size: 16328 {} [00000.472 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 861 size: 16328 {} [00000.367 ms; 018 iters.] [5.6259e-07 err.] pagerankDynamic (zero-fill)
+order: 861 size: 16328 {} [00000.367 ms; 018 iters.] [5.6259e-07 err.] pagerankDynamic (1/N-fill)
+order: 861 size: 16328 {} [00000.367 ms; 018 iters.] [5.6259e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 862 size: 16412 {} [00000.475 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 862 size: 16412 {} [00000.330 ms; 016 iters.] [3.3092e-06 err.] pagerankDynamic (zero-fill)
+order: 862 size: 16412 {} [00000.664 ms; 033 iters.] [5.3961e-06 err.] pagerankDynamic (1/N-fill)
+order: 862 size: 16412 {} [00000.339 ms; 016 iters.] [3.2884e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 862 size: 16470 {} [00000.477 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 862 size: 16470 {} [00000.332 ms; 016 iters.] [2.6664e-06 err.] pagerankDynamic (zero-fill)
+order: 862 size: 16470 {} [00000.332 ms; 016 iters.] [2.6664e-06 err.] pagerankDynamic (1/N-fill)
+order: 862 size: 16470 {} [00000.332 ms; 016 iters.] [2.6664e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 862 size: 16518 {} [00000.477 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 862 size: 16518 {} [00000.332 ms; 016 iters.] [2.2316e-06 err.] pagerankDynamic (zero-fill)
+order: 862 size: 16518 {} [00000.331 ms; 016 iters.] [2.2316e-06 err.] pagerankDynamic (1/N-fill)
+order: 862 size: 16518 {} [00000.332 ms; 016 iters.] [2.2316e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 864 size: 16564 {} [00000.480 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 864 size: 16564 {} [00000.313 ms; 015 iters.] [1.8282e-06 err.] pagerankDynamic (zero-fill)
+order: 864 size: 16564 {} [00000.746 ms; 037 iters.] [5.7786e-06 err.] pagerankDynamic (1/N-fill)
+order: 864 size: 16564 {} [00000.313 ms; 015 iters.] [1.6518e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 865 size: 16613 {} [00000.480 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 865 size: 16613 {} [00000.315 ms; 015 iters.] [2.9392e-06 err.] pagerankDynamic (zero-fill)
+order: 865 size: 16613 {} [00000.671 ms; 033 iters.] [5.2470e-06 err.] pagerankDynamic (1/N-fill)
+order: 865 size: 16613 {} [00000.315 ms; 015 iters.] [2.6357e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 865 size: 16696 {} [00000.482 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 865 size: 16696 {} [00000.315 ms; 015 iters.] [3.4748e-06 err.] pagerankDynamic (zero-fill)
+order: 865 size: 16696 {} [00000.316 ms; 015 iters.] [3.4748e-06 err.] pagerankDynamic (1/N-fill)
+order: 865 size: 16696 {} [00000.315 ms; 015 iters.] [3.4748e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 867 size: 16751 {} [00000.485 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 867 size: 16751 {} [00000.318 ms; 015 iters.] [2.4843e-06 err.] pagerankDynamic (zero-fill)
+order: 867 size: 16751 {} [00000.775 ms; 038 iters.] [4.6651e-06 err.] pagerankDynamic (1/N-fill)
+order: 867 size: 16751 {} [00000.316 ms; 015 iters.] [1.0707e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 868 size: 16804 {} [00000.485 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 868 size: 16804 {} [00000.337 ms; 016 iters.] [2.2986e-06 err.] pagerankDynamic (zero-fill)
+order: 868 size: 16804 {} [00000.676 ms; 033 iters.] [5.2871e-06 err.] pagerankDynamic (1/N-fill)
+order: 868 size: 16804 {} [00000.336 ms; 016 iters.] [2.2482e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 870 size: 16878 {} [00000.486 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 870 size: 16878 {} [00000.317 ms; 015 iters.] [2.9160e-06 err.] pagerankDynamic (zero-fill)
+order: 870 size: 16878 {} [00000.757 ms; 037 iters.] [5.6248e-06 err.] pagerankDynamic (1/N-fill)
+order: 870 size: 16878 {} [00000.317 ms; 015 iters.] [2.7763e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 870 size: 16941 {} [00000.490 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 870 size: 16941 {} [00000.299 ms; 014 iters.] [2.6198e-06 err.] pagerankDynamic (zero-fill)
+order: 870 size: 16941 {} [00000.298 ms; 014 iters.] [2.6198e-06 err.] pagerankDynamic (1/N-fill)
+order: 870 size: 16941 {} [00000.298 ms; 014 iters.] [2.6198e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 871 size: 16996 {} [00000.490 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 871 size: 16996 {} [00000.320 ms; 015 iters.] [1.8150e-06 err.] pagerankDynamic (zero-fill)
+order: 871 size: 16996 {} [00000.686 ms; 033 iters.] [5.2587e-06 err.] pagerankDynamic (1/N-fill)
+order: 871 size: 16996 {} [00000.300 ms; 014 iters.] [1.5875e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 872 size: 17034 {} [00000.491 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 872 size: 17034 {} [00000.320 ms; 015 iters.] [2.3739e-06 err.] pagerankDynamic (zero-fill)
+order: 872 size: 17034 {} [00000.685 ms; 033 iters.] [5.2548e-06 err.] pagerankDynamic (1/N-fill)
+order: 872 size: 17034 {} [00000.320 ms; 015 iters.] [2.2625e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 872 size: 17096 {} [00000.492 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 872 size: 17096 {} [00000.301 ms; 014 iters.] [1.3703e-06 err.] pagerankDynamic (zero-fill)
+order: 872 size: 17096 {} [00000.302 ms; 014 iters.] [1.3703e-06 err.] pagerankDynamic (1/N-fill)
+order: 872 size: 17096 {} [00000.302 ms; 014 iters.] [1.3703e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 873 size: 17143 {} [00000.494 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 873 size: 17143 {} [00000.343 ms; 016 iters.] [2.7444e-06 err.] pagerankDynamic (zero-fill)
+order: 873 size: 17143 {} [00000.710 ms; 034 iters.] [4.5409e-06 err.] pagerankDynamic (1/N-fill)
+order: 873 size: 17143 {} [00000.343 ms; 016 iters.] [2.6869e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 874 size: 17197 {} [00000.474 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 874 size: 17197 {} [00000.344 ms; 016 iters.] [3.3286e-06 err.] pagerankDynamic (zero-fill)
+order: 874 size: 17197 {} [00000.710 ms; 034 iters.] [4.3888e-06 err.] pagerankDynamic (1/N-fill)
+order: 874 size: 17197 {} [00000.343 ms; 016 iters.] [3.2740e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 874 size: 17235 {} [00000.476 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 874 size: 17235 {} [00000.283 ms; 013 iters.] [2.4503e-06 err.] pagerankDynamic (zero-fill)
+order: 874 size: 17235 {} [00000.283 ms; 013 iters.] [2.4503e-06 err.] pagerankDynamic (1/N-fill)
+order: 874 size: 17235 {} [00000.283 ms; 013 iters.] [2.4503e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 875 size: 17261 {} [00000.479 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 875 size: 17261 {} [00000.284 ms; 013 iters.] [3.4798e-06 err.] pagerankDynamic (zero-fill)
+order: 875 size: 17261 {} [00000.695 ms; 033 iters.] [5.5986e-06 err.] pagerankDynamic (1/N-fill)
+order: 875 size: 17261 {} [00000.284 ms; 013 iters.] [3.3469e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 875 size: 17320 {} [00000.481 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 875 size: 17320 {} [00000.328 ms; 015 iters.] [2.4092e-06 err.] pagerankDynamic (zero-fill)
+order: 875 size: 17320 {} [00000.327 ms; 015 iters.] [2.4092e-06 err.] pagerankDynamic (1/N-fill)
+order: 875 size: 17320 {} [00000.327 ms; 015 iters.] [2.4092e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 875 size: 17382 {} [00000.483 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 875 size: 17382 {} [00000.307 ms; 014 iters.] [1.4490e-06 err.] pagerankDynamic (zero-fill)
+order: 875 size: 17382 {} [00000.307 ms; 014 iters.] [1.4490e-06 err.] pagerankDynamic (1/N-fill)
+order: 875 size: 17382 {} [00000.306 ms; 014 iters.] [1.4490e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 876 size: 17433 {} [00000.481 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 876 size: 17433 {} [00000.327 ms; 015 iters.] [2.7516e-06 err.] pagerankDynamic (zero-fill)
+order: 876 size: 17433 {} [00000.702 ms; 033 iters.] [5.1370e-06 err.] pagerankDynamic (1/N-fill)
+order: 876 size: 17433 {} [00000.307 ms; 014 iters.] [3.2208e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 876 size: 17492 {} [00000.482 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 876 size: 17492 {} [00000.307 ms; 014 iters.] [2.8381e-06 err.] pagerankDynamic (zero-fill)
+order: 876 size: 17492 {} [00000.308 ms; 014 iters.] [2.8381e-06 err.] pagerankDynamic (1/N-fill)
+order: 876 size: 17492 {} [00000.308 ms; 014 iters.] [2.8381e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 877 size: 17533 {} [00000.485 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 877 size: 17533 {} [00000.308 ms; 014 iters.] [1.6092e-06 err.] pagerankDynamic (zero-fill)
+order: 877 size: 17533 {} [00000.725 ms; 034 iters.] [4.5686e-06 err.] pagerankDynamic (1/N-fill)
+order: 877 size: 17533 {} [00000.308 ms; 014 iters.] [1.4253e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 877 size: 17579 {} [00000.486 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 877 size: 17579 {} [00000.330 ms; 015 iters.] [2.7136e-06 err.] pagerankDynamic (zero-fill)
+order: 877 size: 17579 {} [00000.330 ms; 015 iters.] [2.7136e-06 err.] pagerankDynamic (1/N-fill)
+order: 877 size: 17579 {} [00000.329 ms; 015 iters.] [2.7136e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 878 size: 17648 {} [00000.488 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 878 size: 17648 {} [00000.351 ms; 016 iters.] [1.2749e-06 err.] pagerankDynamic (zero-fill)
+order: 878 size: 17648 {} [00000.705 ms; 033 iters.] [5.1221e-06 err.] pagerankDynamic (1/N-fill)
+order: 878 size: 17648 {} [00000.351 ms; 016 iters.] [8.9806e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 878 size: 17683 {} [00000.487 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 878 size: 17683 {} [00000.332 ms; 015 iters.] [1.3674e-06 err.] pagerankDynamic (zero-fill)
+order: 878 size: 17683 {} [00000.332 ms; 015 iters.] [1.3674e-06 err.] pagerankDynamic (1/N-fill)
+order: 878 size: 17683 {} [00000.332 ms; 015 iters.] [1.3674e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 878 size: 17745 {} [00000.488 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 878 size: 17745 {} [00000.353 ms; 016 iters.] [3.1042e-06 err.] pagerankDynamic (zero-fill)
+order: 878 size: 17745 {} [00000.353 ms; 016 iters.] [3.1042e-06 err.] pagerankDynamic (1/N-fill)
+order: 878 size: 17745 {} [00000.354 ms; 016 iters.] [3.1042e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 878 size: 17798 {} [00000.490 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 878 size: 17798 {} [00000.396 ms; 018 iters.] [5.8040e-07 err.] pagerankDynamic (zero-fill)
+order: 878 size: 17798 {} [00000.397 ms; 018 iters.] [5.8040e-07 err.] pagerankDynamic (1/N-fill)
+order: 878 size: 17798 {} [00000.395 ms; 018 iters.] [5.8040e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 879 size: 17831 {} [00000.491 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 879 size: 17831 {} [00000.292 ms; 013 iters.] [2.3983e-06 err.] pagerankDynamic (zero-fill)
+order: 879 size: 17831 {} [00000.712 ms; 033 iters.] [5.4439e-06 err.] pagerankDynamic (1/N-fill)
+order: 879 size: 17831 {} [00000.317 ms; 014 iters.] [1.9519e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 879 size: 17872 {} [00000.513 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 879 size: 17872 {} [00000.336 ms; 015 iters.] [2.0244e-06 err.] pagerankDynamic (zero-fill)
+order: 879 size: 17872 {} [00000.336 ms; 015 iters.] [2.0244e-06 err.] pagerankDynamic (1/N-fill)
+order: 879 size: 17872 {} [00000.337 ms; 015 iters.] [2.0244e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 879 size: 17930 {} [00000.494 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 879 size: 17930 {} [00000.296 ms; 013 iters.] [2.6396e-06 err.] pagerankDynamic (zero-fill)
+order: 879 size: 17930 {} [00000.295 ms; 013 iters.] [2.6396e-06 err.] pagerankDynamic (1/N-fill)
+order: 879 size: 17930 {} [00000.291 ms; 013 iters.] [2.6396e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 879 size: 17990 {} [00000.495 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 879 size: 17990 {} [00000.315 ms; 014 iters.] [1.7428e-06 err.] pagerankDynamic (zero-fill)
+order: 879 size: 17990 {} [00000.315 ms; 014 iters.] [1.7428e-06 err.] pagerankDynamic (1/N-fill)
+order: 879 size: 17990 {} [00000.315 ms; 014 iters.] [1.7428e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 880 size: 18037 {} [00000.518 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 880 size: 18037 {} [00000.316 ms; 014 iters.] [2.2478e-06 err.] pagerankDynamic (zero-fill)
+order: 880 size: 18037 {} [00000.722 ms; 033 iters.] [5.4380e-06 err.] pagerankDynamic (1/N-fill)
+order: 880 size: 18037 {} [00000.321 ms; 014 iters.] [2.1775e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 881 size: 18073 {} [00000.495 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 881 size: 18073 {} [00000.361 ms; 016 iters.] [3.4627e-06 err.] pagerankDynamic (zero-fill)
+order: 881 size: 18073 {} [00000.722 ms; 033 iters.] [5.0465e-06 err.] pagerankDynamic (1/N-fill)
+order: 881 size: 18073 {} [00000.339 ms; 015 iters.] [3.0743e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 881 size: 18125 {} [00000.499 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 881 size: 18125 {} [00000.362 ms; 016 iters.] [2.3296e-06 err.] pagerankDynamic (zero-fill)
+order: 881 size: 18125 {} [00000.362 ms; 016 iters.] [2.3296e-06 err.] pagerankDynamic (1/N-fill)
+order: 881 size: 18125 {} [00000.361 ms; 016 iters.] [2.3296e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 881 size: 18167 {} [00000.501 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 881 size: 18167 {} [00000.363 ms; 016 iters.] [3.2092e-06 err.] pagerankDynamic (zero-fill)
+order: 881 size: 18167 {} [00000.363 ms; 016 iters.] [3.2092e-06 err.] pagerankDynamic (1/N-fill)
+order: 881 size: 18167 {} [00000.360 ms; 016 iters.] [3.2092e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 881 size: 18211 {} [00000.501 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 881 size: 18211 {} [00000.296 ms; 013 iters.] [2.5066e-06 err.] pagerankDynamic (zero-fill)
+order: 881 size: 18211 {} [00000.296 ms; 013 iters.] [2.5066e-06 err.] pagerankDynamic (1/N-fill)
+order: 881 size: 18211 {} [00000.296 ms; 013 iters.] [2.5066e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 882 size: 18302 {} [00000.501 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 882 size: 18302 {} [00000.361 ms; 016 iters.] [3.0668e-06 err.] pagerankDynamic (zero-fill)
+order: 882 size: 18302 {} [00000.729 ms; 033 iters.] [4.9983e-06 err.] pagerankDynamic (1/N-fill)
+order: 882 size: 18302 {} [00000.343 ms; 015 iters.] [3.2057e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 882 size: 18347 {} [00000.503 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 882 size: 18347 {} [00000.323 ms; 014 iters.] [7.9988e-07 err.] pagerankDynamic (zero-fill)
+order: 882 size: 18347 {} [00000.329 ms; 014 iters.] [7.9988e-07 err.] pagerankDynamic (1/N-fill)
+order: 882 size: 18347 {} [00000.329 ms; 014 iters.] [7.9988e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 883 size: 18386 {} [00000.543 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 883 size: 18386 {} [00000.378 ms; 016 iters.] [9.2268e-07 err.] pagerankDynamic (zero-fill)
+order: 883 size: 18386 {} [00000.774 ms; 033 iters.] [5.2341e-06 err.] pagerankDynamic (1/N-fill)
+order: 883 size: 18386 {} [00000.378 ms; 016 iters.] [8.5632e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 883 size: 18433 {} [00000.527 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 883 size: 18433 {} [00000.345 ms; 015 iters.] [3.1057e-06 err.] pagerankDynamic (zero-fill)
+order: 883 size: 18433 {} [00000.345 ms; 015 iters.] [3.1057e-06 err.] pagerankDynamic (1/N-fill)
+order: 883 size: 18433 {} [00000.345 ms; 015 iters.] [3.1057e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 884 size: 18473 {} [00000.507 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 884 size: 18473 {} [00000.367 ms; 016 iters.] [1.2280e-06 err.] pagerankDynamic (zero-fill)
+order: 884 size: 18473 {} [00000.736 ms; 033 iters.] [5.5713e-06 err.] pagerankDynamic (1/N-fill)
+order: 884 size: 18473 {} [00000.366 ms; 016 iters.] [1.1472e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 884 size: 18520 {} [00000.508 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 884 size: 18520 {} [00000.368 ms; 016 iters.] [3.2002e-06 err.] pagerankDynamic (zero-fill)
+order: 884 size: 18520 {} [00000.368 ms; 016 iters.] [3.2002e-06 err.] pagerankDynamic (1/N-fill)
+order: 884 size: 18520 {} [00000.368 ms; 016 iters.] [3.2002e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 885 size: 18563 {} [00000.507 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 885 size: 18563 {} [00000.345 ms; 015 iters.] [2.2718e-06 err.] pagerankDynamic (zero-fill)
+order: 885 size: 18563 {} [00000.735 ms; 033 iters.] [5.2757e-06 err.] pagerankDynamic (1/N-fill)
+order: 885 size: 18563 {} [00000.344 ms; 015 iters.] [2.1059e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 885 size: 18622 {} [00000.511 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 885 size: 18622 {} [00000.325 ms; 014 iters.] [1.8460e-06 err.] pagerankDynamic (zero-fill)
+order: 885 size: 18622 {} [00000.325 ms; 014 iters.] [1.8460e-06 err.] pagerankDynamic (1/N-fill)
+order: 885 size: 18622 {} [00000.324 ms; 014 iters.] [1.8460e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 885 size: 18677 {} [00000.511 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 885 size: 18677 {} [00000.324 ms; 014 iters.] [2.7539e-06 err.] pagerankDynamic (zero-fill)
+order: 885 size: 18677 {} [00000.324 ms; 014 iters.] [2.7539e-06 err.] pagerankDynamic (1/N-fill)
+order: 885 size: 18677 {} [00000.323 ms; 014 iters.] [2.7539e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 886 size: 18708 {} [00000.512 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 886 size: 18708 {} [00000.303 ms; 013 iters.] [9.9800e-07 err.] pagerankDynamic (zero-fill)
+order: 886 size: 18708 {} [00000.745 ms; 033 iters.] [5.1813e-06 err.] pagerankDynamic (1/N-fill)
+order: 886 size: 18708 {} [00000.328 ms; 014 iters.] [8.1157e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 886 size: 18765 {} [00000.513 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 886 size: 18765 {} [00000.349 ms; 015 iters.] [3.4992e-06 err.] pagerankDynamic (zero-fill)
+order: 886 size: 18765 {} [00000.349 ms; 015 iters.] [3.4992e-06 err.] pagerankDynamic (1/N-fill)
+order: 886 size: 18765 {} [00000.348 ms; 015 iters.] [3.4992e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 886 size: 18823 {} [00000.516 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 886 size: 18823 {} [00000.329 ms; 014 iters.] [1.5257e-06 err.] pagerankDynamic (zero-fill)
+order: 886 size: 18823 {} [00000.329 ms; 014 iters.] [1.5257e-06 err.] pagerankDynamic (1/N-fill)
+order: 886 size: 18823 {} [00000.326 ms; 014 iters.] [1.5257e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 887 size: 18873 {} [00000.518 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 887 size: 18873 {} [00000.330 ms; 014 iters.] [2.2869e-06 err.] pagerankDynamic (zero-fill)
+order: 887 size: 18873 {} [00000.773 ms; 034 iters.] [4.2985e-06 err.] pagerankDynamic (1/N-fill)
+order: 887 size: 18873 {} [00000.353 ms; 015 iters.] [2.0891e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 888 size: 18903 {} [00000.518 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 888 size: 18903 {} [00000.307 ms; 013 iters.] [9.1197e-07 err.] pagerankDynamic (zero-fill)
+order: 888 size: 18903 {} [00000.754 ms; 033 iters.] [5.1626e-06 err.] pagerankDynamic (1/N-fill)
+order: 888 size: 18903 {} [00000.308 ms; 013 iters.] [7.6825e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 888 size: 18934 {} [00000.519 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 888 size: 18934 {} [00000.309 ms; 013 iters.] [2.8945e-06 err.] pagerankDynamic (zero-fill)
+order: 888 size: 18934 {} [00000.307 ms; 013 iters.] [2.8945e-06 err.] pagerankDynamic (1/N-fill)
+order: 888 size: 18934 {} [00000.307 ms; 013 iters.] [2.8945e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 889 size: 19003 {} [00000.522 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 889 size: 19003 {} [00000.444 ms; 019 iters.] [1.0597e-06 err.] pagerankDynamic (zero-fill)
+order: 889 size: 19003 {} [00000.757 ms; 033 iters.] [5.3804e-06 err.] pagerankDynamic (1/N-fill)
+order: 889 size: 19003 {} [00000.443 ms; 019 iters.] [1.0428e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 890 size: 19061 {} [00000.520 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 890 size: 19061 {} [00000.310 ms; 013 iters.] [1.8059e-06 err.] pagerankDynamic (zero-fill)
+order: 890 size: 19061 {} [00000.756 ms; 033 iters.] [5.2258e-06 err.] pagerankDynamic (1/N-fill)
+order: 890 size: 19061 {} [00000.308 ms; 013 iters.] [1.7017e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 891 size: 19122 {} [00000.550 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 891 size: 19122 {} [00000.379 ms; 016 iters.] [5.3633e-07 err.] pagerankDynamic (zero-fill)
+order: 891 size: 19122 {} [00000.764 ms; 033 iters.] [5.3565e-06 err.] pagerankDynamic (1/N-fill)
+order: 891 size: 19122 {} [00000.379 ms; 016 iters.] [5.5593e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 891 size: 19165 {} [00000.548 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 891 size: 19165 {} [00000.334 ms; 014 iters.] [6.9392e-07 err.] pagerankDynamic (zero-fill)
+order: 891 size: 19165 {} [00000.334 ms; 014 iters.] [6.9392e-07 err.] pagerankDynamic (1/N-fill)
+order: 891 size: 19165 {} [00000.334 ms; 014 iters.] [6.9392e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 891 size: 19225 {} [00000.550 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 891 size: 19225 {} [00000.381 ms; 016 iters.] [1.6608e-06 err.] pagerankDynamic (zero-fill)
+order: 891 size: 19225 {} [00000.381 ms; 016 iters.] [1.6608e-06 err.] pagerankDynamic (1/N-fill)
+order: 891 size: 19225 {} [00000.379 ms; 016 iters.] [1.6608e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 891 size: 19272 {} [00000.553 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 891 size: 19272 {} [00000.359 ms; 015 iters.] [2.4074e-06 err.] pagerankDynamic (zero-fill)
+order: 891 size: 19272 {} [00000.358 ms; 015 iters.] [2.4074e-06 err.] pagerankDynamic (1/N-fill)
+order: 891 size: 19272 {} [00000.359 ms; 015 iters.] [2.4074e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 891 size: 19299 {} [00000.552 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 891 size: 19299 {} [00000.291 ms; 012 iters.] [1.1408e-06 err.] pagerankDynamic (zero-fill)
+order: 891 size: 19299 {} [00000.290 ms; 012 iters.] [1.1408e-06 err.] pagerankDynamic (1/N-fill)
+order: 891 size: 19299 {} [00000.289 ms; 012 iters.] [1.1408e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 891 size: 19353 {} [00000.553 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 891 size: 19353 {} [00000.359 ms; 015 iters.] [7.3614e-07 err.] pagerankDynamic (zero-fill)
+order: 891 size: 19353 {} [00000.359 ms; 015 iters.] [7.3614e-07 err.] pagerankDynamic (1/N-fill)
+order: 891 size: 19353 {} [00000.359 ms; 015 iters.] [7.3614e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 893 size: 19401 {} [00000.554 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 893 size: 19401 {} [00000.428 ms; 018 iters.] [9.0759e-07 err.] pagerankDynamic (zero-fill)
+order: 893 size: 19401 {} [00000.862 ms; 037 iters.] [5.4030e-06 err.] pagerankDynamic (1/N-fill)
+order: 893 size: 19401 {} [00000.406 ms; 017 iters.] [2.9934e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 893 size: 19452 {} [00000.555 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 893 size: 19452 {} [00000.337 ms; 014 iters.] [1.9683e-06 err.] pagerankDynamic (zero-fill)
+order: 893 size: 19452 {} [00000.338 ms; 014 iters.] [1.9683e-06 err.] pagerankDynamic (1/N-fill)
+order: 893 size: 19452 {} [00000.337 ms; 014 iters.] [1.9683e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 895 size: 19483 {} [00000.555 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 895 size: 19483 {} [00000.359 ms; 015 iters.] [9.0108e-07 err.] pagerankDynamic (zero-fill)
+order: 895 size: 19483 {} [00000.865 ms; 037 iters.] [5.3186e-06 err.] pagerankDynamic (1/N-fill)
+order: 895 size: 19483 {} [00000.361 ms; 015 iters.] [7.1718e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 898 size: 19549 {} [00000.559 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 898 size: 19549 {} [00000.384 ms; 016 iters.] [3.4300e-06 err.] pagerankDynamic (zero-fill)
+order: 898 size: 19549 {} [00000.942 ms; 040 iters.] [5.0655e-06 err.] pagerankDynamic (1/N-fill)
+order: 898 size: 19549 {} [00000.387 ms; 016 iters.] [2.8946e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 898 size: 19591 {} [00000.560 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 898 size: 19591 {} [00000.362 ms; 015 iters.] [1.2586e-06 err.] pagerankDynamic (zero-fill)
+order: 898 size: 19591 {} [00000.364 ms; 015 iters.] [1.2586e-06 err.] pagerankDynamic (1/N-fill)
+order: 898 size: 19591 {} [00000.365 ms; 015 iters.] [1.2586e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 898 size: 19621 {} [00000.560 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 898 size: 19621 {} [00000.340 ms; 014 iters.] [2.4347e-06 err.] pagerankDynamic (zero-fill)
+order: 898 size: 19621 {} [00000.342 ms; 014 iters.] [2.4347e-06 err.] pagerankDynamic (1/N-fill)
+order: 898 size: 19621 {} [00000.340 ms; 014 iters.] [2.4347e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 899 size: 19685 {} [00000.560 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 899 size: 19685 {} [00000.410 ms; 017 iters.] [2.6380e-06 err.] pagerankDynamic (zero-fill)
+order: 899 size: 19685 {} [00000.777 ms; 033 iters.] [5.0965e-06 err.] pagerankDynamic (1/N-fill)
+order: 899 size: 19685 {} [00000.387 ms; 016 iters.] [3.1982e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 901 size: 19721 {} [00000.561 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 901 size: 19721 {} [00000.340 ms; 014 iters.] [2.1477e-06 err.] pagerankDynamic (zero-fill)
+order: 901 size: 19721 {} [00000.874 ms; 037 iters.] [5.1315e-06 err.] pagerankDynamic (1/N-fill)
+order: 901 size: 19721 {} [00000.341 ms; 014 iters.] [5.7064e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 901 size: 19776 {} [00000.562 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 901 size: 19776 {} [00000.363 ms; 015 iters.] [3.1050e-06 err.] pagerankDynamic (zero-fill)
+order: 901 size: 19776 {} [00000.368 ms; 015 iters.] [3.1050e-06 err.] pagerankDynamic (1/N-fill)
+order: 901 size: 19776 {} [00000.366 ms; 015 iters.] [3.1050e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 904 size: 19829 {} [00000.563 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 904 size: 19829 {} [00000.340 ms; 014 iters.] [3.0961e-06 err.] pagerankDynamic (zero-fill)
+order: 904 size: 19829 {} [00000.946 ms; 040 iters.] [4.8432e-06 err.] pagerankDynamic (1/N-fill)
+order: 904 size: 19829 {} [00000.342 ms; 014 iters.] [2.6197e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 908 size: 19899 {} [00000.730 ms; 031 iters.] [0.0000e+00 err.] pagerankStatic
+order: 908 size: 19899 {} [00001.020 ms; 043 iters.] [2.8688e-07 err.] pagerankDynamic (zero-fill)
+order: 908 size: 19899 {} [00001.019 ms; 043 iters.] [4.1125e-06 err.] pagerankDynamic (1/N-fill)
+order: 908 size: 19899 {} [00000.833 ms; 035 iters.] [9.1986e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 912 size: 19958 {} [00000.568 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 912 size: 19958 {} [00000.417 ms; 017 iters.] [3.1115e-06 err.] pagerankDynamic (zero-fill)
+order: 912 size: 19958 {} [00000.978 ms; 041 iters.] [5.8022e-06 err.] pagerankDynamic (1/N-fill)
+order: 912 size: 19958 {} [00000.438 ms; 018 iters.] [1.9749e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 913 size: 19992 {} [00000.568 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 913 size: 19992 {} [00000.320 ms; 013 iters.] [2.4905e-06 err.] pagerankDynamic (zero-fill)
+order: 913 size: 19992 {} [00000.793 ms; 033 iters.] [5.1778e-06 err.] pagerankDynamic (1/N-fill)
+order: 913 size: 19992 {} [00000.299 ms; 012 iters.] [9.6385e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 914 size: 20018 {} [00000.571 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 914 size: 20018 {} [00000.348 ms; 014 iters.] [1.8165e-06 err.] pagerankDynamic (zero-fill)
+order: 914 size: 20018 {} [00000.794 ms; 033 iters.] [4.9626e-06 err.] pagerankDynamic (1/N-fill)
+order: 914 size: 20018 {} [00000.370 ms; 015 iters.] [6.7161e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 915 size: 20071 {} [00000.577 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 915 size: 20071 {} [00000.349 ms; 014 iters.] [1.0192e-06 err.] pagerankDynamic (zero-fill)
+order: 915 size: 20071 {} [00000.799 ms; 033 iters.] [5.2032e-06 err.] pagerankDynamic (1/N-fill)
+order: 915 size: 20071 {} [00000.372 ms; 015 iters.] [9.2115e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 916 size: 20130 {} [00000.575 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 916 size: 20130 {} [00000.351 ms; 014 iters.] [2.6081e-06 err.] pagerankDynamic (zero-fill)
+order: 916 size: 20130 {} [00000.799 ms; 033 iters.] [4.9918e-06 err.] pagerankDynamic (1/N-fill)
+order: 916 size: 20130 {} [00000.350 ms; 014 iters.] [2.4890e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 916 size: 20164 {} [00000.572 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 916 size: 20164 {} [00000.346 ms; 014 iters.] [2.4690e-06 err.] pagerankDynamic (zero-fill)
+order: 916 size: 20164 {} [00000.349 ms; 014 iters.] [2.4690e-06 err.] pagerankDynamic (1/N-fill)
+order: 916 size: 20164 {} [00000.348 ms; 014 iters.] [2.4690e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 916 size: 20185 {} [00000.574 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 916 size: 20185 {} [00000.347 ms; 014 iters.] [1.4199e-06 err.] pagerankDynamic (zero-fill)
+order: 916 size: 20185 {} [00000.349 ms; 014 iters.] [1.4199e-06 err.] pagerankDynamic (1/N-fill)
+order: 916 size: 20185 {} [00000.345 ms; 014 iters.] [1.4199e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 918 size: 20224 {} [00000.574 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 918 size: 20224 {} [00000.372 ms; 015 iters.] [2.2447e-06 err.] pagerankDynamic (zero-fill)
+order: 918 size: 20224 {} [00000.916 ms; 038 iters.] [4.5883e-06 err.] pagerankDynamic (1/N-fill)
+order: 918 size: 20224 {} [00000.420 ms; 017 iters.] [1.7589e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 918 size: 20259 {} [00000.574 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 918 size: 20259 {} [00000.347 ms; 014 iters.] [2.9810e-06 err.] pagerankDynamic (zero-fill)
+order: 918 size: 20259 {} [00000.349 ms; 014 iters.] [2.9810e-06 err.] pagerankDynamic (1/N-fill)
+order: 918 size: 20259 {} [00000.350 ms; 014 iters.] [2.9810e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 919 size: 20300 {} [00000.575 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 919 size: 20300 {} [00000.349 ms; 014 iters.] [3.0546e-06 err.] pagerankDynamic (zero-fill)
+order: 919 size: 20300 {} [00000.799 ms; 033 iters.] [5.0325e-06 err.] pagerankDynamic (1/N-fill)
+order: 919 size: 20300 {} [00000.373 ms; 015 iters.] [2.7648e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 921 size: 20351 {} [00000.579 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 921 size: 20351 {} [00000.399 ms; 016 iters.] [2.3070e-06 err.] pagerankDynamic (zero-fill)
+order: 921 size: 20351 {} [00000.898 ms; 037 iters.] [5.1094e-06 err.] pagerankDynamic (1/N-fill)
+order: 921 size: 20351 {} [00000.397 ms; 016 iters.] [2.6847e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 922 size: 20391 {} [00000.580 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 922 size: 20391 {} [00000.400 ms; 016 iters.] [3.0724e-06 err.] pagerankDynamic (zero-fill)
+order: 922 size: 20391 {} [00000.805 ms; 033 iters.] [5.2092e-06 err.] pagerankDynamic (1/N-fill)
+order: 922 size: 20391 {} [00000.400 ms; 016 iters.] [2.7314e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 924 size: 20439 {} [00000.581 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 924 size: 20439 {} [00000.376 ms; 015 iters.] [2.7630e-06 err.] pagerankDynamic (zero-fill)
+order: 924 size: 20439 {} [00000.902 ms; 037 iters.] [5.4971e-06 err.] pagerankDynamic (1/N-fill)
+order: 924 size: 20439 {} [00000.400 ms; 016 iters.] [2.1757e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 927 size: 20508 {} [00000.581 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 927 size: 20508 {} [00000.374 ms; 015 iters.] [2.7694e-06 err.] pagerankDynamic (zero-fill)
+order: 927 size: 20508 {} [00000.981 ms; 040 iters.] [4.8240e-06 err.] pagerankDynamic (1/N-fill)
+order: 927 size: 20508 {} [00000.352 ms; 014 iters.] [2.1705e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 930 size: 20543 {} [00000.583 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 930 size: 20543 {} [00000.303 ms; 012 iters.] [3.1537e-06 err.] pagerankDynamic (zero-fill)
+order: 930 size: 20543 {} [00000.980 ms; 040 iters.] [4.9933e-06 err.] pagerankDynamic (1/N-fill)
+order: 930 size: 20543 {} [00000.303 ms; 012 iters.] [2.3883e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 933 size: 20614 {} [00000.586 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 933 size: 20614 {} [00000.452 ms; 018 iters.] [6.1070e-07 err.] pagerankDynamic (zero-fill)
+order: 933 size: 20614 {} [00000.961 ms; 039 iters.] [5.7741e-06 err.] pagerankDynamic (1/N-fill)
+order: 933 size: 20614 {} [00000.379 ms; 015 iters.] [2.6916e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 935 size: 20680 {} [00000.563 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 935 size: 20680 {} [00000.404 ms; 016 iters.] [3.4927e-06 err.] pagerankDynamic (zero-fill)
+order: 935 size: 20680 {} [00000.910 ms; 037 iters.] [5.3957e-06 err.] pagerankDynamic (1/N-fill)
+order: 935 size: 20680 {} [00000.379 ms; 015 iters.] [3.3457e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 937 size: 20724 {} [00000.564 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 937 size: 20724 {} [00000.405 ms; 016 iters.] [3.5756e-06 err.] pagerankDynamic (zero-fill)
+order: 937 size: 20724 {} [00000.937 ms; 038 iters.] [4.2872e-06 err.] pagerankDynamic (1/N-fill)
+order: 937 size: 20724 {} [00000.379 ms; 015 iters.] [3.8195e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 938 size: 20755 {} [00000.566 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 938 size: 20755 {} [00000.407 ms; 016 iters.] [3.2382e-06 err.] pagerankDynamic (zero-fill)
+order: 938 size: 20755 {} [00000.797 ms; 032 iters.] [5.8239e-06 err.] pagerankDynamic (1/N-fill)
+order: 938 size: 20755 {} [00000.406 ms; 016 iters.] [3.1495e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 942 size: 20852 {} [00000.569 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 942 size: 20852 {} [00000.358 ms; 014 iters.] [1.3147e-06 err.] pagerankDynamic (zero-fill)
+order: 942 size: 20852 {} [00001.023 ms; 041 iters.] [5.1210e-06 err.] pagerankDynamic (1/N-fill)
+order: 942 size: 20852 {} [00000.383 ms; 015 iters.] [1.1983e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 942 size: 20907 {} [00000.569 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 942 size: 20907 {} [00000.408 ms; 016 iters.] [3.3246e-06 err.] pagerankDynamic (zero-fill)
+order: 942 size: 20907 {} [00000.409 ms; 016 iters.] [3.3246e-06 err.] pagerankDynamic (1/N-fill)
+order: 942 size: 20907 {} [00000.410 ms; 016 iters.] [3.3246e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 943 size: 20986 {} [00000.574 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 943 size: 20986 {} [00000.410 ms; 016 iters.] [2.9232e-06 err.] pagerankDynamic (zero-fill)
+order: 943 size: 20986 {} [00000.803 ms; 032 iters.] [5.6871e-06 err.] pagerankDynamic (1/N-fill)
+order: 943 size: 20986 {} [00000.386 ms; 015 iters.] [2.7811e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 944 size: 21039 {} [00000.575 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 944 size: 21039 {} [00000.460 ms; 018 iters.] [3.0345e-06 err.] pagerankDynamic (zero-fill)
+order: 944 size: 21039 {} [00000.808 ms; 032 iters.] [5.7167e-06 err.] pagerankDynamic (1/N-fill)
+order: 944 size: 21039 {} [00000.438 ms; 017 iters.] [3.4163e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 946 size: 21129 {} [00000.576 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 946 size: 21129 {} [00000.414 ms; 016 iters.] [2.9182e-06 err.] pagerankDynamic (zero-fill)
+order: 946 size: 21129 {} [00000.935 ms; 037 iters.] [5.2331e-06 err.] pagerankDynamic (1/N-fill)
+order: 946 size: 21129 {} [00000.414 ms; 016 iters.] [2.7991e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 946 size: 21207 {} [00000.577 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 946 size: 21207 {} [00000.414 ms; 016 iters.] [9.1591e-07 err.] pagerankDynamic (zero-fill)
+order: 946 size: 21207 {} [00000.414 ms; 016 iters.] [9.1591e-07 err.] pagerankDynamic (1/N-fill)
+order: 946 size: 21207 {} [00000.414 ms; 016 iters.] [9.1591e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 948 size: 21276 {} [00000.582 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 948 size: 21276 {} [00000.492 ms; 019 iters.] [5.6057e-07 err.] pagerankDynamic (zero-fill)
+order: 948 size: 21276 {} [00000.943 ms; 037 iters.] [5.1404e-06 err.] pagerankDynamic (1/N-fill)
+order: 948 size: 21276 {} [00000.492 ms; 019 iters.] [5.3342e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 948 size: 21338 {} [00000.582 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 948 size: 21338 {} [00000.394 ms; 015 iters.] [2.7241e-06 err.] pagerankDynamic (zero-fill)
+order: 948 size: 21338 {} [00000.394 ms; 015 iters.] [2.7241e-06 err.] pagerankDynamic (1/N-fill)
+order: 948 size: 21338 {} [00000.393 ms; 015 iters.] [2.7241e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 949 size: 21406 {} [00000.583 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 949 size: 21406 {} [00000.418 ms; 016 iters.] [3.3549e-06 err.] pagerankDynamic (zero-fill)
+order: 949 size: 21406 {} [00000.845 ms; 033 iters.] [5.0920e-06 err.] pagerankDynamic (1/N-fill)
+order: 949 size: 21406 {} [00000.418 ms; 016 iters.] [3.2864e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 951 size: 21473 {} [00000.585 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 951 size: 21473 {} [00000.395 ms; 015 iters.] [3.2278e-06 err.] pagerankDynamic (zero-fill)
+order: 951 size: 21473 {} [00000.948 ms; 037 iters.] [4.9761e-06 err.] pagerankDynamic (1/N-fill)
+order: 951 size: 21473 {} [00000.395 ms; 015 iters.] [2.6717e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 953 size: 21559 {} [00000.591 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 953 size: 21559 {} [00000.372 ms; 014 iters.] [6.2083e-07 err.] pagerankDynamic (zero-fill)
+order: 953 size: 21559 {} [00000.957 ms; 037 iters.] [5.1187e-06 err.] pagerankDynamic (1/N-fill)
+order: 953 size: 21559 {} [00000.346 ms; 013 iters.] [1.9542e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 957 size: 21685 {} [00000.593 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 957 size: 21685 {} [00000.451 ms; 017 iters.] [3.0011e-06 err.] pagerankDynamic (zero-fill)
+order: 957 size: 21685 {} [00001.064 ms; 041 iters.] [5.4634e-06 err.] pagerankDynamic (1/N-fill)
+order: 957 size: 21685 {} [00000.450 ms; 017 iters.] [2.9284e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 958 size: 21732 {} [00000.594 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 958 size: 21732 {} [00000.376 ms; 014 iters.] [2.3287e-06 err.] pagerankDynamic (zero-fill)
+order: 958 size: 21732 {} [00000.834 ms; 032 iters.] [5.6149e-06 err.] pagerankDynamic (1/N-fill)
+order: 958 size: 21732 {} [00000.349 ms; 013 iters.] [2.7687e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 959 size: 21793 {} [00000.596 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 959 size: 21793 {} [00000.375 ms; 014 iters.] [1.2593e-06 err.] pagerankDynamic (zero-fill)
+order: 959 size: 21793 {} [00000.862 ms; 033 iters.] [4.8772e-06 err.] pagerankDynamic (1/N-fill)
+order: 959 size: 21793 {} [00000.374 ms; 014 iters.] [1.2229e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 959 size: 21836 {} [00000.598 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 959 size: 21836 {} [00000.429 ms; 016 iters.] [2.6345e-06 err.] pagerankDynamic (zero-fill)
+order: 959 size: 21836 {} [00000.428 ms; 016 iters.] [2.6345e-06 err.] pagerankDynamic (1/N-fill)
+order: 959 size: 21836 {} [00000.428 ms; 016 iters.] [2.6345e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 959 size: 21893 {} [00000.598 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 959 size: 21893 {} [00000.351 ms; 013 iters.] [1.9767e-06 err.] pagerankDynamic (zero-fill)
+order: 959 size: 21893 {} [00000.350 ms; 013 iters.] [1.9767e-06 err.] pagerankDynamic (1/N-fill)
+order: 959 size: 21893 {} [00000.352 ms; 013 iters.] [1.9767e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 960 size: 21970 {} [00000.601 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 960 size: 21970 {} [00000.432 ms; 016 iters.] [2.7493e-06 err.] pagerankDynamic (zero-fill)
+order: 960 size: 21970 {} [00000.871 ms; 033 iters.] [4.8758e-06 err.] pagerankDynamic (1/N-fill)
+order: 960 size: 21970 {} [00000.404 ms; 015 iters.] [3.1060e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 960 size: 22011 {} [00000.604 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 960 size: 22011 {} [00000.432 ms; 016 iters.] [2.9001e-06 err.] pagerankDynamic (zero-fill)
+order: 960 size: 22011 {} [00000.431 ms; 016 iters.] [2.9001e-06 err.] pagerankDynamic (1/N-fill)
+order: 960 size: 22011 {} [00000.432 ms; 016 iters.] [2.9001e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 960 size: 22048 {} [00000.603 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 960 size: 22048 {} [00000.435 ms; 015 iters.] [7.2389e-07 err.] pagerankDynamic (zero-fill)
+order: 960 size: 22048 {} [00000.398 ms; 015 iters.] [7.2389e-07 err.] pagerankDynamic (1/N-fill)
+order: 960 size: 22048 {} [00000.405 ms; 015 iters.] [7.2389e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 962 size: 22107 {} [00000.605 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 962 size: 22107 {} [00000.408 ms; 015 iters.] [7.3483e-07 err.] pagerankDynamic (zero-fill)
+order: 962 size: 22107 {} [00000.981 ms; 037 iters.] [5.3187e-06 err.] pagerankDynamic (1/N-fill)
+order: 962 size: 22107 {} [00000.434 ms; 016 iters.] [6.8081e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 963 size: 22151 {} [00000.606 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 963 size: 22151 {} [00000.433 ms; 016 iters.] [1.3613e-06 err.] pagerankDynamic (zero-fill)
+order: 963 size: 22151 {} [00000.877 ms; 033 iters.] [4.9742e-06 err.] pagerankDynamic (1/N-fill)
+order: 963 size: 22151 {} [00000.407 ms; 015 iters.] [7.4286e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 963 size: 22188 {} [00000.605 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 963 size: 22188 {} [00000.329 ms; 012 iters.] [2.7303e-06 err.] pagerankDynamic (zero-fill)
+order: 963 size: 22188 {} [00000.329 ms; 012 iters.] [2.7303e-06 err.] pagerankDynamic (1/N-fill)
+order: 963 size: 22188 {} [00000.330 ms; 012 iters.] [2.7303e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 963 size: 22242 {} [00000.605 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 963 size: 22242 {} [00000.407 ms; 015 iters.] [1.8516e-06 err.] pagerankDynamic (zero-fill)
+order: 963 size: 22242 {} [00000.409 ms; 015 iters.] [1.8516e-06 err.] pagerankDynamic (1/N-fill)
+order: 963 size: 22242 {} [00000.407 ms; 015 iters.] [1.8516e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 963 size: 22279 {} [00000.607 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 963 size: 22279 {} [00000.329 ms; 012 iters.] [1.7344e-06 err.] pagerankDynamic (zero-fill)
+order: 963 size: 22279 {} [00000.330 ms; 012 iters.] [1.7344e-06 err.] pagerankDynamic (1/N-fill)
+order: 963 size: 22279 {} [00000.330 ms; 012 iters.] [1.7344e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 963 size: 22324 {} [00000.609 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 963 size: 22324 {} [00000.462 ms; 017 iters.] [2.2460e-06 err.] pagerankDynamic (zero-fill)
+order: 963 size: 22324 {} [00000.461 ms; 017 iters.] [2.2460e-06 err.] pagerankDynamic (1/N-fill)
+order: 963 size: 22324 {} [00000.461 ms; 017 iters.] [2.2460e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 963 size: 22390 {} [00000.609 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 963 size: 22390 {} [00000.410 ms; 015 iters.] [3.2346e-06 err.] pagerankDynamic (zero-fill)
+order: 963 size: 22390 {} [00000.409 ms; 015 iters.] [3.2346e-06 err.] pagerankDynamic (1/N-fill)
+order: 963 size: 22390 {} [00000.410 ms; 015 iters.] [3.2346e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 964 size: 22426 {} [00000.609 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 964 size: 22426 {} [00000.410 ms; 015 iters.] [5.2807e-07 err.] pagerankDynamic (zero-fill)
+order: 964 size: 22426 {} [00000.882 ms; 033 iters.] [4.6435e-06 err.] pagerankDynamic (1/N-fill)
+order: 964 size: 22426 {} [00000.410 ms; 015 iters.] [5.5028e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 964 size: 22483 {} [00000.612 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 964 size: 22483 {} [00000.359 ms; 013 iters.] [1.8141e-06 err.] pagerankDynamic (zero-fill)
+order: 964 size: 22483 {} [00000.359 ms; 013 iters.] [1.8141e-06 err.] pagerankDynamic (1/N-fill)
+order: 964 size: 22483 {} [00000.358 ms; 013 iters.] [1.8141e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 964 size: 22538 {} [00000.618 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 964 size: 22538 {} [00000.389 ms; 014 iters.] [2.8389e-06 err.] pagerankDynamic (zero-fill)
+order: 964 size: 22538 {} [00000.389 ms; 014 iters.] [2.8389e-06 err.] pagerankDynamic (1/N-fill)
+order: 964 size: 22538 {} [00000.387 ms; 014 iters.] [2.8389e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 964 size: 22579 {} [00000.616 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 964 size: 22579 {} [00000.364 ms; 013 iters.] [3.0753e-06 err.] pagerankDynamic (zero-fill)
+order: 964 size: 22579 {} [00000.360 ms; 013 iters.] [3.0753e-06 err.] pagerankDynamic (1/N-fill)
+order: 964 size: 22579 {} [00000.361 ms; 013 iters.] [3.0753e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 964 size: 22621 {} [00000.621 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 964 size: 22621 {} [00000.417 ms; 015 iters.] [9.2939e-07 err.] pagerankDynamic (zero-fill)
+order: 964 size: 22621 {} [00000.416 ms; 015 iters.] [9.2939e-07 err.] pagerankDynamic (1/N-fill)
+order: 964 size: 22621 {} [00000.416 ms; 015 iters.] [9.2939e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 965 size: 22660 {} [00000.618 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 965 size: 22660 {} [00000.389 ms; 014 iters.] [8.6888e-07 err.] pagerankDynamic (zero-fill)
+order: 965 size: 22660 {} [00000.869 ms; 032 iters.] [5.6827e-06 err.] pagerankDynamic (1/N-fill)
+order: 965 size: 22660 {} [00000.389 ms; 014 iters.] [7.9611e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 965 size: 22703 {} [00000.619 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 965 size: 22703 {} [00000.416 ms; 015 iters.] [6.2035e-07 err.] pagerankDynamic (zero-fill)
+order: 965 size: 22703 {} [00000.415 ms; 015 iters.] [6.2035e-07 err.] pagerankDynamic (1/N-fill)
+order: 965 size: 22703 {} [00000.417 ms; 015 iters.] [6.2035e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 965 size: 22735 {} [00000.623 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 965 size: 22735 {} [00000.338 ms; 012 iters.] [3.0013e-06 err.] pagerankDynamic (zero-fill)
+order: 965 size: 22735 {} [00000.337 ms; 012 iters.] [3.0013e-06 err.] pagerankDynamic (1/N-fill)
+order: 965 size: 22735 {} [00000.338 ms; 012 iters.] [3.0013e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 965 size: 22769 {} [00000.622 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 965 size: 22769 {} [00000.337 ms; 012 iters.] [1.8734e-06 err.] pagerankDynamic (zero-fill)
+order: 965 size: 22769 {} [00000.337 ms; 012 iters.] [1.8734e-06 err.] pagerankDynamic (1/N-fill)
+order: 965 size: 22769 {} [00000.340 ms; 012 iters.] [1.8734e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 967 size: 22814 {} [00000.624 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 967 size: 22814 {} [00000.391 ms; 014 iters.] [2.5170e-06 err.] pagerankDynamic (zero-fill)
+order: 967 size: 22814 {} [00001.008 ms; 037 iters.] [5.1477e-06 err.] pagerankDynamic (1/N-fill)
+order: 967 size: 22814 {} [00000.392 ms; 014 iters.] [2.3729e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 970 size: 22865 {} [00000.625 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 970 size: 22865 {} [00000.394 ms; 014 iters.] [2.6402e-06 err.] pagerankDynamic (zero-fill)
+order: 970 size: 22865 {} [00001.067 ms; 039 iters.] [5.3346e-06 err.] pagerankDynamic (1/N-fill)
+order: 970 size: 22865 {} [00000.393 ms; 014 iters.] [1.8912e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 970 size: 22928 {} [00000.628 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 970 size: 22928 {} [00000.421 ms; 015 iters.] [2.6460e-06 err.] pagerankDynamic (zero-fill)
+order: 970 size: 22928 {} [00000.421 ms; 015 iters.] [2.6460e-06 err.] pagerankDynamic (1/N-fill)
+order: 970 size: 22928 {} [00000.421 ms; 015 iters.] [2.6460e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 970 size: 22977 {} [00000.628 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 970 size: 22977 {} [00000.395 ms; 014 iters.] [3.2346e-06 err.] pagerankDynamic (zero-fill)
+order: 970 size: 22977 {} [00000.396 ms; 014 iters.] [3.2346e-06 err.] pagerankDynamic (1/N-fill)
+order: 970 size: 22977 {} [00000.395 ms; 014 iters.] [3.2346e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 970 size: 23030 {} [00000.627 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 970 size: 23030 {} [00000.394 ms; 014 iters.] [1.4135e-06 err.] pagerankDynamic (zero-fill)
+order: 970 size: 23030 {} [00000.394 ms; 014 iters.] [1.4135e-06 err.] pagerankDynamic (1/N-fill)
+order: 970 size: 23030 {} [00000.394 ms; 014 iters.] [1.4135e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 970 size: 23060 {} [00000.627 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 970 size: 23060 {} [00000.367 ms; 013 iters.] [2.0413e-06 err.] pagerankDynamic (zero-fill)
+order: 970 size: 23060 {} [00000.367 ms; 013 iters.] [2.0413e-06 err.] pagerankDynamic (1/N-fill)
+order: 970 size: 23060 {} [00000.368 ms; 013 iters.] [2.0413e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 970 size: 23132 {} [00000.629 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 970 size: 23132 {} [00000.422 ms; 015 iters.] [4.0597e-07 err.] pagerankDynamic (zero-fill)
+order: 970 size: 23132 {} [00000.422 ms; 015 iters.] [4.0597e-07 err.] pagerankDynamic (1/N-fill)
+order: 970 size: 23132 {} [00000.422 ms; 015 iters.] [4.0597e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 971 size: 23175 {} [00000.631 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 971 size: 23175 {} [00000.370 ms; 013 iters.] [7.9889e-07 err.] pagerankDynamic (zero-fill)
+order: 971 size: 23175 {} [00000.916 ms; 033 iters.] [4.9095e-06 err.] pagerankDynamic (1/N-fill)
+order: 971 size: 23175 {} [00000.371 ms; 013 iters.] [6.3740e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 972 size: 23209 {} [00000.631 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 972 size: 23209 {} [00000.369 ms; 013 iters.] [5.0988e-07 err.] pagerankDynamic (zero-fill)
+order: 972 size: 23209 {} [00000.888 ms; 032 iters.] [5.7239e-06 err.] pagerankDynamic (1/N-fill)
+order: 972 size: 23209 {} [00000.370 ms; 013 iters.] [3.4879e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 972 size: 23249 {} [00000.636 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 972 size: 23249 {} [00000.372 ms; 013 iters.] [1.8134e-06 err.] pagerankDynamic (zero-fill)
+order: 972 size: 23249 {} [00000.371 ms; 013 iters.] [1.8134e-06 err.] pagerankDynamic (1/N-fill)
+order: 972 size: 23249 {} [00000.372 ms; 013 iters.] [1.8134e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 972 size: 23303 {} [00000.633 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 972 size: 23303 {} [00000.426 ms; 015 iters.] [1.7766e-06 err.] pagerankDynamic (zero-fill)
+order: 972 size: 23303 {} [00000.425 ms; 015 iters.] [1.7766e-06 err.] pagerankDynamic (1/N-fill)
+order: 972 size: 23303 {} [00000.427 ms; 015 iters.] [1.7766e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 972 size: 23360 {} [00000.637 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 972 size: 23360 {} [00000.456 ms; 016 iters.] [3.0111e-06 err.] pagerankDynamic (zero-fill)
+order: 972 size: 23360 {} [00000.455 ms; 016 iters.] [3.0111e-06 err.] pagerankDynamic (1/N-fill)
+order: 972 size: 23360 {} [00000.456 ms; 016 iters.] [3.0111e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 974 size: 23412 {} [00000.640 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 974 size: 23412 {} [00000.458 ms; 016 iters.] [2.2517e-06 err.] pagerankDynamic (zero-fill)
+order: 974 size: 23412 {} [00001.034 ms; 037 iters.] [5.0421e-06 err.] pagerankDynamic (1/N-fill)
+order: 974 size: 23412 {} [00000.430 ms; 015 iters.] [2.4019e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 975 size: 23464 {} [00000.641 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 975 size: 23464 {} [00000.458 ms; 016 iters.] [3.2802e-06 err.] pagerankDynamic (zero-fill)
+order: 975 size: 23464 {} [00000.900 ms; 032 iters.] [5.6390e-06 err.] pagerankDynamic (1/N-fill)
+order: 975 size: 23464 {} [00000.458 ms; 016 iters.] [3.2043e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 976 size: 23525 {} [00000.643 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 976 size: 23525 {} [00000.375 ms; 013 iters.] [2.8831e-06 err.] pagerankDynamic (zero-fill)
+order: 976 size: 23525 {} [00000.904 ms; 032 iters.] [5.5111e-06 err.] pagerankDynamic (1/N-fill)
+order: 976 size: 23525 {} [00000.376 ms; 013 iters.] [2.6400e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 976 size: 23589 {} [00000.643 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 976 size: 23589 {} [00000.404 ms; 014 iters.] [7.0293e-07 err.] pagerankDynamic (zero-fill)
+order: 976 size: 23589 {} [00000.404 ms; 014 iters.] [7.0293e-07 err.] pagerankDynamic (1/N-fill)
+order: 976 size: 23589 {} [00000.405 ms; 014 iters.] [7.0293e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 976 size: 23625 {} [00000.642 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 976 size: 23625 {} [00000.377 ms; 013 iters.] [2.7879e-06 err.] pagerankDynamic (zero-fill)
+order: 976 size: 23625 {} [00000.377 ms; 013 iters.] [2.7879e-06 err.] pagerankDynamic (1/N-fill)
+order: 976 size: 23625 {} [00000.375 ms; 013 iters.] [2.7879e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 976 size: 23661 {} [00000.644 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 976 size: 23661 {} [00000.377 ms; 013 iters.] [9.7080e-07 err.] pagerankDynamic (zero-fill)
+order: 976 size: 23661 {} [00000.377 ms; 013 iters.] [9.7080e-07 err.] pagerankDynamic (1/N-fill)
+order: 976 size: 23661 {} [00000.377 ms; 013 iters.] [9.7080e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 976 size: 23713 {} [00000.644 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 976 size: 23713 {} [00000.405 ms; 014 iters.] [2.4740e-06 err.] pagerankDynamic (zero-fill)
+order: 976 size: 23713 {} [00000.404 ms; 014 iters.] [2.4740e-06 err.] pagerankDynamic (1/N-fill)
+order: 976 size: 23713 {} [00000.406 ms; 014 iters.] [2.4740e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 977 size: 23795 {} [00000.644 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 977 size: 23795 {} [00000.432 ms; 015 iters.] [1.0438e-06 err.] pagerankDynamic (zero-fill)
+order: 977 size: 23795 {} [00000.933 ms; 033 iters.] [5.0399e-06 err.] pagerankDynamic (1/N-fill)
+order: 977 size: 23795 {} [00000.489 ms; 017 iters.] [2.6551e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 977 size: 23846 {} [00000.648 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 977 size: 23846 {} [00000.462 ms; 016 iters.] [8.4574e-07 err.] pagerankDynamic (zero-fill)
+order: 977 size: 23846 {} [00000.461 ms; 016 iters.] [8.4574e-07 err.] pagerankDynamic (1/N-fill)
+order: 977 size: 23846 {} [00000.463 ms; 016 iters.] [8.4574e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 977 size: 23890 {} [00000.647 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 977 size: 23890 {} [00000.520 ms; 018 iters.] [4.4769e-07 err.] pagerankDynamic (zero-fill)
+order: 977 size: 23890 {} [00000.520 ms; 018 iters.] [4.4769e-07 err.] pagerankDynamic (1/N-fill)
+order: 977 size: 23890 {} [00000.519 ms; 018 iters.] [4.4769e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 978 size: 23936 {} [00000.647 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 978 size: 23936 {} [00000.464 ms; 016 iters.] [2.1024e-06 err.] pagerankDynamic (zero-fill)
+order: 978 size: 23936 {} [00000.911 ms; 032 iters.] [5.3222e-06 err.] pagerankDynamic (1/N-fill)
+order: 978 size: 23936 {} [00000.464 ms; 016 iters.] [2.0607e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 978 size: 23977 {} [00000.650 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 978 size: 23977 {} [00000.409 ms; 014 iters.] [2.9909e-06 err.] pagerankDynamic (zero-fill)
+order: 978 size: 23977 {} [00000.409 ms; 014 iters.] [2.9909e-06 err.] pagerankDynamic (1/N-fill)
+order: 978 size: 23977 {} [00000.408 ms; 014 iters.] [2.9909e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 978 size: 24016 {} [00000.652 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 978 size: 24016 {} [00000.465 ms; 016 iters.] [6.6767e-07 err.] pagerankDynamic (zero-fill)
+order: 978 size: 24016 {} [00000.464 ms; 016 iters.] [6.6767e-07 err.] pagerankDynamic (1/N-fill)
+order: 978 size: 24016 {} [00000.465 ms; 016 iters.] [6.6767e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 978 size: 24048 {} [00000.650 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 978 size: 24048 {} [00000.324 ms; 011 iters.] [2.5439e-06 err.] pagerankDynamic (zero-fill)
+order: 978 size: 24048 {} [00000.324 ms; 011 iters.] [2.5439e-06 err.] pagerankDynamic (1/N-fill)
+order: 978 size: 24048 {} [00000.324 ms; 011 iters.] [2.5439e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 980 size: 24103 {} [00000.655 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 980 size: 24103 {} [00000.441 ms; 015 iters.] [7.6492e-07 err.] pagerankDynamic (zero-fill)
+order: 980 size: 24103 {} [00001.062 ms; 037 iters.] [4.9497e-06 err.] pagerankDynamic (1/N-fill)
+order: 980 size: 24103 {} [00000.440 ms; 015 iters.] [7.0475e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 980 size: 24137 {} [00000.656 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 980 size: 24137 {} [00000.383 ms; 013 iters.] [1.3856e-06 err.] pagerankDynamic (zero-fill)
+order: 980 size: 24137 {} [00000.383 ms; 013 iters.] [1.3856e-06 err.] pagerankDynamic (1/N-fill)
+order: 980 size: 24137 {} [00000.383 ms; 013 iters.] [1.3856e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 980 size: 24157 {} [00000.660 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 980 size: 24157 {} [00000.385 ms; 013 iters.] [2.5038e-06 err.] pagerankDynamic (zero-fill)
+order: 980 size: 24157 {} [00000.384 ms; 013 iters.] [2.5038e-06 err.] pagerankDynamic (1/N-fill)
+order: 980 size: 24157 {} [00000.384 ms; 013 iters.] [2.5038e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 980 size: 24191 {} [00000.657 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 980 size: 24191 {} [00000.441 ms; 015 iters.] [2.7830e-06 err.] pagerankDynamic (zero-fill)
+order: 980 size: 24191 {} [00000.442 ms; 015 iters.] [2.7830e-06 err.] pagerankDynamic (1/N-fill)
+order: 980 size: 24191 {} [00000.442 ms; 015 iters.] [2.7830e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 980 size: 24225 {} [00000.658 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 980 size: 24225 {} [00000.385 ms; 013 iters.] [1.0345e-06 err.] pagerankDynamic (zero-fill)
+order: 980 size: 24225 {} [00000.385 ms; 013 iters.] [1.0345e-06 err.] pagerankDynamic (1/N-fill)
+order: 980 size: 24225 {} [00000.385 ms; 013 iters.] [1.0345e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 981 size: 24269 {} [00000.658 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 981 size: 24269 {} [00000.413 ms; 014 iters.] [1.5234e-06 err.] pagerankDynamic (zero-fill)
+order: 981 size: 24269 {} [00000.926 ms; 032 iters.] [5.6795e-06 err.] pagerankDynamic (1/N-fill)
+order: 981 size: 24269 {} [00000.442 ms; 015 iters.] [1.1893e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 981 size: 24323 {} [00000.659 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 981 size: 24323 {} [00000.358 ms; 012 iters.] [8.0139e-07 err.] pagerankDynamic (zero-fill)
+order: 981 size: 24323 {} [00000.357 ms; 012 iters.] [8.0139e-07 err.] pagerankDynamic (1/N-fill)
+order: 981 size: 24323 {} [00000.357 ms; 012 iters.] [8.0139e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 981 size: 24352 {} [00000.662 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 981 size: 24352 {} [00000.359 ms; 012 iters.] [7.3828e-07 err.] pagerankDynamic (zero-fill)
+order: 981 size: 24352 {} [00000.359 ms; 012 iters.] [7.3828e-07 err.] pagerankDynamic (1/N-fill)
+order: 981 size: 24352 {} [00000.358 ms; 012 iters.] [7.3828e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 981 size: 24375 {} [00000.665 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 981 size: 24375 {} [00000.445 ms; 015 iters.] [1.5021e-06 err.] pagerankDynamic (zero-fill)
+order: 981 size: 24375 {} [00000.445 ms; 015 iters.] [1.5021e-06 err.] pagerankDynamic (1/N-fill)
+order: 981 size: 24375 {} [00000.445 ms; 015 iters.] [1.5021e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 981 size: 24417 {} [00000.664 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 981 size: 24417 {} [00000.360 ms; 012 iters.] [1.9998e-06 err.] pagerankDynamic (zero-fill)
+order: 981 size: 24417 {} [00000.359 ms; 012 iters.] [1.9998e-06 err.] pagerankDynamic (1/N-fill)
+order: 981 size: 24417 {} [00000.358 ms; 012 iters.] [1.9998e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 983 size: 24461 {} [00000.667 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 983 size: 24461 {} [00000.447 ms; 015 iters.] [1.6467e-06 err.] pagerankDynamic (zero-fill)
+order: 983 size: 24461 {} [00001.077 ms; 037 iters.] [5.2717e-06 err.] pagerankDynamic (1/N-fill)
+order: 983 size: 24461 {} [00000.388 ms; 013 iters.] [7.2387e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 983 size: 24521 {} [00000.663 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 983 size: 24521 {} [00000.359 ms; 012 iters.] [1.4073e-06 err.] pagerankDynamic (zero-fill)
+order: 983 size: 24521 {} [00000.358 ms; 012 iters.] [1.4073e-06 err.] pagerankDynamic (1/N-fill)
+order: 983 size: 24521 {} [00000.358 ms; 012 iters.] [1.4073e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 983 size: 24568 {} [00000.666 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 983 size: 24568 {} [00000.417 ms; 014 iters.] [2.6240e-06 err.] pagerankDynamic (zero-fill)
+order: 983 size: 24568 {} [00000.417 ms; 014 iters.] [2.6240e-06 err.] pagerankDynamic (1/N-fill)
+order: 983 size: 24568 {} [00000.417 ms; 014 iters.] [2.6240e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 984 size: 24614 {} [00000.666 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 984 size: 24614 {} [00000.360 ms; 012 iters.] [2.1388e-06 err.] pagerankDynamic (zero-fill)
+order: 984 size: 24614 {} [00000.937 ms; 032 iters.] [5.9278e-06 err.] pagerankDynamic (1/N-fill)
+order: 984 size: 24614 {} [00000.361 ms; 012 iters.] [1.8992e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 984 size: 24645 {} [00000.668 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 984 size: 24645 {} [00000.477 ms; 016 iters.] [6.5469e-07 err.] pagerankDynamic (zero-fill)
+order: 984 size: 24645 {} [00000.477 ms; 016 iters.] [6.5469e-07 err.] pagerankDynamic (1/N-fill)
+order: 984 size: 24645 {} [00000.477 ms; 016 iters.] [6.5469e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 984 size: 24692 {} [00000.671 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 984 size: 24692 {} [00000.391 ms; 013 iters.] [8.6654e-07 err.] pagerankDynamic (zero-fill)
+order: 984 size: 24692 {} [00000.391 ms; 013 iters.] [8.6654e-07 err.] pagerankDynamic (1/N-fill)
+order: 984 size: 24692 {} [00000.391 ms; 013 iters.] [8.6654e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 986 size: 24731 {} [00000.700 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 986 size: 24731 {} [00000.362 ms; 012 iters.] [7.9190e-07 err.] pagerankDynamic (zero-fill)
+order: 986 size: 24731 {} [00001.088 ms; 037 iters.] [5.2779e-06 err.] pagerankDynamic (1/N-fill)
+order: 986 size: 24731 {} [00000.392 ms; 013 iters.] [6.7543e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 986 size: 24774 {} [00000.673 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 986 size: 24774 {} [00000.423 ms; 014 iters.] [2.8621e-06 err.] pagerankDynamic (zero-fill)
+order: 986 size: 24774 {} [00000.422 ms; 014 iters.] [2.8621e-06 err.] pagerankDynamic (1/N-fill)
+order: 986 size: 24774 {} [00000.421 ms; 014 iters.] [2.8621e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 986 size: 24816 {} [00000.675 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 986 size: 24816 {} [00000.393 ms; 013 iters.] [2.3934e-06 err.] pagerankDynamic (zero-fill)
+order: 986 size: 24816 {} [00000.394 ms; 013 iters.] [2.3934e-06 err.] pagerankDynamic (1/N-fill)
+order: 986 size: 24816 {} [00000.394 ms; 013 iters.] [2.3934e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 986 size: 24867 {} [00000.674 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 986 size: 24867 {} [00000.422 ms; 014 iters.] [2.9044e-06 err.] pagerankDynamic (zero-fill)
+order: 986 size: 24867 {} [00000.424 ms; 014 iters.] [2.9044e-06 err.] pagerankDynamic (1/N-fill)
+order: 986 size: 24867 {} [00000.422 ms; 014 iters.] [2.9044e-06 err.] pagerankDynamic (scaled,1/N-fill)
+order: 986 size: 24919 {} [00000.705 ms; 024 iters.] [0.0000e+00 err.] pagerankStatic
+order: 986 size: 24919 {} [00000.424 ms; 014 iters.] [7.6859e-07 err.] pagerankDynamic (zero-fill)
+order: 986 size: 24919 {} [00000.423 ms; 014 iters.] [7.6859e-07 err.] pagerankDynamic (1/N-fill)
+order: 986 size: 24919 {} [00000.425 ms; 014 iters.] [7.6859e-07 err.] pagerankDynamic (scaled,1/N-fill)
+order: 986 size: 24929 {} [00000.675 ms; 023 iters.] [0.0000e+00 err.] pagerankStatic
+order: 986 size: 24929 {} [00000.365 ms; 012 iters.] [3.0986e-06 err.] pagerankDynamic (zero-fill)
+order: 986 size: 24929 {} [00000.365 ms; 012 iters.] [3.0986e-06 err.] pagerankDynamic (1/N-fill)
+order: 986 size: 24929 {} [00000.366 ms; 012 iters.] [3.0986e-06 err.] pagerankDynamic (scaled,1/N-fill)
