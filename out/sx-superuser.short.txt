@@ -1,0 +1,19 @@
+Using graph sx-superuser.txt ...
+Temporal edges: 1443340
+order: 194085 size: 924886 {}
+
+# Batch size 1e+6
+[00194.001 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
+[00205.088 ms; 060 iters.] [3.0277e-6 err.] pagerankDynamic
+
+# Batch size 1e+5
+[00152.740 ms; 054 iters.] [0.0000e+0 err.] pagerankStatic
+[00156.569 ms; 056 iters.] [7.1794e-6 err.] pagerankDynamic
+
+# Batch size 1e+4
+[00145.364 ms; 054 iters.] [0.0000e+0 err.] pagerankStatic
+[00119.691 ms; 047 iters.] [7.8789e-6 err.] pagerankDynamic
+
+# Batch size 1e+3
+[00145.708 ms; 054 iters.] [0.0000e+0 err.] pagerankStatic
+[00086.217 ms; 035 iters.] [9.5531e-6 err.] pagerankDynamic

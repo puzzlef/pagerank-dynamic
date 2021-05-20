@@ -1,0 +1,19 @@
+Using graph wiki-talk-temporal.txt ...
+Temporal edges: 7833141
+order: 1140149 size: 3309592 {}
+
+# Batch size 1e+6
+[00408.373 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
+[00435.189 ms; 060 iters.] [5.8216e-6 err.] pagerankDynamic
+
+# Batch size 1e+5
+[00360.306 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
+[00319.501 ms; 051 iters.] [1.0180e-4 err.] pagerankDynamic
+
+# Batch size 1e+4
+[00338.425 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
+[00220.896 ms; 038 iters.] [7.3697e-5 err.] pagerankDynamic
+
+# Batch size 1e+3
+[00347.279 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
+[00139.173 ms; 024 iters.] [3.1690e-5 err.] pagerankDynamic
