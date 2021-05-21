@@ -72,7 +72,8 @@ $ ./a.out ~/data/email-Eu-core-temporal.txt
 # [00000.541 ms; 022 iters.] [1.5049e-6 err.] pagerankDynamic
 ```
 
-[![](https://i.imgur.com/r41PgWd.png)][cool charts]
+[![](https://i.imgur.com/TmvAX7l.png)][cool charts]
+[![](https://i.imgur.com/5vUMTH3.png)][cool charts]
 
 <br>
 <br>
@@ -143,7 +144,8 @@ $ ./a.out ~/data/wiki-talk-temporal.txt
 # [00691.425 ms; 059 iters.] [2.5494e-6 err.] pagerankDynamic
 ```
 
-[![](https://i.imgur.com/sVzmhnz.png)][cool charts]
+[![](https://i.imgur.com/D49BRLA.png)][cool charts]
+[![](https://i.imgur.com/IESSIQ9.png)][cool charts]
 
 <br>
 <br>
@@ -162,6 +164,6 @@ $ ./a.out ~/data/wiki-talk-temporal.txt
 [pull]: https://github.com/puzzlef/pagerank-push-vs-pull
 [CSR]: https://github.com/puzzlef/pagerank-class-vs-csr
 [scaled-fill]: https://github.com/puzzlef/pagerank-dynamic-adjust-ranks
-[cool charts]: https://docs.google.com/spreadsheets/d/1avE7QFCxFSRJw2dr6A5QeX8rSQxSKr10CE8_IiHCBdk/edit?usp=sharing
+[cool charts]: https://docs.google.com/spreadsheets/d/1b6fuE9dRbAbQanCl2rDXc-K2xpIUSg7Mw_dzVnFbkD8/edit?usp=sharing
 ["graphs"]: https://github.com/puzzlef/graphs
 [SuiteSparse Matrix Collection]: https://suitesparse-collection-website.herokuapp.com
