@@ -9,12 +9,12 @@ graph with multiple batch sizes. Batch sizes are always an order of 10. New
 edges are incrementally added to the graph batch-by-batch until the entire
 graph is complete. The speedup of dynamic pagerank tends to **~2x** of static
 pagerank when batch size is **1000**. I was able to get [cool charts] for these
-huge logs, showing the comparision.
+logs using [sheets], showing the comparision.
 
 All outputs (including shortened versions) are saved in [out/](out/) and
 outputs for `email-Eu-core-temporal` and `wiki-talk-temporal` are listed here.
-The input data used for this experiment is available at ["graphs"] (for small
-ones), and the [SuiteSparse Matrix Collection].
+The input data used for this experiment is available at the
+[Stanford Large Network Dataset Collection].
 
 <br>
 
@@ -72,80 +72,88 @@ $ ./a.out ~/data/email-Eu-core-temporal.txt
 # [00000.541 ms; 022 iters.] [1.5049e-6 err.] pagerankDynamic
 ```
 
-[![](https://i.imgur.com/TmvAX7l.png)][cool charts]
-[![](https://i.imgur.com/5vUMTH3.png)][cool charts]
+[![](https://i.imgur.com/4tWWPOT.gif)][sheets]
+[![](https://i.imgur.com/VAHYT9C.gif)][sheets]
 
 <br>
 <br>
 
 ```bash
 $ g++ -O3 main.cxx
-$ ./a.out ~/data/wiki-talk-temporal.txt
+$ ./a.out ~/data/sx-stackoverflow.txt
 
 # (SHORTENED)
-# Using graph wiki-talk-temporal.txt ...
-# Temporal edges: 7833141
-# order: 1140149 size: 3309592 {}
+# Using graph sx-stackoverflow.txt ...
+# Temporal edges: 63497051
+# order: 2601977 size: 36233450 {}
 #
 # # Batch size 1e+0
-# [00340.903 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
-# [00009.966 ms; 002 iters.] [1.1367e-6 err.] pagerankDynamic
+# [04657.920 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
+# [00099.498 ms; 001 iters.] [9.6450e-7 err.] pagerankDynamic
 #
 # # Batch size 5e+0
-# [00341.358 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
-# [00018.500 ms; 004 iters.] [2.8356e-6 err.] pagerankDynamic
+# [04634.926 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
+# [00135.350 ms; 002 iters.] [1.4472e-6 err.] pagerankDynamic
 #
 # # Batch size 1e+1
-# [00340.824 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
-# [00024.168 ms; 005 iters.] [5.3977e-6 err.] pagerankDynamic
+# [04648.379 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
+# [00179.794 ms; 003 iters.] [1.9689e-6 err.] pagerankDynamic
 #
 # # Batch size 5e+1
-# [00341.422 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
-# [00046.705 ms; 010 iters.] [9.2519e-6 err.] pagerankDynamic
+# [04628.978 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
+# [00341.603 ms; 006 iters.] [3.2815e-6 err.] pagerankDynamic
 #
 # # Batch size 1e+2
-# [00342.834 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
-# [00060.702 ms; 012 iters.] [9.8899e-6 err.] pagerankDynamic
+# [04609.713 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
+# [00414.303 ms; 007 iters.] [4.0053e-6 err.] pagerankDynamic
 #
 # # Batch size 5e+2
-# [00338.967 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
-# [00109.049 ms; 020 iters.] [2.7572e-5 err.] pagerankDynamic
+# [04609.833 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
+# [00685.551 ms; 011 iters.] [5.7854e-6 err.] pagerankDynamic
 #
 # # Batch size 1e+3
-# [00338.164 ms; 055 iters.] [0.0000e+0 err.] pagerankStatic
-# [00131.742 ms; 024 iters.] [9.9510e-6 err.] pagerankDynamic
+# [04628.448 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
+# [00872.455 ms; 014 iters.] [7.5399e-6 err.] pagerankDynamic
 #
 # # Batch size 5e+3
-# [00343.487 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
-# [00193.201 ms; 034 iters.] [6.7188e-5 err.] pagerankDynamic
+# [04612.280 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
+# [01532.175 ms; 022 iters.] [7.3422e-6 err.] pagerankDynamic
 #
 # # Batch size 1e+4
-# [00341.069 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
-# [00220.372 ms; 038 iters.] [3.3175e-4 err.] pagerankDynamic
+# [04636.627 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
+# [01825.588 ms; 026 iters.] [7.2866e-6 err.] pagerankDynamic
 #
 # # Batch size 5e+4
-# [00344.286 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
-# [00278.292 ms; 047 iters.] [8.0925e-5 err.] pagerankDynamic
+# [04690.433 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
+# [02556.521 ms; 034 iters.] [7.1117e-6 err.] pagerankDynamic
 #
 # # Batch size 1e+5
-# [00345.874 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
-# [00307.791 ms; 051 iters.] [1.0181e-4 err.] pagerankDynamic
+# [04637.379 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
+# [02821.770 ms; 038 iters.] [1.1516e-5 err.] pagerankDynamic
 #
 # # Batch size 5e+5
-# [00372.870 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
-# [00381.515 ms; 058 iters.] [7.1419e-6 err.] pagerankDynamic
+# [04606.930 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
+# [03491.683 ms; 046 iters.] [7.5847e-6 err.] pagerankDynamic
 #
 # # Batch size 1e+6
-# [00404.854 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
-# [00431.128 ms; 060 iters.] [5.8216e-6 err.] pagerankDynamic
+# [04590.247 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
+# [03825.545 ms; 050 iters.] [7.3622e-6 err.] pagerankDynamic
 #
 # # Batch size 5e+6
-# [00663.725 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
-# [00691.425 ms; 059 iters.] [2.5494e-6 err.] pagerankDynamic
+# [04789.445 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
+# [04697.050 ms; 056 iters.] [6.9308e-6 err.] pagerankDynamic
+#
+# # Batch size 1e+7
+# [05223.199 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
+# [05183.780 ms; 057 iters.] [6.0776e-6 err.] pagerankDynamic
+#
+# # Batch size 5e+7
+# [06678.227 ms; 058 iters.] [0.0000e+0 err.] pagerankStatic
+# [06742.952 ms; 059 iters.] [3.3479e-6 err.] pagerankDynamic
 ```
 
-[![](https://i.imgur.com/D49BRLA.png)][cool charts]
-[![](https://i.imgur.com/IESSIQ9.png)][cool charts]
+[![](https://i.imgur.com/3zo6nzy.gif)][sheets]
+[![](https://i.imgur.com/v5y3qiY.gif)][sheets]
 
 <br>
 <br>
@@ -154,7 +162,7 @@ $ ./a.out ~/data/wiki-talk-temporal.txt
 ## References
 
 - [PageRank Algorithm, Mining massive Datasets (CS246), Stanford University](http://snap.stanford.edu/class/cs246-videos-2019/lec9_190205-cs246-720.mp4)
-- [SuiteSparse Matrix Collection]
+- [Stanford Large Network Dataset Collection]
 
 <br>
 <br>
@@ -164,6 +172,7 @@ $ ./a.out ~/data/wiki-talk-temporal.txt
 [pull]: https://github.com/puzzlef/pagerank-push-vs-pull
 [CSR]: https://github.com/puzzlef/pagerank-class-vs-csr
 [scaled-fill]: https://github.com/puzzlef/pagerank-dynamic-adjust-ranks
-[cool charts]: https://docs.google.com/spreadsheets/d/1b6fuE9dRbAbQanCl2rDXc-K2xpIUSg7Mw_dzVnFbkD8/edit?usp=sharing
+[cool charts]: https://photos.app.goo.gl/dcQWY7z1HEdPAqre8
+[sheets]: https://docs.google.com/spreadsheets/d/1b6fuE9dRbAbQanCl2rDXc-K2xpIUSg7Mw_dzVnFbkD8/edit?usp=sharing
 ["graphs"]: https://github.com/puzzlef/graphs
-[SuiteSparse Matrix Collection]: https://suitesparse-collection-website.herokuapp.com
+[Stanford Large Network Dataset Collection]: http://snap.stanford.edu/data/index.html
