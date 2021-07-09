@@ -1,24 +1,25 @@
-Comparing strategies to update ranks for dynamic PageRank ([pull], [CSR]).
+Comparing strategies to **update ranks** for **dynamic PageRank** ([pull], [CSR]).
 
 This experiment was for comparing the performance between:
-1. Find static pagerank of updated graph.
-2. Find dynamic pagerank, using **zero-fill** for new vertices.
-3. Find dynamic pagerank, using **1/N** for new vertices.
-4. Find dynamic pagerank, **scaling** old vertices, and using **1/N** for new vertices.
+1. Find **static** pagerank of updated graph.
+2. Find **dynamic** pagerank, using **zero-fill** for new vertices.
+3. Find **dynamic** pagerank, using **1/N** for new vertices.
+4. Find **dynamic** pagerank, **scaling** old vertices, and using **1/N** for new vertices.
 
 Each technique was attempted on different temporal graphs, updating each graph
 with multiple batch sizes. Batch sizes are always an order of 10. For each
 batch size, static as well as the 3 dynamic rank adjust methods are tested.
 Each rank adjust method (for dynamic pagerank) can have a different number
 of iterations to convergence. The **4th approach**, which does **scaling**
-and uses **1/N** for new vertices seems to perform best. It is also seen
+and uses **1/N** for new vertices **seems to perform best**. It is also seen
 that as batch size increases, the convergence iterations (time) of dynamic
 pagerank increases. In some cases it even becomes slower than static pagerank.
 
-All outputs (including shortened versions) are saved in [out/](out/) and
-outputs for `email-Eu-core-temporal` and `wiki-talk-temporal` are listed here.
-The input data used for this experiment is available at the
-[Stanford Large Network Dataset Collection].
+All outputs are saved in [out](out/) and a small part of the output is listed
+here. Some [charts] are also included below, generated from [sheets]. The input
+data used for this experiment is available at the
+[Stanford Large Network Dataset Collection]. This experiment was done with
+guidance from [Prof. Dip Sankar Banerjee] and [Prof. Kishore Kothapalli].
 
 <br>
 
@@ -86,13 +87,31 @@ $ ./a.out ~/data/wiki-talk-temporal.txt
 # [00136.688 ms; 024 iters.] [3.5643e-5 err.] pagerankDynamic (scaled,1/N-fill)
 ```
 
+[![](https://i.imgur.com/YCAJM9N.gif)][sheets]
+[![](https://i.imgur.com/3EsjRoP.gif)][sheets]
+[![](https://i.imgur.com/NPfMGvK.gif)][sheets]
+[![](https://i.imgur.com/ZagUs8j.gif)][sheets]
+[![](https://i.imgur.com/hY0lbwp.gif)][sheets]
+[![](https://i.imgur.com/cOPDqJ1.gif)][sheets]
+[![](https://i.imgur.com/ByeWnLj.gif)][sheets]
+[![](https://i.imgur.com/raRd2DQ.gif)][sheets]
+[![](https://i.imgur.com/he9EmDH.gif)][sheets]
+[![](https://i.imgur.com/DXgiQGo.gif)][sheets]
+[![](https://i.imgur.com/iSmsYfl.gif)][sheets]
+[![](https://i.imgur.com/p20UpBM.gif)][sheets]
+[![](https://i.imgur.com/EGBkFUf.gif)][sheets]
+[![](https://i.imgur.com/k0iwdki.gif)][sheets]
+
+[![](https://i.imgur.com/5wFvGKR.gif)][sheets]
+[![](https://i.imgur.com/9kEUPiK.gif)][sheets]
+
 <br>
 <br>
 
 
 ## References
 
-- [PageRank Algorithm, Mining massive Datasets (CS246), Stanford University](http://snap.stanford.edu/class/cs246-videos-2019/lec9_190205-cs246-720.mp4)
+- [PageRank Algorithm, Mining massive Datasets (CS246), Stanford University](https://www.youtube.com/watch?v=ke9g8hB0MEo)
 - [Stanford Large Network Dataset Collection]
 
 <br>
@@ -100,6 +119,10 @@ $ ./a.out ~/data/wiki-talk-temporal.txt
 
 [![](https://i.imgur.com/sNyLL3K.jpg)](https://www.youtube.com/watch?v=SoiKp2oSUl0)
 
+[Prof. Dip Sankar Banerjee]: https://sites.google.com/site/dipsankarban/
+[Prof. Kishore Kothapalli]: https://cstar.iiit.ac.in/~kkishore/
+[Stanford Large Network Dataset Collection]: http://snap.stanford.edu/data/index.html
 [pull]: https://github.com/puzzlef/pagerank-push-vs-pull
 [CSR]: https://github.com/puzzlef/pagerank-class-vs-csr
-[Stanford Large Network Dataset Collection]: http://snap.stanford.edu/data/index.html
+[charts]: https://photos.app.goo.gl/7vjL6WDN5hY8wWjM9
+[sheets]: https://docs.google.com/spreadsheets/d/1ABVf_qu8h8_7OE2X1WbVo9vI95kSPtRr5LB2_7OAMSo/edit?usp=sharing
