@@ -73,5 +73,6 @@ int main(int argc, char **argv) {
   printf("Using graph %s ...\n", file);
   string d = readFile(file);
   runPagerank(d, show);
+  printf("\n");
   return 0;
 }

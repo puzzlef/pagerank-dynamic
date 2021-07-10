@@ -4,78 +4,18 @@ This experiment was for comparing the performance between:
 1. Find static pagerank of updated graph.
 2. Find dynamic pagerank, **scaling** old vertices, and using **1/N** for new vertices.
 
-Both techniques were attempted on different temporal graphs, updating each
-graph with multiple batch sizes. Batch sizes are always an order of 10. New
-edges are incrementally added to the graph batch-by-batch until the entire
-graph is complete. The speedup of dynamic pagerank tends to **~2x** of static
-pagerank when batch size is **1000**. I was able to get [cool charts] for these
-logs using [sheets], showing the comparision.
+Both techniques were attempted on a number of temporal graphs, running each
+with multiple batch sizes (`1`, `5`, `10`, `50`, ...). New edges are
+incrementally added to the graph batch-by-batch until the entire graph is
+complete. **Dynamic pagerank** is clearly **faster** than *static pagerank*
+for most cases.
 
-All outputs (including shortened versions) are saved in [out/](out/) and
-outputs for `email-Eu-core-temporal` and `wiki-talk-temporal` are listed here.
-The input data used for this experiment is available at the
-[Stanford Large Network Dataset Collection].
+All outputs are saved in [out](out/) and a small part of the output is listed
+here. Some [charts] are also included below, generated from [sheets]. The input
+data used for this experiment is available at the
+[Stanford Large Network Dataset Collection]. This experiment was done with
+guidance from [Prof. Dip Sankar Banerjee] and [Prof. Kishore Kothapalli].
 
-<br>
-
-```bash
-$ g++ -O3 main.cxx
-$ ./a.out ~/data/email-Eu-core-temporal.txt
-
-# (SHORTENED)
-# Using graph email-Eu-core-temporal.txt ...
-# Temporal edges: 332335
-# order: 986 size: 24929 {}
-#
-# # Batch size 1e+0
-# [00000.498 ms; 027 iters.] [0.0000e+0 err.] pagerankStatic
-# [00000.032 ms; 002 iters.] [6.4766e-7 err.] pagerankDynamic
-#
-# # Batch size 5e+0
-# [00000.510 ms; 027 iters.] [0.0000e+0 err.] pagerankStatic
-# [00000.065 ms; 003 iters.] [1.0864e-6 err.] pagerankDynamic
-#
-# # Batch size 1e+1
-# [00000.501 ms; 027 iters.] [0.0000e+0 err.] pagerankStatic
-# [00000.098 ms; 005 iters.] [1.5461e-6 err.] pagerankDynamic
-#
-# # Batch size 5e+1
-# [00000.503 ms; 027 iters.] [0.0000e+0 err.] pagerankStatic
-# [00000.218 ms; 011 iters.] [2.4047e-6 err.] pagerankDynamic
-#
-# # Batch size 1e+2
-# [00000.502 ms; 027 iters.] [0.0000e+0 err.] pagerankStatic
-# [00000.251 ms; 014 iters.] [2.4436e-6 err.] pagerankDynamic
-#
-# # Batch size 5e+2
-# [00000.499 ms; 027 iters.] [0.0000e+0 err.] pagerankStatic
-# [00000.308 ms; 016 iters.] [2.5226e-6 err.] pagerankDynamic
-#
-# # Batch size 1e+3
-# [00000.501 ms; 027 iters.] [0.0000e+0 err.] pagerankStatic
-# [00000.336 ms; 018 iters.] [2.4926e-6 err.] pagerankDynamic
-#
-# # Batch size 5e+3
-# [00000.509 ms; 027 iters.] [0.0000e+0 err.] pagerankStatic
-# [00000.391 ms; 020 iters.] [2.3684e-6 err.] pagerankDynamic
-#
-# # Batch size 1e+4
-# [00000.518 ms; 027 iters.] [0.0000e+0 err.] pagerankStatic
-# [00000.415 ms; 022 iters.] [2.1345e-6 err.] pagerankDynamic
-#
-# # Batch size 5e+4
-# [00000.530 ms; 024 iters.] [0.0000e+0 err.] pagerankStatic
-# [00000.481 ms; 022 iters.] [1.6988e-6 err.] pagerankDynamic
-#
-# # Batch size 1e+5
-# [00000.577 ms; 024 iters.] [0.0000e+0 err.] pagerankStatic
-# [00000.541 ms; 022 iters.] [1.5049e-6 err.] pagerankDynamic
-```
-
-[![](https://i.imgur.com/4tWWPOT.gif)][sheets]
-[![](https://i.imgur.com/VAHYT9C.gif)][sheets]
-
-<br>
 <br>
 
 ```bash
@@ -152,6 +92,18 @@ $ ./a.out ~/data/sx-stackoverflow.txt
 # [06742.952 ms; 059 iters.] [3.3479e-6 err.] pagerankDynamic
 ```
 
+[![](https://i.imgur.com/4tWWPOT.gif)][sheets]
+[![](https://i.imgur.com/VAHYT9C.gif)][sheets]
+[![](https://i.imgur.com/opfSxQ9.gif)][sheets]
+[![](https://i.imgur.com/gxzatLd.gif)][sheets]
+[![](https://i.imgur.com/Gk1zBX3.gif)][sheets]
+[![](https://i.imgur.com/4WLl0nt.gif)][sheets]
+[![](https://i.imgur.com/QXdoot2.gif)][sheets]
+[![](https://i.imgur.com/GYh1SV0.gif)][sheets]
+[![](https://i.imgur.com/WFKWsuy.gif)][sheets]
+[![](https://i.imgur.com/B2SDRKB.gif)][sheets]
+[![](https://i.imgur.com/BdXE8ly.gif)][sheets]
+[![](https://i.imgur.com/d1Qw1AF.gif)][sheets]
 [![](https://i.imgur.com/3zo6nzy.gif)][sheets]
 [![](https://i.imgur.com/v5y3qiY.gif)][sheets]
 
@@ -161,7 +113,7 @@ $ ./a.out ~/data/sx-stackoverflow.txt
 
 ## References
 
-- [PageRank Algorithm, Mining massive Datasets (CS246), Stanford University](http://snap.stanford.edu/class/cs246-videos-2019/lec9_190205-cs246-720.mp4)
+- [PageRank Algorithm, Mining massive Datasets (CS246), Stanford University](https://www.youtube.com/watch?v=ke9g8hB0MEo)
 - [Stanford Large Network Dataset Collection]
 
 <br>
@@ -169,10 +121,12 @@ $ ./a.out ~/data/sx-stackoverflow.txt
 
 [![](https://i.imgur.com/0TfMELc.jpg)](https://www.youtube.com/watch?v=npl0o3X7NTA)
 
+[Prof. Dip Sankar Banerjee]: https://sites.google.com/site/dipsankarban/
+[Prof. Kishore Kothapalli]: https://cstar.iiit.ac.in/~kkishore/
+[Stanford Large Network Dataset Collection]: http://snap.stanford.edu/data/index.html
+["graphs"]: https://github.com/puzzlef/graphs
 [pull]: https://github.com/puzzlef/pagerank-push-vs-pull
 [CSR]: https://github.com/puzzlef/pagerank-class-vs-csr
 [scaled-fill]: https://github.com/puzzlef/pagerank-dynamic-adjust-ranks
-[cool charts]: https://photos.app.goo.gl/dcQWY7z1HEdPAqre8
+[charts]: https://photos.app.goo.gl/dcQWY7z1HEdPAqre8
 [sheets]: https://docs.google.com/spreadsheets/d/1b6fuE9dRbAbQanCl2rDXc-K2xpIUSg7Mw_dzVnFbkD8/edit?usp=sharing
-["graphs"]: https://github.com/puzzlef/graphs
-[Stanford Large Network Dataset Collection]: http://snap.stanford.edu/data/index.html
