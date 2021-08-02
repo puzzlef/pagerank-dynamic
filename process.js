@@ -75,18 +75,15 @@ function readLogLine(ln, data, state) {
     state.batch_size = parseFloat(batch_size);
   }
   else if (RRESLT.test(ln)) {
-    var [, order, size, time, iters, err, technique] = RRESLT.exec(ln);
-    data.get(state.graph).push({
-      graph: state.graph,
-      temporal_edges: state.temporal_edges,
-      batch_size: state.batch_size,
-      order: parseFloat(order),
-      size: parseFloat(size),
-      time: parseFloat(time),
-      iterations: parseFloat(iters),
-      error: parseFloat(err),
+    var [, order, size, time, iterations, error, technique] = RRESLT.exec(ln);
+    data.get(state.graph).push(Object.assign({}, state, {
+      order:      parseFloat(order),
+      size:       parseFloat(size),
+      time:       parseFloat(time),
+      iterations: parseFloat(iterations),
+      error:      parseFloat(error),
       technique
-    });
+    }));
   }
   return state;
 }
