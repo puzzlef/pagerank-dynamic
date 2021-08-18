@@ -22,7 +22,7 @@ void runPagerankBatch(const string& data, int repeat, int skip, int batch) {
   vector<float> r0, r1, r2, r3;
   vector<float> s0, s1, s2, s3;
   vector<float> *init = nullptr;
-  PagerankOptions<float> o = {repeat};
+  bool partialTolerance = true;
 
   DiGraph<> x;
   stringstream s(data);
@@ -30,10 +30,10 @@ void runPagerankBatch(const string& data, int repeat, int skip, int batch) {
     // Skip some edges (to speed up execution)
     if (skip>0 && !readSnapTemporal(x, s, skip)) break;
     auto ksOld = vertices(x);
-    auto a0 = pagerankTeleport(x, init, o);
-    auto a1 = pagerankLoop(x, init, o);
-    auto a2 = pagerankLoopAll(x, init, o);
-    auto a3 = pagerankRemove(x, init, o);
+    auto a0 = pagerankTeleport(x, init, {repeat});
+    auto a1 = pagerankLoop(x, init, {repeat});
+    auto a2 = pagerankLoopAll(x, init, {repeat});
+    auto a3 = pagerankRemove(x, init, {repeat});
     auto r0 = move(a0.ranks);
     auto r1 = move(a1.ranks);
     auto r2 = move(a2.ranks);
@@ -55,36 +55,36 @@ void runPagerankBatch(const string& data, int repeat, int skip, int batch) {
     adjustRanks(s3, r3, ksOld, ks, 0.0f, float(ksOld.size())/ks.size(), 1.0f/ks.size());
 
     // Find pagerank by teleporting to a random vertex from every dead end.
-    auto b0 = pagerankTeleport(y, init, o);
+    auto b0 = pagerankTeleport(y, init, {repeat});
     printRow(y, b0, b0, "pagerankTeleport (static)");
-    auto c0 = pagerankTeleport(y, &s0, o);
-    printRow(y, b0, c0, "pagerankTeleport (incremental)");
-    auto d0 = pagerankTeleportDynamic(x, y, &s0, o);
-    printRow(y, b0, d0, "pagerankTeleport (dynamic)");
+    auto c0 = pagerankTeleportDynamic(x, y, &s0, {repeat});
+    printRow(y, b0, c0, "pagerankTeleport (dynamic-full)");
+    auto d0 = pagerankTeleportDynamic(x, y, &s0, {repeat, partialTolerance});
+    printRow(y, b0, d0, "pagerankTeleport (dynamic-partial)");
 
     // Find pagerank by self-looping dead ends.
-    auto b1 = pagerankLoop(y, init, o);
+    auto b1 = pagerankLoop(y, init, {repeat});
     printRow(y, b1, b1, "pagerankLoop (static)");
-    auto c1 = pagerankLoop(y, &s1, o);
-    printRow(y, b1, c1, "pagerankLoop (incremental)");
-    auto d1 = pagerankLoopDynamic(x, y, &s1, o);
-    printRow(y, b1, d1, "pagerankLoop (dynamic)");
+    auto c1 = pagerankLoopDynamic(x, y, &s1, {repeat});
+    printRow(y, b1, c1, "pagerankLoop (dynamic-full)");
+    auto d1 = pagerankLoopDynamic(x, y, &s1, {repeat, partialTolerance});
+    printRow(y, b1, d1, "pagerankLoop (dynamic-partial)");
 
     // Find pagerank by self-looping all vertices.
-    auto b2 = pagerankLoopAll(y, init, o);
+    auto b2 = pagerankLoopAll(y, init, {repeat});
     printRow(y, b2, b2, "pagerankLoopAll (static)");
-    auto c2 = pagerankLoopAll(y, &s2, o);
-    printRow(y, b2, c2, "pagerankLoopAll (incremental)");
-    auto d2 = pagerankLoopAllDynamic(x, y, &s2, o);
-    printRow(y, b2, d2, "pagerankLoopAll (dynamic)");
+    auto c2 = pagerankLoopAllDynamic(x, y, &s2, {repeat});
+    printRow(y, b2, c2, "pagerankLoopAll (dynamic-full)");
+    auto d2 = pagerankLoopAllDynamic(x, y, &s2, {repeat, partialTolerance});
+    printRow(y, b2, d2, "pagerankLoopAll (dynamic-partial)");
 
     // Find pagerank by removing dead ends initially, and calculating their ranks after convergence.
-    auto b3 = pagerankRemove(y, init, o);
+    auto b3 = pagerankRemove(y, init, {repeat});
     printRow(y, b3, b3, "pagerankRemove (static)");
-    auto c3 = pagerankRemove(y, &s3, o);
-    printRow(y, b3, c3, "pagerankRemove (incremental)");
-    auto d3 = pagerankRemoveDynamic(x, y, &s3, o);
-    printRow(y, b3, d3, "pagerankRemove (dynamic)");
+    auto c3 = pagerankRemoveDynamic(x, y, &s3, {repeat});
+    printRow(y, b3, c3, "pagerankRemove (dynamic-full)");
+    auto d3 = pagerankRemoveDynamic(x, y, &s3, {repeat, partialTolerance});
+    printRow(y, b3, d3, "pagerankRemove (dynamic-partial)");
 
     // New graph is now old.
     x = move(y);
