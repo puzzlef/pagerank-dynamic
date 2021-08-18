@@ -32,15 +32,16 @@ void pagerankCalculate(vector<T>& a, const vector<T>& c, const vector<int>& vfro
 
 
 template <class T>
-int pagerankPlainLoop(vector<T>& a, vector<T>& r, vector<T>& c, const vector<T>& f, const vector<int>& vfrom, const vector<int>& efrom, const vector<int>& vdata, int i, int n, int N, T p, T E, int L) {
-  T c0 = (1-p)/N;
+int pagerankPlainLoop(vector<T>& a, vector<T>& r, vector<T>& c, const vector<T>& f, const vector<int>& vfrom, const vector<int>& efrom, const vector<int>& vdata, int i, int n, int N, T p, T E, int L, bool EP) {
   int l = 1;
+  T c0 = (1-p)/N;
+  T El = EP? E*n/N : E; // partial error?
   for (; l<L; l++) {
     if (l==1) multiply(c, r, f, 0, N);  // 1st time, find contrib for all
     else      multiply(c, r, f, i, n);  // nth time, only those that changed
     pagerankCalculate(a, c, vfrom, efrom, i, n, c0);  // only changed
-    T el = l1Norm(a, r, 0, N);  // full error check, partial can be done too (i, n)
-    if (el < E) break;
+    T el = EP? l1Norm(a, r, i, n) : l1Norm(a, r, 0, N);  // partial error?
+    if (el < El) break;
     swap(a, r);
   }
   return l;
@@ -49,10 +50,11 @@ int pagerankPlainLoop(vector<T>& a, vector<T>& r, vector<T>& c, const vector<T>&
 
 template <class H, class J, class FL, class T=float>
 PagerankResult<T> pagerankPlainCore(const H& xt, const J& ks, int i, int n, FL fl, const vector<T> *q, PagerankOptions<T> o) {
-  int  N = xt.order();
-  T    p = o.damping;
-  T    E = o.tolerance;
-  int  L = o.maxIterations, l;
+  int  N  = xt.order();
+  T    p  = o.damping;
+  T    E  = o.tolerance;
+  int  L  = o.maxIterations, l;
+  bool EP = o.partialTolerance;
   auto vfrom = sourceOffsets(xt, ks);
   auto efrom = destinationIndices(xt, ks);
   auto vdata = vertexData(xt, ks);
@@ -63,7 +65,7 @@ PagerankResult<T> pagerankPlainCore(const H& xt, const J& ks, int i, int n, FL f
     else fill(r, T(1)/N);
     copy(a, r);  // copy old ranks
     mark([&] { pagerankFactor(f, vdata, 0, N, p); });
-    mark([&] { l = fl(a, r, c, f, vfrom, efrom, vdata, i, n, N, p, E, L); });  // with full error check, partial can be done too (E*n/N)
+    mark([&] { l = fl(a, r, c, f, vfrom, efrom, vdata, i, n, N, p, E, L, EP); });
   }, o.repeat);
   return {decompressContainer(xt, a, ks), l, t};
 }

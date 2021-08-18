@@ -10,13 +10,14 @@ using std::move;
 
 template <class T>
 struct PagerankOptions {
-  int repeat;
-  T   damping;
-  T   tolerance;
-  int maxIterations;
+  int  repeat;
+  bool partialTolerance;
+  T    damping;
+  T    tolerance;
+  int  maxIterations;
 
-  PagerankOptions(int repeat=1, T damping=0.85, T tolerance=1e-6, int maxIterations=500) :
-  repeat(repeat), damping(damping), tolerance(tolerance), maxIterations(maxIterations) {}
+  PagerankOptions(int repeat=1, bool partialTolerance=false, T damping=0.85, T tolerance=1e-6, int maxIterations=500) :
+  repeat(repeat), partialTolerance(partialTolerance), damping(damping), tolerance(tolerance), maxIterations(maxIterations) {}
 };
 
 

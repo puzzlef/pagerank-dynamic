@@ -26,15 +26,16 @@ T pagerankTeleportContribution(const vector<T>& r, const vector<int>& vfrom, con
 
 
 template <class T>
-int pagerankTeleportLoop(vector<T>& a, vector<T>& r, vector<T>& c, const vector<T>& f, const vector<int>& vfrom, const vector<int>& efrom, const vector<int>& vdata, int i, int n, int N, T p, T E, int L) {
+int pagerankTeleportLoop(vector<T>& a, vector<T>& r, vector<T>& c, const vector<T>& f, const vector<int>& vfrom, const vector<int>& efrom, const vector<int>& vdata, int i, int n, int N, T p, T E, int L, bool EP) {
   int l = 1;
+  T El = EP? E*n/N : E; // partial error?
   for (; l<L; l++) {
     if (l==1) multiply(c, r, f, 0, N);  // 1st time, find contrib for all
     else      multiply(c, r, f, i, n);  // nth time, only those that changed
     T c0 = pagerankTeleportContribution(r, vfrom, efrom, vdata, N, p); // all vertices needed!
     pagerankCalculate(a, c, vfrom, efrom, i, n, c0);  // only changed
-    T el = l1Norm(a, r, 0, N);  // full error check, partial can be done too (i, n)
-    if (el < E) break;
+    T el = EP? l1Norm(a, r, i, n) : l1Norm(a, r, 0, N);  // partial error?
+    if (el < El) break;
     swap(a, r);
   }
   return l;
