@@ -10,7 +10,7 @@ git clone https://github.com/puzzlef/$src
 cd $src
 
 # Run
-g++ -O3 main.cxx
+g++ -std=c++17 -O3 main.cxx
 stdbuf --output=L ./a.out ~/data/email-Eu-core-temporal.txt 2>&1 | tee -a "$out"
 stdbuf --output=L ./a.out ~/data/CollegeMsg.txt             2>&1 | tee -a "$out"
 stdbuf --output=L ./a.out ~/data/sx-mathoverflow.txt        2>&1 | tee -a "$out"
