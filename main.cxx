@@ -109,6 +109,6 @@ int main(int argc, char **argv) {
   printf("Using graph %s ...\n", file);
   string d = readFile(file);
   runPagerank(d, repeat);
-    printf("\n");
+  printf("\n");
   return 0;
 }
