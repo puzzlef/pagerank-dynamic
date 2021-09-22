@@ -1,23 +1,11 @@
-Performance of **contribution-push** based vs **contribution-pull** based PageRank.
+Performance comparison of using **error measurement strategies** with
+dynamic PageRank ([pull], [CSR]).
 
-There are two ways (algorithmically) to think of the pagerank calculation.
-1. Find pagerank by **pushing contribution** to *out-vertices*.
-2. Find pagerank by **pulling contribution** from *in-vertices*.
+There are two ways of *error measurement* with *dynamic PageRank* calculation.
+1. Measure error *for all vertices* (**full**), and stop once it falls below tolerance value.
+2. Measure error *only for affected vertices* (**partial**), and stop once it falls below *scaled* tolerance value.
 
-This experiment was to try both of these approaches on a number of different
-graphs, running each approach 5 times per graph to get a good time measure.
-The **push** method is somewhat easier to implement, and is described in
-[this lecture]. However, it requires multiple writes per source vertex.
-On the other hand, the **pull** method requires 2 additional calculations
-per-vertex, i.e., non-teleport contribution of each vertex, and, total
-teleport contribution (to all vertices). However, it requires only 1 write
-per destination vertex.
-
-While it might seem that pull method would be a clear winner, the results
-indicate that although **pull** is always **faster** than *push* approach,
-the difference between the two depends on the nature of the graph. Note
-that neither approach makes use of *SIMD instructions* which are available
-on all modern hardware.
+`TODO`
 
 All outputs are saved in [out](out/) and a small part of the output is listed
 here. Some [charts] are also included below, generated from [sheets]. The input
@@ -41,237 +29,301 @@ $ ...
 # order: 2601977 size: 36233450 {}
 #
 # # Batch size 1e+1
-# [04851.921 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [00850.952 ms; 013 iters.] [4.2257e-4 err.] pagerankTeleport (dynamic-full)
-# [00853.373 ms; 013 iters.] [4.2257e-4 err.] pagerankTeleport (dynamic-partial)
-# [03696.537 ms; 044 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [00132.195 ms; 002 iters.] [1.5312e-6 err.] pagerankLoop (dynamic-full)
-# [00184.983 ms; 003 iters.] [1.6357e-6 err.] pagerankLoop (dynamic-partial)
-# [03857.906 ms; 044 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [00119.807 ms; 002 iters.] [1.5658e-6 err.] pagerankLoopAll (dynamic-full)
-# [00170.017 ms; 003 iters.] [1.7373e-6 err.] pagerankLoopAll (dynamic-partial)
-# [03439.101 ms; 052 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [03210.626 ms; 058 iters.] [1.5855e-2 err.] pagerankRemove (dynamic-full)
-# [03262.219 ms; 059 iters.] [1.5855e-2 err.] pagerankRemove (dynamic-partial)
+# [05530.117 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [03885.523 ms; 043 iters.] [1.0784e-2 err.] pagerankTeleport (dynamic-full)
+# [03879.973 ms; 043 iters.] [1.0784e-2 err.] pagerankTeleport (dynamic-partial)
+# [04945.522 ms; 051 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [02841.727 ms; 032 iters.] [1.0635e-2 err.] pagerankLoop (dynamic-full)
+# [02854.771 ms; 034 iters.] [1.0634e-2 err.] pagerankLoop (dynamic-partial)
+# [04732.724 ms; 051 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [03132.172 ms; 036 iters.] [1.0813e-2 err.] pagerankLoopAll (dynamic-full)
+# [03190.126 ms; 038 iters.] [1.0812e-2 err.] pagerankLoopAll (dynamic-partial)
+# [03709.146 ms; 053 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [02697.447 ms; 040 iters.] [3.6837e-2 err.] pagerankRemove (dynamic-full)
+# [02731.531 ms; 042 iters.] [3.6837e-2 err.] pagerankRemove (dynamic-partial)
 #
 # # Batch size 5e+1
-# [04622.221 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [00905.163 ms; 015 iters.] [4.2427e-4 err.] pagerankTeleport (dynamic-full)
-# [00906.015 ms; 015 iters.] [4.2427e-4 err.] pagerankTeleport (dynamic-partial)
-# [03475.991 ms; 044 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [00266.267 ms; 004 iters.] [2.8962e-6 err.] pagerankLoop (dynamic-full)
-# [00301.446 ms; 005 iters.] [2.7123e-6 err.] pagerankLoop (dynamic-partial)
-# [03597.244 ms; 044 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [00237.085 ms; 004 iters.] [3.0453e-6 err.] pagerankLoopAll (dynamic-full)
-# [00276.520 ms; 005 iters.] [2.9021e-6 err.] pagerankLoopAll (dynamic-partial)
-# [03290.769 ms; 052 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [03038.005 ms; 058 iters.] [1.5855e-2 err.] pagerankRemove (dynamic-full)
-# [03101.300 ms; 059 iters.] [1.5855e-2 err.] pagerankRemove (dynamic-partial)
+# [05404.213 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [03904.148 ms; 043 iters.] [8.5991e-4 err.] pagerankTeleport (dynamic-full)
+# [03884.698 ms; 043 iters.] [8.5991e-4 err.] pagerankTeleport (dynamic-partial)
+# [04848.698 ms; 051 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [02894.188 ms; 033 iters.] [6.3630e-4 err.] pagerankLoop (dynamic-full)
+# [02965.799 ms; 035 iters.] [6.3499e-4 err.] pagerankLoop (dynamic-partial)
+# [04616.032 ms; 051 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [03241.114 ms; 037 iters.] [7.8648e-4 err.] pagerankLoopAll (dynamic-full)
+# [03268.989 ms; 038 iters.] [7.8512e-4 err.] pagerankLoopAll (dynamic-partial)
+# [03642.386 ms; 053 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [02712.481 ms; 040 iters.] [1.4858e-3 err.] pagerankRemove (dynamic-full)
+# [02814.504 ms; 043 iters.] [1.4858e-3 err.] pagerankRemove (dynamic-partial)
 #
 # # Batch size 1e+2
-# [04585.060 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [00926.924 ms; 015 iters.] [4.2293e-4 err.] pagerankTeleport (dynamic-full)
-# [00930.036 ms; 015 iters.] [4.2293e-4 err.] pagerankTeleport (dynamic-partial)
-# [03451.951 ms; 044 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [00325.311 ms; 006 iters.] [3.5198e-6 err.] pagerankLoop (dynamic-full)
-# [00364.794 ms; 007 iters.] [3.2179e-6 err.] pagerankLoop (dynamic-partial)
-# [03568.740 ms; 044 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [00305.406 ms; 005 iters.] [3.7485e-6 err.] pagerankLoopAll (dynamic-full)
-# [00339.491 ms; 006 iters.] [3.4649e-6 err.] pagerankLoopAll (dynamic-partial)
-# [03264.674 ms; 052 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [03014.660 ms; 058 iters.] [1.5855e-2 err.] pagerankRemove (dynamic-full)
-# [03068.464 ms; 059 iters.] [1.5855e-2 err.] pagerankRemove (dynamic-partial)
+# [05398.281 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [03886.014 ms; 043 iters.] [8.5820e-4 err.] pagerankTeleport (dynamic-full)
+# [03862.920 ms; 043 iters.] [8.5820e-4 err.] pagerankTeleport (dynamic-partial)
+# [04761.810 ms; 051 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [02857.284 ms; 033 iters.] [6.3595e-4 err.] pagerankLoop (dynamic-full)
+# [02927.210 ms; 035 iters.] [6.3465e-4 err.] pagerankLoop (dynamic-partial)
+# [04563.852 ms; 051 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [03208.563 ms; 037 iters.] [7.8661e-4 err.] pagerankLoopAll (dynamic-full)
+# [03280.487 ms; 039 iters.] [7.8524e-4 err.] pagerankLoopAll (dynamic-partial)
+# [03649.768 ms; 053 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [02724.629 ms; 041 iters.] [1.4858e-3 err.] pagerankRemove (dynamic-full)
+# [02720.289 ms; 043 iters.] [1.4858e-3 err.] pagerankRemove (dynamic-partial)
 #
 # # Batch size 5e+2
-# [04475.601 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [01025.701 ms; 017 iters.] [4.2555e-4 err.] pagerankTeleport (dynamic-full)
-# [01026.733 ms; 017 iters.] [4.2555e-4 err.] pagerankTeleport (dynamic-partial)
-# [03401.757 ms; 044 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [00517.111 ms; 010 iters.] [5.0824e-6 err.] pagerankLoop (dynamic-full)
-# [00586.693 ms; 011 iters.] [4.3903e-6 err.] pagerankLoop (dynamic-partial)
-# [03511.560 ms; 044 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [00507.089 ms; 010 iters.] [5.2972e-6 err.] pagerankLoopAll (dynamic-full)
-# [00571.719 ms; 011 iters.] [4.5886e-6 err.] pagerankLoopAll (dynamic-partial)
-# [03205.029 ms; 052 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [02970.128 ms; 058 iters.] [1.5855e-2 err.] pagerankRemove (dynamic-full)
-# [03019.891 ms; 059 iters.] [1.5855e-2 err.] pagerankRemove (dynamic-partial)
+# [05472.637 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [03911.807 ms; 043 iters.] [8.5792e-4 err.] pagerankTeleport (dynamic-full)
+# [03906.738 ms; 043 iters.] [8.5792e-4 err.] pagerankTeleport (dynamic-partial)
+# [04761.451 ms; 051 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [02813.523 ms; 033 iters.] [6.3410e-4 err.] pagerankLoop (dynamic-full)
+# [02961.176 ms; 035 iters.] [6.3281e-4 err.] pagerankLoop (dynamic-partial)
+# [04635.045 ms; 051 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [03185.616 ms; 037 iters.] [7.8522e-4 err.] pagerankLoopAll (dynamic-full)
+# [03273.207 ms; 039 iters.] [7.8387e-4 err.] pagerankLoopAll (dynamic-partial)
+# [03634.719 ms; 053 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [02666.254 ms; 041 iters.] [1.4865e-3 err.] pagerankRemove (dynamic-full)
+# [02711.250 ms; 044 iters.] [1.4864e-3 err.] pagerankRemove (dynamic-partial)
 #
 # # Batch size 1e+3
-# [04483.775 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [01142.090 ms; 018 iters.] [4.2759e-4 err.] pagerankTeleport (dynamic-full)
-# [01145.313 ms; 018 iters.] [4.2759e-4 err.] pagerankTeleport (dynamic-partial)
-# [03390.572 ms; 044 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [00665.872 ms; 013 iters.] [5.6965e-6 err.] pagerankLoop (dynamic-full)
-# [00750.569 ms; 014 iters.] [4.8313e-6 err.] pagerankLoop (dynamic-partial)
-# [03510.645 ms; 044 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [00651.872 ms; 012 iters.] [5.8364e-6 err.] pagerankLoopAll (dynamic-full)
-# [00726.428 ms; 014 iters.] [5.0397e-6 err.] pagerankLoopAll (dynamic-partial)
-# [03217.045 ms; 052 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [02967.557 ms; 058 iters.] [1.5854e-2 err.] pagerankRemove (dynamic-full)
-# [03015.005 ms; 059 iters.] [1.5854e-2 err.] pagerankRemove (dynamic-partial)
+# [05410.048 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [03867.531 ms; 044 iters.] [8.5552e-4 err.] pagerankTeleport (dynamic-full)
+# [03865.457 ms; 044 iters.] [8.5552e-4 err.] pagerankTeleport (dynamic-partial)
+# [04751.256 ms; 051 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [02850.915 ms; 033 iters.] [6.3282e-4 err.] pagerankLoop (dynamic-full)
+# [02945.889 ms; 035 iters.] [6.3153e-4 err.] pagerankLoop (dynamic-partial)
+# [04503.616 ms; 051 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [03263.122 ms; 037 iters.] [7.8425e-4 err.] pagerankLoopAll (dynamic-full)
+# [03278.221 ms; 039 iters.] [7.8294e-4 err.] pagerankLoopAll (dynamic-partial)
+# [03648.349 ms; 053 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [02727.434 ms; 041 iters.] [1.4872e-3 err.] pagerankRemove (dynamic-full)
+# [02789.369 ms; 044 iters.] [1.4871e-3 err.] pagerankRemove (dynamic-partial)
 #
 # # Batch size 5e+3
-# [04497.343 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [01556.970 ms; 024 iters.] [4.3287e-4 err.] pagerankTeleport (dynamic-full)
-# [01557.819 ms; 024 iters.] [4.3287e-4 err.] pagerankTeleport (dynamic-partial)
-# [03389.138 ms; 044 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [01169.442 ms; 021 iters.] [6.3166e-6 err.] pagerankLoop (dynamic-full)
-# [01261.324 ms; 022 iters.] [5.3143e-6 err.] pagerankLoop (dynamic-partial)
-# [03522.822 ms; 044 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [01130.907 ms; 020 iters.] [6.5629e-6 err.] pagerankLoopAll (dynamic-full)
-# [01207.731 ms; 022 iters.] [5.5794e-6 err.] pagerankLoopAll (dynamic-partial)
-# [03221.898 ms; 052 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [02957.805 ms; 058 iters.] [1.5857e-2 err.] pagerankRemove (dynamic-full)
-# [03016.430 ms; 059 iters.] [1.5857e-2 err.] pagerankRemove (dynamic-partial)
+# [05529.451 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [03928.555 ms; 044 iters.] [8.6132e-4 err.] pagerankTeleport (dynamic-full)
+# [03973.335 ms; 044 iters.] [8.6132e-4 err.] pagerankTeleport (dynamic-partial)
+# [04786.888 ms; 051 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [02838.815 ms; 034 iters.] [6.2588e-4 err.] pagerankLoop (dynamic-full)
+# [02988.667 ms; 036 iters.] [6.2470e-4 err.] pagerankLoop (dynamic-partial)
+# [04658.512 ms; 051 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [03312.873 ms; 038 iters.] [7.7974e-4 err.] pagerankLoopAll (dynamic-full)
+# [03225.711 ms; 040 iters.] [7.7848e-4 err.] pagerankLoopAll (dynamic-partial)
+# [03655.904 ms; 053 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [02722.193 ms; 042 iters.] [1.4945e-3 err.] pagerankRemove (dynamic-full)
+# [02725.165 ms; 045 iters.] [1.4944e-3 err.] pagerankRemove (dynamic-partial)
 #
 # # Batch size 1e+4
-# [04488.908 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [01769.905 ms; 027 iters.] [4.3164e-4 err.] pagerankTeleport (dynamic-full)
-# [01767.358 ms; 027 iters.] [4.3164e-4 err.] pagerankTeleport (dynamic-partial)
-# [03421.292 ms; 044 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [01397.260 ms; 024 iters.] [6.4854e-6 err.] pagerankLoop (dynamic-full)
-# [01487.141 ms; 026 iters.] [5.4408e-6 err.] pagerankLoop (dynamic-partial)
-# [03529.370 ms; 044 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [01370.308 ms; 024 iters.] [6.7158e-6 err.] pagerankLoopAll (dynamic-full)
-# [01439.905 ms; 025 iters.] [5.6845e-6 err.] pagerankLoopAll (dynamic-partial)
-# [03232.829 ms; 052 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [02981.530 ms; 058 iters.] [1.5851e-2 err.] pagerankRemove (dynamic-full)
-# [03026.178 ms; 059 iters.] [1.5851e-2 err.] pagerankRemove (dynamic-partial)
+# [05355.425 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [03850.469 ms; 044 iters.] [8.6273e-4 err.] pagerankTeleport (dynamic-full)
+# [03850.058 ms; 044 iters.] [8.6273e-4 err.] pagerankTeleport (dynamic-partial)
+# [04734.508 ms; 051 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [02889.423 ms; 035 iters.] [6.2011e-4 err.] pagerankLoop (dynamic-full)
+# [03024.678 ms; 037 iters.] [6.1897e-4 err.] pagerankLoop (dynamic-partial)
+# [04560.633 ms; 051 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [03266.595 ms; 038 iters.] [7.7665e-4 err.] pagerankLoopAll (dynamic-full)
+# [03240.672 ms; 040 iters.] [7.7548e-4 err.] pagerankLoopAll (dynamic-partial)
+# [03619.322 ms; 053 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [02708.890 ms; 043 iters.] [1.5040e-3 err.] pagerankRemove (dynamic-full)
+# [02772.865 ms; 045 iters.] [1.5040e-3 err.] pagerankRemove (dynamic-partial)
 #
 # # Batch size 5e+4
-# [04510.532 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [02331.230 ms; 034 iters.] [4.2591e-4 err.] pagerankTeleport (dynamic-full)
-# [02342.306 ms; 034 iters.] [4.2591e-4 err.] pagerankTeleport (dynamic-partial)
-# [03408.886 ms; 044 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [01935.739 ms; 032 iters.] [6.5757e-6 err.] pagerankLoop (dynamic-full)
-# [02022.907 ms; 034 iters.] [5.4970e-6 err.] pagerankLoop (dynamic-partial)
-# [03537.548 ms; 044 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [01894.896 ms; 032 iters.] [6.9042e-6 err.] pagerankLoopAll (dynamic-full)
-# [01956.976 ms; 033 iters.] [5.8366e-6 err.] pagerankLoopAll (dynamic-partial)
-# [03234.946 ms; 052 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [02981.868 ms; 058 iters.] [1.5816e-2 err.] pagerankRemove (dynamic-full)
-# [03037.288 ms; 059 iters.] [1.5816e-2 err.] pagerankRemove (dynamic-partial)
+# [05435.680 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [03952.017 ms; 045 iters.] [8.5426e-4 err.] pagerankTeleport (dynamic-full)
+# [03941.191 ms; 045 iters.] [8.5426e-4 err.] pagerankTeleport (dynamic-partial)
+# [04859.709 ms; 051 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [03103.775 ms; 037 iters.] [5.9698e-4 err.] pagerankLoop (dynamic-full)
+# [03222.962 ms; 039 iters.] [5.9604e-4 err.] pagerankLoop (dynamic-partial)
+# [04720.057 ms; 051 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [03303.619 ms; 040 iters.] [7.6608e-4 err.] pagerankLoopAll (dynamic-full)
+# [03364.793 ms; 042 iters.] [7.6503e-4 err.] pagerankLoopAll (dynamic-partial)
+# [03684.576 ms; 053 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [02708.787 ms; 045 iters.] [1.6220e-3 err.] pagerankRemove (dynamic-full)
+# [02785.400 ms; 047 iters.] [1.6218e-3 err.] pagerankRemove (dynamic-partial)
 #
 # # Batch size 1e+5
-# [04500.296 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [02596.185 ms; 038 iters.] [4.2523e-4 err.] pagerankTeleport (dynamic-full)
-# [02604.035 ms; 038 iters.] [4.2523e-4 err.] pagerankTeleport (dynamic-partial)
-# [03426.800 ms; 044 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [02157.199 ms; 036 iters.] [6.5941e-6 err.] pagerankLoop (dynamic-full)
-# [02242.756 ms; 038 iters.] [5.5411e-6 err.] pagerankLoop (dynamic-partial)
-# [03527.188 ms; 044 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [02115.772 ms; 035 iters.] [6.9358e-6 err.] pagerankLoopAll (dynamic-full)
-# [02194.836 ms; 037 iters.] [5.8289e-6 err.] pagerankLoopAll (dynamic-partial)
-# [03231.058 ms; 052 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [02978.933 ms; 058 iters.] [1.5762e-2 err.] pagerankRemove (dynamic-full)
-# [03034.055 ms; 059 iters.] [1.5762e-2 err.] pagerankRemove (dynamic-partial)
+# [05446.271 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [03947.911 ms; 046 iters.] [8.5883e-4 err.] pagerankTeleport (dynamic-full)
+# [03959.313 ms; 046 iters.] [8.5883e-4 err.] pagerankTeleport (dynamic-partial)
+# [04659.606 ms; 051 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [03146.380 ms; 039 iters.] [5.8047e-4 err.] pagerankLoop (dynamic-full)
+# [03264.366 ms; 041 iters.] [5.7965e-4 err.] pagerankLoop (dynamic-partial)
+# [04625.957 ms; 051 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [03356.807 ms; 041 iters.] [7.6095e-4 err.] pagerankLoopAll (dynamic-full)
+# [03413.821 ms; 043 iters.] [7.6002e-4 err.] pagerankLoopAll (dynamic-partial)
+# [03660.425 ms; 053 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [02863.631 ms; 046 iters.] [1.7630e-3 err.] pagerankRemove (dynamic-full)
+# [02982.411 ms; 048 iters.] [1.7629e-3 err.] pagerankRemove (dynamic-partial)
 #
 # # Batch size 5e+5
-# [04526.756 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [03217.553 ms; 046 iters.] [3.9182e-4 err.] pagerankTeleport (dynamic-full)
-# [03221.831 ms; 046 iters.] [3.9182e-4 err.] pagerankTeleport (dynamic-partial)
-# [03412.089 ms; 044 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [02696.333 ms; 044 iters.] [6.4926e-6 err.] pagerankLoop (dynamic-full)
-# [02750.494 ms; 045 iters.] [5.5501e-6 err.] pagerankLoop (dynamic-partial)
-# [03544.510 ms; 044 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [02641.881 ms; 043 iters.] [6.9493e-6 err.] pagerankLoopAll (dynamic-full)
-# [02703.871 ms; 045 iters.] [5.9069e-6 err.] pagerankLoopAll (dynamic-partial)
-# [03235.366 ms; 052 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [03000.420 ms; 058 iters.] [1.5293e-2 err.] pagerankRemove (dynamic-full)
-# [03048.030 ms; 060 iters.] [1.5293e-2 err.] pagerankRemove (dynamic-partial)
+# [05235.717 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [03998.946 ms; 049 iters.] [3.9015e-4 err.] pagerankTeleport (dynamic-full)
+# [03974.706 ms; 049 iters.] [3.9015e-4 err.] pagerankTeleport (dynamic-partial)
+# [04513.054 ms; 051 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [03357.693 ms; 045 iters.] [5.1104e-4 err.] pagerankLoop (dynamic-full)
+# [03413.932 ms; 046 iters.] [5.1056e-4 err.] pagerankLoop (dynamic-partial)
+# [04363.629 ms; 051 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [03269.979 ms; 044 iters.] [7.4686e-4 err.] pagerankLoopAll (dynamic-full)
+# [03328.293 ms; 046 iters.] [7.4625e-4 err.] pagerankLoopAll (dynamic-partial)
+# [03521.911 ms; 053 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [02871.785 ms; 050 iters.] [2.9415e-3 err.] pagerankRemove (dynamic-full)
+# [02907.066 ms; 052 iters.] [2.9413e-3 err.] pagerankRemove (dynamic-partial)
 #
 # # Batch size 1e+6
-# [04989.396 ms; 056 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [03867.231 ms; 049 iters.] [3.4816e-4 err.] pagerankTeleport (dynamic-full)
-# [03869.729 ms; 049 iters.] [3.4816e-4 err.] pagerankTeleport (dynamic-partial)
-# [03850.290 ms; 044 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [03251.650 ms; 046 iters.] [6.4582e-6 err.] pagerankLoop (dynamic-full)
-# [03352.257 ms; 048 iters.] [5.5068e-6 err.] pagerankLoop (dynamic-partial)
-# [04017.433 ms; 044 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [03224.120 ms; 046 iters.] [6.8601e-6 err.] pagerankLoopAll (dynamic-full)
-# [03279.987 ms; 047 iters.] [5.8627e-6 err.] pagerankLoopAll (dynamic-partial)
-# [03589.587 ms; 052 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [03356.372 ms; 059 iters.] [1.4546e-2 err.] pagerankRemove (dynamic-full)
-# [03415.710 ms; 060 iters.] [1.4546e-2 err.] pagerankRemove (dynamic-partial)
+# [05207.828 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [04163.442 ms; 051 iters.] [3.4792e-4 err.] pagerankTeleport (dynamic-full)
+# [04159.791 ms; 051 iters.] [3.4792e-4 err.] pagerankTeleport (dynamic-partial)
+# [04642.410 ms; 051 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [03731.395 ms; 047 iters.] [5.1622e-4 err.] pagerankLoop (dynamic-full)
+# [03817.179 ms; 048 iters.] [5.1587e-4 err.] pagerankLoop (dynamic-partial)
+# [04398.673 ms; 051 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [03590.860 ms; 046 iters.] [7.8028e-4 err.] pagerankLoopAll (dynamic-full)
+# [03603.509 ms; 048 iters.] [7.7980e-4 err.] pagerankLoopAll (dynamic-partial)
+# [03566.511 ms; 053 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [02988.230 ms; 052 iters.] [4.0616e-3 err.] pagerankRemove (dynamic-full)
+# [03012.101 ms; 054 iters.] [4.0613e-3 err.] pagerankRemove (dynamic-partial)
 #
 # # Batch size 5e+6
-# [04953.558 ms; 056 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [04507.158 ms; 056 iters.] [3.2059e-4 err.] pagerankTeleport (dynamic-full)
-# [04484.068 ms; 056 iters.] [3.2059e-4 err.] pagerankTeleport (dynamic-partial)
-# [03878.606 ms; 045 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [03757.160 ms; 051 iters.] [5.8825e-6 err.] pagerankLoop (dynamic-full)
-# [03820.137 ms; 052 iters.] [5.2537e-6 err.] pagerankLoop (dynamic-partial)
-# [04007.882 ms; 045 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [03680.963 ms; 050 iters.] [6.1178e-6 err.] pagerankLoopAll (dynamic-full)
-# [03736.318 ms; 051 iters.] [5.3989e-6 err.] pagerankLoopAll (dynamic-partial)
-# [03709.806 ms; 052 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [03491.077 ms; 060 iters.] [8.6993e-3 err.] pagerankRemove (dynamic-full)
-# [03551.886 ms; 062 iters.] [8.6996e-3 err.] pagerankRemove (dynamic-partial)
+# [05208.010 ms; 056 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [04694.504 ms; 056 iters.] [3.2031e-4 err.] pagerankTeleport (dynamic-full)
+# [04727.816 ms; 056 iters.] [3.2031e-4 err.] pagerankTeleport (dynamic-partial)
+# [05067.397 ms; 052 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [04705.365 ms; 052 iters.] [4.5803e-4 err.] pagerankLoop (dynamic-full)
+# [04591.157 ms; 053 iters.] [4.5785e-4 err.] pagerankLoop (dynamic-partial)
+# [04424.067 ms; 052 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [04322.087 ms; 051 iters.] [8.9832e-4 err.] pagerankLoopAll (dynamic-full)
+# [04197.665 ms; 052 iters.] [8.9811e-4 err.] pagerankLoopAll (dynamic-partial)
+# [03694.155 ms; 054 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [03652.800 ms; 056 iters.] [9.8153e-3 err.] pagerankRemove (dynamic-full)
+# [03630.079 ms; 057 iters.] [9.8148e-3 err.] pagerankRemove (dynamic-partial)
 #
 # # Batch size 1e+7
-# [05392.156 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [05020.084 ms; 057 iters.] [6.4179e-4 err.] pagerankTeleport (dynamic-full)
-# [04982.307 ms; 057 iters.] [6.4179e-4 err.] pagerankTeleport (dynamic-partial)
-# [04251.046 ms; 046 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [04091.434 ms; 050 iters.] [5.4004e-6 err.] pagerankLoop (dynamic-full)
-# [04181.763 ms; 051 iters.] [4.9507e-6 err.] pagerankLoop (dynamic-partial)
-# [04442.193 ms; 047 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [04027.664 ms; 049 iters.] [5.6146e-6 err.] pagerankLoopAll (dynamic-full)
-# [04071.348 ms; 050 iters.] [4.9323e-6 err.] pagerankLoopAll (dynamic-partial)
-# [04082.759 ms; 053 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [03903.030 ms; 061 iters.] [4.5333e-3 err.] pagerankRemove (dynamic-full)
-# [03937.720 ms; 062 iters.] [4.5334e-3 err.] pagerankRemove (dynamic-partial)
+# [06053.154 ms; 057 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [05558.233 ms; 057 iters.] [6.4174e-4 err.] pagerankTeleport (dynamic-full)
+# [05545.498 ms; 057 iters.] [6.4174e-4 err.] pagerankTeleport (dynamic-partial)
+# [05636.728 ms; 053 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [04994.432 ms; 053 iters.] [4.1711e-4 err.] pagerankLoop (dynamic-full)
+# [05035.627 ms; 054 iters.] [4.1689e-4 err.] pagerankLoop (dynamic-partial)
+# [05204.659 ms; 053 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [05031.842 ms; 052 iters.] [8.7106e-4 err.] pagerankLoopAll (dynamic-full)
+# [05008.802 ms; 053 iters.] [8.7091e-4 err.] pagerankLoopAll (dynamic-partial)
+# [04305.305 ms; 055 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [04068.965 ms; 056 iters.] [1.0733e-2 err.] pagerankRemove (dynamic-full)
+# [04401.484 ms; 057 iters.] [1.0733e-2 err.] pagerankRemove (dynamic-partial)
 #
 # # Batch size 5e+7
-# [06909.900 ms; 058 iters.] [0.0000e+0 err.] pagerankTeleport (static)
-# [06383.602 ms; 059 iters.] [5.5646e-5 err.] pagerankTeleport (dynamic-full)
-# [06407.914 ms; 059 iters.] [5.5646e-5 err.] pagerankTeleport (dynamic-partial)
-# [06212.262 ms; 055 iters.] [0.0000e+0 err.] pagerankLoop (static)
-# [05578.974 ms; 054 iters.] [2.8869e-6 err.] pagerankLoop (dynamic-full)
-# [05558.839 ms; 055 iters.] [2.6885e-6 err.] pagerankLoop (dynamic-partial)
-# [06526.776 ms; 055 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
-# [05576.140 ms; 054 iters.] [2.9767e-6 err.] pagerankLoopAll (dynamic-full)
-# [05582.109 ms; 054 iters.] [2.9767e-6 err.] pagerankLoopAll (dynamic-partial)
-# [06058.312 ms; 058 iters.] [0.0000e+0 err.] pagerankRemove (static)
-# [05669.452 ms; 062 iters.] [2.4701e-3 err.] pagerankRemove (dynamic-full)
-# [05770.752 ms; 063 iters.] [2.4698e-3 err.] pagerankRemove (dynamic-partial)
+# [07711.316 ms; 058 iters.] [0.0000e+0 err.] pagerankTeleport (static)
+# [07436.135 ms; 059 iters.] [5.4804e-5 err.] pagerankTeleport (dynamic-full)
+# [08238.648 ms; 059 iters.] [5.4804e-5 err.] pagerankTeleport (dynamic-partial)
+# [07670.212 ms; 055 iters.] [0.0000e+0 err.] pagerankLoop (static)
+# [06798.180 ms; 056 iters.] [2.4537e-4 err.] pagerankLoop (dynamic-full)
+# [07059.362 ms; 056 iters.] [2.4535e-4 err.] pagerankLoop (dynamic-partial)
+# [07363.364 ms; 055 iters.] [0.0000e+0 err.] pagerankLoopAll (static)
+# [07249.228 ms; 055 iters.] [1.2089e-4 err.] pagerankLoopAll (dynamic-full)
+# [06544.768 ms; 055 iters.] [1.2085e-4 err.] pagerankLoopAll (dynamic-partial)
+# [06484.971 ms; 058 iters.] [0.0000e+0 err.] pagerankRemove (static)
+# [06954.867 ms; 059 iters.] [5.0810e-3 err.] pagerankRemove (dynamic-full)
+# [06397.615 ms; 059 iters.] [5.0810e-3 err.] pagerankRemove (dynamic-partial)
 ```
 
-[![](https://i.imgur.com/rcvx67u.png)][sheetp]
-[![](https://i.imgur.com/zM0FWhK.png)][sheetp]
-[![](https://i.imgur.com/hdnvgFv.png)][sheetp]
-[![](https://i.imgur.com/0PFzEdr.png)][sheetp]
-[![](https://i.imgur.com/vHUGqZj.png)][sheetp]
-[![](https://i.imgur.com/3KoFa4a.png)][sheetp]
-[![](https://i.imgur.com/sugM3YE.png)][sheetp]
-[![](https://i.imgur.com/sMeAFTI.png)][sheetp]
+[![](https://i.imgur.com/iXWSwSj.gif)][sheetp]
+[![](https://i.imgur.com/XnPpQ7N.gif)][sheetp]
+[![](https://i.imgur.com/AXw3bfH.gif)][sheetp]
+[![](https://i.imgur.com/Me2uD1J.gif)][sheetp]
+[![](https://i.imgur.com/4kJMw90.gif)][sheetp]
+[![](https://i.imgur.com/kS3lO2N.gif)][sheetp]
+[![](https://i.imgur.com/TlY2tk4.gif)][sheetp]
+[![](https://i.imgur.com/mFjxYdb.gif)][sheetp]
 
-[![](https://i.imgur.com/frNocq5.png)][sheetp]
-[![](https://i.imgur.com/panmjFp.png)][sheetp]
-[![](https://i.imgur.com/vtGV8cy.png)][sheetp]
-[![](https://i.imgur.com/SgP0oX5.png)][sheetp]
-[![](https://i.imgur.com/cvOOgP1.png)][sheetp]
-[![](https://i.imgur.com/1Kl8QjI.png)][sheetp]
-[![](https://i.imgur.com/jn1XSoG.png)][sheetp]
-[![](https://i.imgur.com/C0KCMVt.png)][sheetp]
+[![](https://i.imgur.com/7xbsTnI.gif)][sheetp]
+[![](https://i.imgur.com/M3N2ugc.gif)][sheetp]
+[![](https://i.imgur.com/g6yRV5I.gif)][sheetp]
+[![](https://i.imgur.com/LIRshab.gif)][sheetp]
+[![](https://i.imgur.com/04c1rGI.gif)][sheetp]
+[![](https://i.imgur.com/OCt5j3L.gif)][sheetp]
+[![](https://i.imgur.com/IhZKLr6.gif)][sheetp]
+[![](https://i.imgur.com/9SVIo4t.gif)][sheetp]
 
-[![](https://i.imgur.com/fIWv0LV.png)][sheetp]
-[![](https://i.imgur.com/8UHPScN.png)][sheetp]
-[![](https://i.imgur.com/WEOfhxQ.png)][sheetp]
-[![](https://i.imgur.com/5HUxEvz.png)][sheetp]
-[![](https://i.imgur.com/Gbm0HRo.png)][sheetp]
-[![](https://i.imgur.com/Eg2SbDu.png)][sheetp]
-[![](https://i.imgur.com/SLZqLbf.png)][sheetp]
-[![](https://i.imgur.com/opGpoGp.png)][sheetp]
+[![](https://i.imgur.com/1ujIEKW.gif)][sheetp]
+[![](https://i.imgur.com/MkPEQ9T.gif)][sheetp]
+[![](https://i.imgur.com/Xkbjpnc.gif)][sheetp]
+[![](https://i.imgur.com/sV2FIQF.gif)][sheetp]
+[![](https://i.imgur.com/3UflZ3F.gif)][sheetp]
+[![](https://i.imgur.com/5tVVN4n.gif)][sheetp]
+[![](https://i.imgur.com/nWyUoSC.gif)][sheetp]
+[![](https://i.imgur.com/SfIpzCs.gif)][sheetp]
 
-[![](https://i.imgur.com/nKYNcqI.png)][sheetp]
-[![](https://i.imgur.com/uz6Vo8i.png)][sheetp]
-[![](https://i.imgur.com/rEhwe0B.png)][sheetp]
-[![](https://i.imgur.com/RCoGnHq.png)][sheetp]
-[![](https://i.imgur.com/pVAQ12g.png)][sheetp]
-[![](https://i.imgur.com/JpIYts8.png)][sheetp]
-[![](https://i.imgur.com/MncjtSr.png)][sheetp]
-[![](https://i.imgur.com/IkBs3j6.png)][sheetp]
+[![](https://i.imgur.com/Sr2lga8.gif)][sheetp]
+[![](https://i.imgur.com/cYu2AYH.gif)][sheetp]
+[![](https://i.imgur.com/qZaJ6n8.gif)][sheetp]
+[![](https://i.imgur.com/dRIcft5.gif)][sheetp]
+[![](https://i.imgur.com/uTQoyTX.gif)][sheetp]
+[![](https://i.imgur.com/EAz11wD.gif)][sheetp]
+[![](https://i.imgur.com/KPE8TZk.gif)][sheetp]
+[![](https://i.imgur.com/2Vmx4WH.gif)][sheetp]
+
+[![](https://i.imgur.com/Kh0iURR.gif)][sheetp]
+[![](https://i.imgur.com/1YL1D1i.gif)][sheetp]
+[![](https://i.imgur.com/9jSmdEN.gif)][sheetp]
+[![](https://i.imgur.com/rtvwtHL.gif)][sheetp]
+[![](https://i.imgur.com/Lozs712.gif)][sheetp]
+[![](https://i.imgur.com/SbQw9uT.gif)][sheetp]
+[![](https://i.imgur.com/ORDyKDP.gif)][sheetp]
+[![](https://i.imgur.com/P0hPCuX.gif)][sheetp]
+
+[![](https://i.imgur.com/X8PCXMh.gif)][sheetp]
+[![](https://i.imgur.com/0V5Cgzf.gif)][sheetp]
+[![](https://i.imgur.com/107gh8Y.gif)][sheetp]
+[![](https://i.imgur.com/i4BP7zH.gif)][sheetp]
+[![](https://i.imgur.com/Pqr2yOn.gif)][sheetp]
+[![](https://i.imgur.com/t1WTA5s.gif)][sheetp]
+[![](https://i.imgur.com/ks8lRxK.gif)][sheetp]
+[![](https://i.imgur.com/WsbLJFP.gif)][sheetp]
+
+[![](https://i.imgur.com/dMSHrON.gif)][sheetp]
+[![](https://i.imgur.com/w6B5vHq.gif)][sheetp]
+[![](https://i.imgur.com/cbC7ujr.gif)][sheetp]
+[![](https://i.imgur.com/zdVtza9.gif)][sheetp]
+[![](https://i.imgur.com/fhdME1W.gif)][sheetp]
+[![](https://i.imgur.com/BYFHBY4.gif)][sheetp]
+[![](https://i.imgur.com/5zbhHqQ.gif)][sheetp]
+[![](https://i.imgur.com/RQnuEC4.gif)][sheetp]
+
+
+[![](https://i.imgur.com/qefllB8.png)][sheetp]
+[![](https://i.imgur.com/4WzFlIQ.png)][sheetp]
+[![](https://i.imgur.com/21PYkJt.png)][sheetp]
+[![](https://i.imgur.com/lVjSN7g.png)][sheetp]
+[![](https://i.imgur.com/JlSGjbA.png)][sheetp]
+[![](https://i.imgur.com/Xqa7JrJ.png)][sheetp]
+[![](https://i.imgur.com/EuaXnt2.png)][sheetp]
+[![](https://i.imgur.com/JEbnNTZ.png)][sheetp]
+
+[![](https://i.imgur.com/9GR88NW.png)][sheetp]
+[![](https://i.imgur.com/z3GGJaM.png)][sheetp]
+[![](https://i.imgur.com/s0FjaiE.png)][sheetp]
+[![](https://i.imgur.com/e2Qbnny.png)][sheetp]
+[![](https://i.imgur.com/AIbMeOn.png)][sheetp]
+[![](https://i.imgur.com/s7vr9Ss.png)][sheetp]
+[![](https://i.imgur.com/97sokl3.png)][sheetp]
+[![](https://i.imgur.com/qLMWpaw.png)][sheetp]
+
+[![](https://i.imgur.com/h1vtKm2.png)][sheetp]
+[![](https://i.imgur.com/bUFxmle.png)][sheetp]
+[![](https://i.imgur.com/DIIh1pm.png)][sheetp]
+[![](https://i.imgur.com/9LLyUWc.png)][sheetp]
+[![](https://i.imgur.com/KzBCgzd.png)][sheetp]
+[![](https://i.imgur.com/xQHxkZ6.png)][sheetp]
+[![](https://i.imgur.com/C1YX0zM.png)][sheetp]
+[![](https://i.imgur.com/uvG7mHr.png)][sheetp]
+
+[![](https://i.imgur.com/vowm1k6.png)][sheetp]
+[![](https://i.imgur.com/MkIpRZd.png)][sheetp]
+[![](https://i.imgur.com/Y2Eccqb.png)][sheetp]
+[![](https://i.imgur.com/CeuTtMG.png)][sheetp]
+[![](https://i.imgur.com/GPL5CNv.png)][sheetp]
+[![](https://i.imgur.com/KMEWDV9.png)][sheetp]
+[![](https://i.imgur.com/oPFJBn4.png)][sheetp]
+[![](https://i.imgur.com/v9ARKBq.png)][sheetp]
 
 <br>
 <br>
@@ -291,6 +343,8 @@ $ ...
 [Prof. Kishore Kothapalli]: https://cstar.iiit.ac.in/~kkishore/
 [SuiteSparse Matrix Collection]: https://suitesparse-collection-website.herokuapp.com
 ["graphs"]: https://github.com/puzzlef/graphs
+[pull]: https://github.com/puzzlef/pagerank-push-vs-pull
+[CSR]: https://github.com/puzzlef/pagerank-class-vs-csr
 [charts]: https://photos.app.goo.gl/mAGStz1Pg2DR4RsT8
 [sheets]: https://docs.google.com/spreadsheets/d/1pz1ya2ftFWABJM-etPEV1GEf94Wnw1hJbZlh6WTickY/edit?usp=sharing
 [sheetp]: https://docs.google.com/spreadsheets/d/e/2PACX-1vS8rn04zSsyDW29MphGmqUTGSEbzJzqw_S7J1fqRTMTPPSGPWiqxhUTQuDbba3XpXGgR9ugBX5vMlb2/pubhtml

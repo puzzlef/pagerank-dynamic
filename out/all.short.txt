@@ -1067,5 +1067,3 @@ order: 2601977 size: 36233450 {}
 [06484.971 ms; 058 iters.] [0.0000e+0 err.] pagerankRemove (static)
 [06954.867 ms; 059 iters.] [5.0810e-3 err.] pagerankRemove (dynamic-full)
 [06397.615 ms; 059 iters.] [5.0810e-3 err.] pagerankRemove (dynamic-partial)
-
-

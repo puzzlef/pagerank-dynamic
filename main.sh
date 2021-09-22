@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-src="pagerank-dynamic-tolerance-full-vs-partial"
+src="pagerank-dynamic-tolerance-measurement"
 out="/home/resources/Documents/subhajit/$src.log"
 ulimit -s unlimited
 printf "" > "$out"
