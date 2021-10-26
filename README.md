@@ -1,11 +1,11 @@
-Comparing strategies to **update ranks** for **dynamic PageRank** ([pull], [CSR]).
+Comparing strategies to **update ranks** for **incremental/dynamic PageRank** ([pull], [CSR]).
 
 This experiment was for comparing the performance between:
 1. Find **static** pagerank of updated graph.
-2. Find **dynamic** pagerank, using **zero-fill**.
-3. Find **dynamic** pagerank, using **1/N-fill**.
-4. Find **dynamic** pagerank, using **scaled zero-fill**.
-5. Find **dynamic** pagerank, using **scaled 1/N-fill**.
+2. Find **incremental** pagerank, using **zero-fill**.
+3. Find **incremental** pagerank, using **1/N-fill**.
+4. Find **incremental** pagerank, using **scaled zero-fill**.
+5. Find **incremental** pagerank, using **scaled 1/N-fill**.
 
 There are a number of **strategies to set up the initial rank vector** for the
 PageRank algorithm on the *updated graph*, using the ranks from the *old graph*.
@@ -92,7 +92,7 @@ PageRank perform significantly better than static PageRank, with a small
 performance difference among them. However, for *large batch sizes*, *static*
 *PageRank* is able to beat *all* of the rank adjustment strategies. This
 is expected, since beyond a certain batch size, computing PageRank from
-scratch is going to be *faster* than dynamic PageRank. On average, the
+scratch is going to be *faster* than incremental/dynamic PageRank. On average, the
 performance difference between the rank adjustment strategies *increases*
 as the *batch size increases*. Both *1/N-fill*, and *scaled 1/N-fill* strategies
 (having similar performance curve) require somewhat *fewer iterations* to
@@ -116,7 +116,7 @@ than *zero-fill* and *scaled zero-fill*. *AM-RATIO* is obtained in a process
 similar to that of *GM-RATIO*, except that *arithmetic mean (AM)* is used
 instead of GM.
 
-Among the four studied *rank adjustment strategies* for *dynamic PageRank*,
+Among the four studied *rank adjustment strategies* for *incremental/dynamic PageRank*,
 both **1/N-fill** and **scaled 1/N-fill** appear to be the **best**. However,
 only with the *scaled 1/N-fill* strategy (also *scaled zero-fill*, but it is
 *slower*), it is possible to **skip** PageRank computation on **unaffected**
@@ -147,101 +147,101 @@ $ ...
 #
 # # Batch size 1e+1
 # [04939.784 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
-# [03615.313 ms; 041 iters.] [4.3594e-4 err.] pagerankDynamic (zero-fill)
-# [03622.748 ms; 041 iters.] [4.3594e-4 err.] pagerankDynamic (1/N-fill)
-# [03634.465 ms; 041 iters.] [4.3594e-4 err.] pagerankDynamic (scaled zero-fill)
-# [03629.793 ms; 041 iters.] [4.3594e-4 err.] pagerankDynamic (scaled 1/N-fill)
+# [03615.313 ms; 041 iters.] [4.3594e-4 err.] pagerankIncremental (zero-fill)
+# [03622.748 ms; 041 iters.] [4.3594e-4 err.] pagerankIncremental (1/N-fill)
+# [03634.465 ms; 041 iters.] [4.3594e-4 err.] pagerankIncremental (scaled zero-fill)
+# [03629.793 ms; 041 iters.] [4.3594e-4 err.] pagerankIncremental (scaled 1/N-fill)
 #
 # # Batch size 5e+1
 # [05160.998 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
-# [03766.426 ms; 041 iters.] [4.3596e-4 err.] pagerankDynamic (zero-fill)
-# [03782.768 ms; 041 iters.] [4.3594e-4 err.] pagerankDynamic (1/N-fill)
-# [03769.523 ms; 041 iters.] [4.3596e-4 err.] pagerankDynamic (scaled zero-fill)
-# [03786.383 ms; 041 iters.] [4.3594e-4 err.] pagerankDynamic (scaled 1/N-fill)
+# [03766.426 ms; 041 iters.] [4.3596e-4 err.] pagerankIncremental (zero-fill)
+# [03782.768 ms; 041 iters.] [4.3594e-4 err.] pagerankIncremental (1/N-fill)
+# [03769.523 ms; 041 iters.] [4.3596e-4 err.] pagerankIncremental (scaled zero-fill)
+# [03786.383 ms; 041 iters.] [4.3594e-4 err.] pagerankIncremental (scaled 1/N-fill)
 #
 # # Batch size 1e+2
 # [05136.888 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
-# [03767.514 ms; 041 iters.] [4.3596e-4 err.] pagerankDynamic (zero-fill)
-# [03772.496 ms; 041 iters.] [4.3595e-4 err.] pagerankDynamic (1/N-fill)
-# [03769.711 ms; 041 iters.] [4.3596e-4 err.] pagerankDynamic (scaled zero-fill)
-# [03777.805 ms; 041 iters.] [4.3596e-4 err.] pagerankDynamic (scaled 1/N-fill)
+# [03767.514 ms; 041 iters.] [4.3596e-4 err.] pagerankIncremental (zero-fill)
+# [03772.496 ms; 041 iters.] [4.3595e-4 err.] pagerankIncremental (1/N-fill)
+# [03769.711 ms; 041 iters.] [4.3596e-4 err.] pagerankIncremental (scaled zero-fill)
+# [03777.805 ms; 041 iters.] [4.3596e-4 err.] pagerankIncremental (scaled 1/N-fill)
 #
 # # Batch size 5e+2
 # [05120.352 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
-# [03748.187 ms; 041 iters.] [4.3600e-4 err.] pagerankDynamic (zero-fill)
-# [03767.701 ms; 041 iters.] [4.3600e-4 err.] pagerankDynamic (1/N-fill)
-# [03762.846 ms; 041 iters.] [4.3600e-4 err.] pagerankDynamic (scaled zero-fill)
-# [03764.992 ms; 041 iters.] [4.3600e-4 err.] pagerankDynamic (scaled 1/N-fill)
+# [03748.187 ms; 041 iters.] [4.3600e-4 err.] pagerankIncremental (zero-fill)
+# [03767.701 ms; 041 iters.] [4.3600e-4 err.] pagerankIncremental (1/N-fill)
+# [03762.846 ms; 041 iters.] [4.3600e-4 err.] pagerankIncremental (scaled zero-fill)
+# [03764.992 ms; 041 iters.] [4.3600e-4 err.] pagerankIncremental (scaled 1/N-fill)
 #
 # # Batch size 1e+3
 # [05146.768 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
-# [03765.965 ms; 041 iters.] [4.3607e-4 err.] pagerankDynamic (zero-fill)
-# [03774.291 ms; 041 iters.] [4.3604e-4 err.] pagerankDynamic (1/N-fill)
-# [03779.047 ms; 042 iters.] [4.3606e-4 err.] pagerankDynamic (scaled zero-fill)
-# [03774.637 ms; 041 iters.] [4.3603e-4 err.] pagerankDynamic (scaled 1/N-fill)
+# [03765.965 ms; 041 iters.] [4.3607e-4 err.] pagerankIncremental (zero-fill)
+# [03774.291 ms; 041 iters.] [4.3604e-4 err.] pagerankIncremental (1/N-fill)
+# [03779.047 ms; 042 iters.] [4.3606e-4 err.] pagerankIncremental (scaled zero-fill)
+# [03774.637 ms; 041 iters.] [4.3603e-4 err.] pagerankIncremental (scaled 1/N-fill)
 #
 # # Batch size 5e+3
 # [05090.658 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
-# [03766.083 ms; 042 iters.] [4.3612e-4 err.] pagerankDynamic (zero-fill)
-# [03786.325 ms; 042 iters.] [4.3612e-4 err.] pagerankDynamic (1/N-fill)
-# [03787.047 ms; 042 iters.] [4.3613e-4 err.] pagerankDynamic (scaled zero-fill)
-# [03793.852 ms; 042 iters.] [4.3611e-4 err.] pagerankDynamic (scaled 1/N-fill)
+# [03766.083 ms; 042 iters.] [4.3612e-4 err.] pagerankIncremental (zero-fill)
+# [03786.325 ms; 042 iters.] [4.3612e-4 err.] pagerankIncremental (1/N-fill)
+# [03787.047 ms; 042 iters.] [4.3613e-4 err.] pagerankIncremental (scaled zero-fill)
+# [03793.852 ms; 042 iters.] [4.3611e-4 err.] pagerankIncremental (scaled 1/N-fill)
 #
 # # Batch size 1e+4
 # [05155.605 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
-# [03834.611 ms; 043 iters.] [4.3615e-4 err.] pagerankDynamic (zero-fill)
-# [03823.441 ms; 043 iters.] [4.3609e-4 err.] pagerankDynamic (1/N-fill)
-# [03820.311 ms; 043 iters.] [4.3618e-4 err.] pagerankDynamic (scaled zero-fill)
-# [03836.097 ms; 043 iters.] [4.3610e-4 err.] pagerankDynamic (scaled 1/N-fill)
+# [03834.611 ms; 043 iters.] [4.3615e-4 err.] pagerankIncremental (zero-fill)
+# [03823.441 ms; 043 iters.] [4.3609e-4 err.] pagerankIncremental (1/N-fill)
+# [03820.311 ms; 043 iters.] [4.3618e-4 err.] pagerankIncremental (scaled zero-fill)
+# [03836.097 ms; 043 iters.] [4.3610e-4 err.] pagerankIncremental (scaled 1/N-fill)
 #
 # # Batch size 5e+4
 # [05390.391 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
-# [04059.541 ms; 044 iters.] [4.3631e-4 err.] pagerankDynamic (zero-fill)
-# [04055.194 ms; 044 iters.] [4.3610e-4 err.] pagerankDynamic (1/N-fill)
-# [04082.488 ms; 044 iters.] [4.3632e-4 err.] pagerankDynamic (scaled zero-fill)
-# [04086.058 ms; 044 iters.] [4.3611e-4 err.] pagerankDynamic (scaled 1/N-fill)
+# [04059.541 ms; 044 iters.] [4.3631e-4 err.] pagerankIncremental (zero-fill)
+# [04055.194 ms; 044 iters.] [4.3610e-4 err.] pagerankIncremental (1/N-fill)
+# [04082.488 ms; 044 iters.] [4.3632e-4 err.] pagerankIncremental (scaled zero-fill)
+# [04086.058 ms; 044 iters.] [4.3611e-4 err.] pagerankIncremental (scaled 1/N-fill)
 #
 # # Batch size 1e+5
 # [05211.426 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
-# [04012.745 ms; 045 iters.] [4.3642e-4 err.] pagerankDynamic (zero-fill)
-# [04013.988 ms; 045 iters.] [4.3621e-4 err.] pagerankDynamic (1/N-fill)
-# [03985.501 ms; 045 iters.] [4.3649e-4 err.] pagerankDynamic (scaled zero-fill)
-# [03977.713 ms; 045 iters.] [4.3621e-4 err.] pagerankDynamic (scaled 1/N-fill)
+# [04012.745 ms; 045 iters.] [4.3642e-4 err.] pagerankIncremental (zero-fill)
+# [04013.988 ms; 045 iters.] [4.3621e-4 err.] pagerankIncremental (1/N-fill)
+# [03985.501 ms; 045 iters.] [4.3649e-4 err.] pagerankIncremental (scaled zero-fill)
+# [03977.713 ms; 045 iters.] [4.3621e-4 err.] pagerankIncremental (scaled 1/N-fill)
 #
 # # Batch size 5e+5
 # [05750.091 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
-# [04760.236 ms; 050 iters.] [4.3668e-4 err.] pagerankDynamic (zero-fill)
-# [04721.523 ms; 049 iters.] [7.4446e-6 err.] pagerankDynamic (1/N-fill)
-# [04709.357 ms; 050 iters.] [4.3679e-4 err.] pagerankDynamic (scaled zero-fill)
-# [04674.002 ms; 049 iters.] [7.5238e-6 err.] pagerankDynamic (scaled 1/N-fill)
+# [04760.236 ms; 050 iters.] [4.3668e-4 err.] pagerankIncremental (zero-fill)
+# [04721.523 ms; 049 iters.] [7.4446e-6 err.] pagerankIncremental (1/N-fill)
+# [04709.357 ms; 050 iters.] [4.3679e-4 err.] pagerankIncremental (scaled zero-fill)
+# [04674.002 ms; 049 iters.] [7.5238e-6 err.] pagerankIncremental (scaled 1/N-fill)
 #
 # # Batch size 1e+6
 # [05786.956 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
-# [04975.434 ms; 052 iters.] [8.0893e-6 err.] pagerankDynamic (zero-fill)
-# [04908.633 ms; 051 iters.] [7.8276e-6 err.] pagerankDynamic (1/N-fill)
-# [04934.850 ms; 052 iters.] [8.0739e-6 err.] pagerankDynamic (scaled zero-fill)
-# [04895.568 ms; 051 iters.] [7.7943e-6 err.] pagerankDynamic (scaled 1/N-fill)
+# [04975.434 ms; 052 iters.] [8.0893e-6 err.] pagerankIncremental (zero-fill)
+# [04908.633 ms; 051 iters.] [7.8276e-6 err.] pagerankIncremental (1/N-fill)
+# [04934.850 ms; 052 iters.] [8.0739e-6 err.] pagerankIncremental (scaled zero-fill)
+# [04895.568 ms; 051 iters.] [7.7943e-6 err.] pagerankIncremental (scaled 1/N-fill)
 #
 # # Batch size 5e+6
 # [06634.203 ms; 056 iters.] [0.0000e+0 err.] pagerankStatic
-# [06363.779 ms; 059 iters.] [7.3656e-6 err.] pagerankDynamic (zero-fill)
-# [05934.904 ms; 056 iters.] [7.1436e-6 err.] pagerankDynamic (1/N-fill)
-# [06161.640 ms; 059 iters.] [7.3794e-6 err.] pagerankDynamic (scaled zero-fill)
-# [05859.559 ms; 056 iters.] [7.0833e-6 err.] pagerankDynamic (scaled 1/N-fill)
+# [06363.779 ms; 059 iters.] [7.3656e-6 err.] pagerankIncremental (zero-fill)
+# [05934.904 ms; 056 iters.] [7.1436e-6 err.] pagerankIncremental (1/N-fill)
+# [06161.640 ms; 059 iters.] [7.3794e-6 err.] pagerankIncremental (scaled zero-fill)
+# [05859.559 ms; 056 iters.] [7.0833e-6 err.] pagerankIncremental (scaled 1/N-fill)
 #
 # # Batch size 1e+7
 # [07038.214 ms; 057 iters.] [0.0000e+0 err.] pagerankStatic
-# [06738.821 ms; 062 iters.] [6.3339e-6 err.] pagerankDynamic (zero-fill)
-# [06499.542 ms; 057 iters.] [6.1972e-6 err.] pagerankDynamic (1/N-fill)
-# [07009.660 ms; 062 iters.] [6.3312e-6 err.] pagerankDynamic (scaled zero-fill)
-# [06591.503 ms; 057 iters.] [6.0978e-6 err.] pagerankDynamic (scaled 1/N-fill)
+# [06738.821 ms; 062 iters.] [6.3339e-6 err.] pagerankIncremental (zero-fill)
+# [06499.542 ms; 057 iters.] [6.1972e-6 err.] pagerankIncremental (1/N-fill)
+# [07009.660 ms; 062 iters.] [6.3312e-6 err.] pagerankIncremental (scaled zero-fill)
+# [06591.503 ms; 057 iters.] [6.0978e-6 err.] pagerankIncremental (scaled 1/N-fill)
 #
 # # Batch size 5e+7
 # [08794.845 ms; 058 iters.] [0.0000e+0 err.] pagerankStatic
-# [10055.872 ms; 068 iters.] [5.8015e-6 err.] pagerankDynamic (zero-fill)
-# [08454.233 ms; 059 iters.] [3.6083e-6 err.] pagerankDynamic (1/N-fill)
-# [09482.630 ms; 068 iters.] [5.8012e-6 err.] pagerankDynamic (scaled zero-fill)
-# [08932.575 ms; 059 iters.] [3.5756e-6 err.] pagerankDynamic (scaled 1/N-fill)
+# [10055.872 ms; 068 iters.] [5.8015e-6 err.] pagerankIncremental (zero-fill)
+# [08454.233 ms; 059 iters.] [3.6083e-6 err.] pagerankIncremental (1/N-fill)
+# [09482.630 ms; 068 iters.] [5.8012e-6 err.] pagerankIncremental (scaled zero-fill)
+# [08932.575 ms; 059 iters.] [3.5756e-6 err.] pagerankIncremental (scaled 1/N-fill)
 ```
 
 [![](https://i.imgur.com/2By6cGN.gif)][sheetp]

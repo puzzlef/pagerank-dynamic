@@ -41,25 +41,25 @@ void runPagerankBatch(const string& data, int repeat, int skip, int batch) {
     auto a1 = pagerankTeleport(y, init, {repeat});
     printRow(y, a1, a1, "pagerankStatic");
 
-    // Find dynamic pagerank, using zero for new vertices.
+    // Find incremental pagerank, using zero for new vertices.
     adjustRanks(r1, r0, k0, k1, 0.0f, 1.0f, 0.0f);
     auto a2 = pagerankTeleport(y, &r1, {repeat});
-    printRow(y, a1, a2, "pagerankDynamic (zero-fill)");
+    printRow(y, a1, a2, "pagerankIncremental (zero-fill)");
 
-    // Find dynamic pagerank, using 1/N for new vertices.
+    // Find incremental pagerank, using 1/N for new vertices.
     adjustRanks(r1, r0, k0, k1, 0.0f, 1.0f, 1.0f/K1);
     auto a3 = pagerankTeleport(y, &r1, {repeat});
-    printRow(y, a1, a3, "pagerankDynamic (1/N-fill)");
+    printRow(y, a1, a3, "pagerankIncremental (1/N-fill)");
 
-    // Find dynamic pagerank, scaling old vertices, and using zero for new vertices.
+    // Find incremental pagerank, scaling old vertices, and using zero for new vertices.
     adjustRanks(r1, r0, k0, k1, 0.0f, float(K0)/K1, 0.0f);
     auto a4 = pagerankTeleport(y, &r1, {repeat});
-    printRow(y, a1, a4, "pagerankDynamic (scaled zero-fill)");
+    printRow(y, a1, a4, "pagerankIncremental (scaled zero-fill)");
 
-    // Find dynamic pagerank, scaling old vertices, and using 1/N for new vertices.
+    // Find incremental pagerank, scaling old vertices, and using 1/N for new vertices.
     adjustRanks(r1, r0, k0, k1, 0.0f, float(K0)/K1, 1.0f/K1);
     auto a5 = pagerankTeleport(y, &r1, {repeat});
-    printRow(y, a1, a5, "pagerankDynamic (scaled 1/N-fill)");
+    printRow(y, a1, a5, "pagerankIncremental (scaled 1/N-fill)");
 
     // New graph is now old.
     x = move(y);
