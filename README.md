@@ -288,6 +288,7 @@ $ ...
 <br>
 
 [![](https://i.imgur.com/xYJUQbm.jpg)](https://www.youtube.com/watch?v=tIybKX2NKeo)
+[![ORG](https://img.shields.io/badge/org-puzzlef-green?logo=Org)](https://puzzlef.github.io)
 [![DOI](https://zenodo.org/badge/367267258.svg)](https://zenodo.org/badge/latestdoi/367267258)
 
 [Prof. Dip Sankar Banerjee]: https://sites.google.com/site/dipsankarban/
