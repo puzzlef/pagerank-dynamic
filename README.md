@@ -7,7 +7,7 @@ There are two ways of *error measurement* with *dynamic PageRank* calculation.
 
 `TODO`
 
-All outputs are saved in [out](out/) and a small part of the output is listed
+All outputs are saved in [gist] and a small part of the output is listed
 here. Some [charts] are also included below, generated from [sheets]. The input
 data used for this experiment is available at ["graphs"] (for small ones), and
 the [SuiteSparse Matrix Collection]. This experiment was done with guidance
@@ -345,6 +345,7 @@ $ ...
 ["graphs"]: https://github.com/puzzlef/graphs
 [pull]: https://github.com/puzzlef/pagerank-push-vs-pull
 [CSR]: https://github.com/puzzlef/pagerank-class-vs-csr
+[gist]: https://gist.github.com/wolfram77/3c3e2392a3731a1719200ff42eb9ae05
 [charts]: https://photos.app.goo.gl/mAGStz1Pg2DR4RsT8
 [sheets]: https://docs.google.com/spreadsheets/d/1pz1ya2ftFWABJM-etPEV1GEf94Wnw1hJbZlh6WTickY/edit?usp=sharing
 [sheetp]: https://docs.google.com/spreadsheets/d/e/2PACX-1vS8rn04zSsyDW29MphGmqUTGSEbzJzqw_S7J1fqRTMTPPSGPWiqxhUTQuDbba3XpXGgR9ugBX5vMlb2/pubhtml
