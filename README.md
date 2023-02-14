@@ -10,7 +10,7 @@ incrementally added to the graph batch-by-batch until the entire graph is
 complete. **Dynamic pagerank** is clearly **faster** than *static pagerank*
 for most cases.
 
-All outputs are saved in [out](out/) and a small part of the output is listed
+All outputs are saved in [gist] and a small part of the output is listed
 here. Some [charts] are also included below, generated from [sheets]. The input
 data used for this experiment is available at the
 [Stanford Large Network Dataset Collection]. This experiment was done with
@@ -128,5 +128,6 @@ $ ./a.out ~/data/sx-stackoverflow.txt
 [pull]: https://github.com/puzzlef/pagerank-push-vs-pull
 [CSR]: https://github.com/puzzlef/pagerank-class-vs-csr
 [scaled-fill]: https://github.com/puzzlef/pagerank-dynamic-adjust-ranks
+[gist]: https://gist.github.com/wolfram77/d07a9ebe2e5517b7397cdffb26e8c7ce
 [charts]: https://photos.app.goo.gl/dcQWY7z1HEdPAqre8
 [sheets]: https://docs.google.com/spreadsheets/d/1b6fuE9dRbAbQanCl2rDXc-K2xpIUSg7Mw_dzVnFbkD8/edit?usp=sharing
