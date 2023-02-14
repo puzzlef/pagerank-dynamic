@@ -124,7 +124,7 @@ only with the *scaled 1/N-fill* strategy (also *scaled zero-fill*, but it is
 *ends in the old graph)*. The **scaled 1/N-fill** rank adjustment strategy,
 which is commonly used for dynamic PageRank, is thus the way to go.
 
-All outputs are saved in [out](out/) and a small part of the output is listed
+All outputs are saved in [gist] and a small part of the output is listed
 here. Some [charts] are also included below, generated from [sheets]. The input
 data used for this experiment is available at the
 [Stanford Large Network Dataset Collection]. This experiment was done with
@@ -296,6 +296,7 @@ $ ...
 [Stanford Large Network Dataset Collection]: http://snap.stanford.edu/data/index.html
 [pull]: https://github.com/puzzlef/pagerank-push-vs-pull
 [CSR]: https://github.com/puzzlef/pagerank-class-vs-csr
+[gist]: https://gist.github.com/wolfram77/57d8f58a7becbc0685cfeb9f533d721c
 [charts]: https://photos.app.goo.gl/7vjL6WDN5hY8wWjM9
 [sheets]: https://docs.google.com/spreadsheets/d/1MAdwqlAEhYf5EXF3B6ahVvztS*vQt0nT*MBK2xOYl2w/edit?usp=sharing
 [sheetp]: https://docs.google.com/spreadsheets/d/e/2PACX-1vSAvNX3h6-oDrvrNG2*fTLFVk32mnzAI2PSXt2WN34zKSjNRxPyQwY84hc2zPzL9mNGnFDYn3cSCkZd/pubhtml
