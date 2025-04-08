@@ -177,7 +177,7 @@ in [gist]. Some [charts] are also included below, generated from [sheets].
 [![](https://i.imgur.com/0TfMELc.jpg)](https://www.youtube.com/watch?v=tIybKX2NKeo)
 [![ORG](https://img.shields.io/badge/org-puzzlef-green?logo=Org)](https://puzzlef.github.io)
 [![DOI](https://zenodo.org/badge/367267258.svg)](https://zenodo.org/badge/latestdoi/367267258)
-
+![](https://ga-beacon.deno.dev/G-KD28SG54JQ:hbAybl6nQFOtmVxW4if3xw/github.com/puzzlef/pagerank-dynamic)
 
 [Prof. Dip Sankar Banerjee]: https://sites.google.com/site/dipsankarban/
 [Prof. Kishore Kothapalli]: https://faculty.iiit.ac.in/~kkishore/
